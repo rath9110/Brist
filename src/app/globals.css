@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-bg: #f4f6f4;
+  --color-surface: #ffffff;
+  --color-primary: #1f3d2b;
+  --color-primary-tint: #f0f5f2;
+  --color-secondary: #4f7a65;
+  --color-accent: #dce5df;
+  --color-text: #1f2a24;
+  --color-text-muted: #6b6b6b;
+  --color-success: #2ecc71;
+  --color-error: #c0392b;
+  --color-warning: #d68910;
+}
+
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* CTA button — uppercase, semibold, letter-spaced */
+.btn-cta {
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: var(--color-primary);
+  color: #ffffff;
+  border-radius: 12px;
+  padding: 16px 24px;
+  width: 100%;
+  transition: background 150ms ease, transform 150ms ease;
+}
+.btn-cta:hover {
+  background: #17301f;
+}
+.btn-cta:active {
+  transform: scale(0.99);
+}
+
+/* Question transition animations */
+@keyframes question-out {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-16px);
+  }
+}
+@keyframes question-in {
+  from {
+    opacity: 0;
+    transform: translateX(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.question-enter {
+  animation: question-in 200ms ease 50ms both;
+}
+.question-exit {
+  animation: question-out 150ms ease both;
+}
+
+/* Progress bar pulse (used during results loading) */
+@keyframes pulse-bar {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+.progress-pulse {
+  animation: pulse-bar 900ms ease-in-out infinite;
+}
