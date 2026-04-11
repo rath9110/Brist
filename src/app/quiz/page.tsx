@@ -15,8 +15,9 @@ const EMPTY_ANSWERS: QuizAnswers = {
   q2_demographics: "",
   q3_energy_pattern: "",
   q4_sleep: "",
-  q5_diet: "",
+  q5_diet: [],
   q6_training: "",
+  q6_frequency: "",
   q7_symptoms: [],
   q8_current_supplements: "",
 };
@@ -40,25 +41,32 @@ export default function QuizPage() {
       return demoAge !== "" && demoSex !== "";
     }
     if (question.type === "multi_select") {
-      return (answers.q7_symptoms as string[]).length > 0;
+      if (question.id === "q5_diet") return answers.q5_diet.length > 0;
+      return answers.q7_symptoms.length > 0;
     }
     return (answers[answerKey] as string) !== "";
   }
 
-  function advance() {
-    if (!canAdvance() || animating) return;
-
+  function animateForward(updatedAnswers: QuizAnswers) {
+    if (step + 1 >= TOTAL) {
+      const result = computeScores(updatedAnswers);
+      sessionStorage.setItem("brist_answers", JSON.stringify(updatedAnswers));
+      sessionStorage.setItem("brist_results", JSON.stringify(result));
+      router.push("/results");
+      return;
+    }
     setDirection("out");
     setAnimating(true);
     setTimeout(() => {
-      if (step + 1 >= TOTAL) {
-        finishQuiz();
-        return;
-      }
       setStep((s) => s + 1);
       setDirection("in");
       setAnimating(false);
     }, 150);
+  }
+
+  function advance() {
+    if (!canAdvance() || animating) return;
+    animateForward(answers);
   }
 
   function goBack() {
@@ -72,13 +80,6 @@ export default function QuizPage() {
     }, 150);
   }
 
-  function finishQuiz() {
-    const result = computeScores(answers);
-    sessionStorage.setItem("brist_answers", JSON.stringify(answers));
-    sessionStorage.setItem("brist_results", JSON.stringify(result));
-    router.push("/results");
-  }
-
   // Q2: sync composite selections into answers
   useEffect(() => {
     if (demoAge && demoSex) {
@@ -89,11 +90,17 @@ export default function QuizPage() {
     }
   }, [demoAge, demoSex]);
 
-  function selectSingle(key: keyof QuizAnswers, value: string) {
-    setAnswers((prev) => ({ ...prev, [key]: value }));
+  function toggleDiet(value: string) {
+    setAnswers((prev) => {
+      const current = prev.q5_diet;
+      if (current.includes(value)) {
+        return { ...prev, q5_diet: current.filter((v) => v !== value) };
+      }
+      return { ...prev, q5_diet: [...current, value] };
+    });
   }
 
-  function toggleMulti(value: string) {
+  function toggleSymptom(value: string) {
     setAnswers((prev) => {
       const current = prev.q7_symptoms;
       if (value === "none") {
@@ -122,116 +129,109 @@ export default function QuizPage() {
         <button
           type="button"
           onClick={goBack}
-          className="absolute top-6 left-6 font-sans text-[14px] text-text-muted hover:text-text transition-colors"
+          className="absolute top-6 left-6 z-10 font-sans text-[14px] text-text-muted hover:text-text transition-colors"
         >
           ← Tillbaka
         </button>
       )}
 
-      <div className={`flex-1 flex flex-col items-center justify-center px-6 py-16 ${animClass}`}>
-        <div className="w-full max-w-content">
-          {/* Question */}
-          <h2 className="font-serif text-[24px] text-text mb-8 leading-snug">
-            {question.question}
-          </h2>
+      <div className={`flex-1 overflow-y-auto ${animClass}`}>
+        <div className="min-h-full flex flex-col items-center justify-center px-6 py-16">
+          <div className="w-full max-w-content">
+            {/* Question */}
+            <h2 className="font-serif text-[24px] text-text mb-8 leading-snug">
+              {question.question}
+            </h2>
 
-          {/* Single select */}
-          {question.type === "single_select" && (
-            <div className="flex flex-col gap-3">
-              {question.options!.map((opt) => (
-                <OptionTile
-                  key={opt.key}
-                  label={opt.label}
-                  selected={(answers[answerKey] as string) === opt.key}
-                  onClick={() => {
-                    selectSingle(answerKey, opt.key);
-                    // Auto-advance on single-select
-                    setTimeout(() => {
-                      setAnswers((prev) => {
-                        const updated = { ...prev, [answerKey]: opt.key };
-                        if (step + 1 >= TOTAL) {
-                          const result = computeScores(updated);
-                          sessionStorage.setItem("brist_answers", JSON.stringify(updated));
-                          sessionStorage.setItem("brist_results", JSON.stringify(result));
-                          router.push("/results");
-                        } else {
-                          setDirection("out");
-                          setAnimating(true);
-                          setTimeout(() => {
-                            setStep((s) => s + 1);
-                            setDirection("in");
-                            setAnimating(false);
-                          }, 150);
-                        }
-                        return updated;
-                      });
-                    }, 120);
-                  }}
-                />
-              ))}
-            </div>
-          )}
+            {/* Single select — auto-advances on pick */}
+            {question.type === "single_select" && (
+              <div className="flex flex-col gap-3">
+                {question.options!.map((opt) => (
+                  <OptionTile
+                    key={opt.key}
+                    label={opt.label}
+                    selected={(answers[answerKey] as string) === opt.key}
+                    onClick={() => {
+                      const updated = { ...answers, [answerKey]: opt.key };
+                      setAnswers(updated);
+                      setTimeout(() => animateForward(updated), 120);
+                    }}
+                  />
+                ))}
+              </div>
+            )}
 
-          {/* Composite (Q2) */}
-          {question.type === "composite" && (
-            <div className="flex flex-col gap-6">
-              {question.rows!.map((row) => (
-                <div key={row.key}>
-                  <p className="font-sans text-[14px] text-text-muted mb-3">
-                    {row.label}
-                  </p>
-                  <div className="flex flex-col gap-2">
-                    {row.options.map((opt) => {
-                      const selected =
-                        row.key === "age" ? demoAge === opt.key : demoSex === opt.key;
-                      return (
-                        <OptionTile
-                          key={opt.key}
-                          label={opt.label}
-                          selected={selected}
-                          onClick={() =>
-                            row.key === "age"
-                              ? setDemoAge(opt.key)
-                              : setDemoSex(opt.key)
-                          }
-                        />
-                      );
-                    })}
+            {/* Composite (Q2 — age + sex) */}
+            {question.type === "composite" && (
+              <div className="flex flex-col gap-6">
+                {question.rows!.map((row) => (
+                  <div key={row.key}>
+                    <p className="font-sans text-[14px] text-text-muted mb-3">
+                      {row.label}
+                    </p>
+                    <div className="flex flex-col gap-2">
+                      {row.options.map((opt) => {
+                        const selected =
+                          row.key === "age" ? demoAge === opt.key : demoSex === opt.key;
+                        return (
+                          <OptionTile
+                            key={opt.key}
+                            label={opt.label}
+                            selected={selected}
+                            onClick={() =>
+                              row.key === "age"
+                                ? setDemoAge(opt.key)
+                                : setDemoSex(opt.key)
+                            }
+                          />
+                        );
+                      })}
+                    </div>
                   </div>
-                </div>
-              ))}
-              <button
-                type="button"
-                onClick={advance}
-                disabled={!canAdvance()}
-                className="btn-cta mt-2 disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                Fortsätt →
-              </button>
-            </div>
-          )}
+                ))}
+                <button
+                  type="button"
+                  onClick={advance}
+                  disabled={!canAdvance()}
+                  className="btn-cta mt-2 disabled:opacity-40 disabled:cursor-not-allowed"
+                >
+                  Fortsätt →
+                </button>
+              </div>
+            )}
 
-          {/* Multi-select (Q7) */}
-          {question.type === "multi_select" && (
-            <div className="flex flex-col gap-3">
-              {question.options!.map((opt) => (
-                <OptionTile
-                  key={opt.key}
-                  label={opt.label}
-                  selected={(answers.q7_symptoms as string[]).includes(opt.key)}
-                  onClick={() => toggleMulti(opt.key)}
-                />
-              ))}
-              <button
-                type="button"
-                onClick={advance}
-                disabled={!canAdvance()}
-                className="btn-cta mt-2 disabled:opacity-40 disabled:cursor-not-allowed"
-              >
-                Fortsätt →
-              </button>
-            </div>
-          )}
+            {/* Multi-select (Q5 diet + Q7 symptoms) */}
+            {question.type === "multi_select" && (
+              <div className="flex flex-col gap-3">
+                {question.options!.map((opt) => {
+                  const selected =
+                    question.id === "q5_diet"
+                      ? answers.q5_diet.includes(opt.key)
+                      : answers.q7_symptoms.includes(opt.key);
+                  return (
+                    <OptionTile
+                      key={opt.key}
+                      label={opt.label}
+                      selected={selected}
+                      onClick={() =>
+                        question.id === "q5_diet"
+                          ? toggleDiet(opt.key)
+                          : toggleSymptom(opt.key)
+                      }
+                    />
+                  );
+                })}
+                <button
+                  type="button"
+                  onClick={advance}
+                  disabled={!canAdvance()}
+                  className="btn-cta mt-2 disabled:opacity-40 disabled:cursor-not-allowed"
+                >
+                  Fortsätt →
+                </button>
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </main>

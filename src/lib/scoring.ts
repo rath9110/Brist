@@ -68,6 +68,12 @@ const QUIZ_WEIGHTS: Record<string, Record<string, Weights>> = {
     endurance_focused: { iron: 0.3, magnesium: 0.4, omega3: 0.2, zinc: 0.2 },
     mixed: { magnesium: 0.4, iron: 0.2, zinc: 0.3, omega3: 0.2, vitamin_d: 0.2 },
   },
+  q6_frequency: {
+    rarely:     {},
+    one_two:    { magnesium: 0.1, vitamin_d: 0.1 },
+    three_four: { magnesium: 0.2, zinc: 0.1, iron: 0.1, vitamin_d: 0.1 },
+    five_plus:  { magnesium: 0.3, zinc: 0.2, iron: 0.2, vitamin_d: 0.2, omega3: 0.1 },
+  },
   q7_symptoms: {
     frequent_illness: { vitamin_d: 0.4, zinc: 0.3 },
     brittle_hair_nails: { iron: 0.4, zinc: 0.3, thyroid: 0.2 },
@@ -102,14 +108,14 @@ export function computeScores(answers: QuizAnswers): ScoringResult {
     contributions[area] = [];
   }
 
-  // Sum base weights for q1–q6 (single-select)
+  // Sum base weights for single-select questions
   const singleQuestions: { key: QuestionKey; answerKey: keyof QuizAnswers }[] = [
     { key: "q1_goal", answerKey: "q1_goal" },
     { key: "q2_demographics", answerKey: "q2_demographics" },
     { key: "q3_energy_pattern", answerKey: "q3_energy_pattern" },
     { key: "q4_sleep", answerKey: "q4_sleep" },
-    { key: "q5_diet", answerKey: "q5_diet" },
     { key: "q6_training", answerKey: "q6_training" },
+    { key: "q6_frequency", answerKey: "q6_frequency" },
   ];
 
   for (const { key, answerKey } of singleQuestions) {
@@ -120,6 +126,17 @@ export function computeScores(answers: QuizAnswers): ScoringResult {
       const n = nutrient as DeficiencyArea;
       scores[n] += weight;
       contributions[n].push({ question: key, answer, weight });
+    }
+  }
+
+  // Q5 diet multi-select: add weights for all selected diets
+  for (const diet of answers.q5_diet) {
+    const weights = QUIZ_WEIGHTS.q5_diet?.[diet];
+    if (!weights) continue;
+    for (const [nutrient, weight] of Object.entries(weights)) {
+      const n = nutrient as DeficiencyArea;
+      scores[n] += weight;
+      contributions[n].push({ question: "q5_diet", answer: diet, weight });
     }
   }
 
@@ -153,7 +170,7 @@ export function computeScores(answers: QuizAnswers): ScoringResult {
   }
 
   // 4. Vegan B12 floor
-  if (answers.q5_diet === "vegan_vegetarian") {
+  if (answers.q5_diet.includes("vegan_vegetarian")) {
     scores.b12 = Math.max(scores.b12, 0.5);
   }
 
@@ -167,7 +184,7 @@ export function computeScores(answers: QuizAnswers): ScoringResult {
   if (answers.q7_symptoms.includes("digestive_issues")) {
     absorptionConcern = true;
     for (const area of DEFICIENCY_AREAS) {
-      scores[area] += 0.15;
+      if (scores[area] > 0) scores[area] += 0.15; // only amplify existing signals
     }
   }
 
@@ -182,7 +199,7 @@ export function computeScores(answers: QuizAnswers): ScoringResult {
   const highSymptomLoad = symptomCount >= 4;
 
   // --- Build scored nutrients ---
-  const isVegan = answers.q5_diet === "vegan_vegetarian";
+  const isVegan = answers.q5_diet.includes("vegan_vegetarian");
 
   const nutrients: ScoredNutrient[] = [];
 

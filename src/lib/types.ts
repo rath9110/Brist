@@ -3,8 +3,9 @@ export type QuizAnswers = {
   q2_demographics: string; // combined key e.g. "female_30_39"
   q3_energy_pattern: string;
   q4_sleep: string;
-  q5_diet: string;
+  q5_diet: string[];
   q6_training: string;
+  q6_frequency: string;
   q7_symptoms: string[];
   q8_current_supplements: string;
 };
@@ -33,6 +34,7 @@ export type QuestionKey =
   | "q4_sleep"
   | "q5_diet"
   | "q6_training"
+  | "q6_frequency"
   | "q7_symptoms";
 
 export type TopFactor = {

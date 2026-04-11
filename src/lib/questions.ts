@@ -17,6 +17,7 @@ export type Question = {
     | "q4_sleep"
     | "q5_diet"
     | "q6_training"
+    | "q6_frequency"
     | "q7_symptoms"
     | "q8_current_supplements";
   type: QuestionType;
@@ -93,8 +94,8 @@ export const QUESTIONS: Question[] = [
   },
   {
     id: "q5_diet",
-    type: "single_select",
-    question: "Hur ser en vanlig matdag ut för dig?",
+    type: "multi_select",
+    question: "Hur ser en vanlig matdag ut för dig? (välj allt som stämmer)",
     options: [
       { key: "home_cooked_varied", label: "Mestadels hemlagat och varierat" },
       { key: "convenience", label: "Mest snabbmat och ute" },
@@ -114,11 +115,22 @@ export const QUESTIONS: Question[] = [
     type: "single_select",
     question: "Hur mycket tränar du, och vilken typ?",
     options: [
-      { key: "sedentary", label: "Stillasittande" },
-      { key: "light_activity", label: "Lätt aktivitet 2–3 gånger i veckan" },
-      { key: "strength_focused", label: "Styrketräning 3–5 gånger i veckan" },
-      { key: "endurance_focused", label: "Uthållighet (löpning, cykling)" },
-      { key: "mixed", label: "Blandat — både styrka och uthållighet" },
+      { key: "sedentary", label: "Jag tränar inte" },
+      { key: "light_activity", label: "Lätt aktivitet (promenader, yoga, cykling)" },
+      { key: "strength_focused", label: "Styrketräning" },
+      { key: "endurance_focused", label: "Uthållighetsträning (löpning, cykling, rodd)" },
+      { key: "mixed", label: "Blandat — styrka och uthållighet" },
+    ],
+  },
+  {
+    id: "q6_frequency",
+    type: "single_select",
+    question: "Hur ofta är du fysiskt aktiv?",
+    options: [
+      { key: "rarely", label: "Sällan eller aldrig" },
+      { key: "one_two", label: "1–2 gånger per vecka" },
+      { key: "three_four", label: "3–4 gånger per vecka" },
+      { key: "five_plus", label: "5 eller fler gånger per vecka" },
     ],
   },
   {
