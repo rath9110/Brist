@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, DM_Serif_Display } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import CookieBanner from "@/components/CookieBanner";
 import "./globals.css";
 
 const dmSans = DM_Sans({
@@ -35,6 +36,7 @@ export default function RootLayout({
     <html lang="sv">
       <body className={`${dmSans.variable} ${dmSerifDisplay.variable}`}>
         {children}
+        <CookieBanner />
         <Analytics />
       </body>
     </html>

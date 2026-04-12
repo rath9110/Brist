@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const CATEGORY_LABELS: Record<string, string> = {
   pillar: "Översikt",
-  nutrient: "Närsämnen",
+  nutrient: "Näringsämnen",
   symptom: "Symtom",
   lifestyle: "Livsstil",
 };

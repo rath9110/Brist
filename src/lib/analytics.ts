@@ -1,3 +1,17 @@
+const CONSENT_KEY = "brist_consent";
+
+export function getConsent(): "yes" | "no" | null {
+  if (typeof localStorage === "undefined") return null;
+  const v = localStorage.getItem(CONSENT_KEY);
+  if (v === "yes" || v === "no") return v;
+  return null;
+}
+
+export function setConsent(value: "yes" | "no"): void {
+  if (typeof localStorage === "undefined") return;
+  localStorage.setItem(CONSENT_KEY, value);
+}
+
 function getSessionId(): string {
   const KEY = "brist_session_id";
   let id = sessionStorage.getItem(KEY);
@@ -12,6 +26,7 @@ export function trackEvent(
   event: string,
   metadata?: Record<string, string | number>
 ): void {
+  if (getConsent() !== "yes") return;
   try {
     const payload = JSON.stringify({
       event,

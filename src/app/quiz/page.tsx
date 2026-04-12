@@ -1,7 +1,7 @@
 "use client";
 
-import { useState, useEffect } from "react";
-import { useRouter } from "next/navigation";
+import { Suspense, useState, useEffect } from "react";
+import { useRouter, useSearchParams } from "next/navigation";
 import ProgressBar from "@/components/ProgressBar";
 import OptionTile from "@/components/OptionTile";
 import type { QuizAnswers } from "@/lib/types";
@@ -24,7 +24,16 @@ const EMPTY_ANSWERS: QuizAnswers = {
 };
 
 export default function QuizPage() {
+  return (
+    <Suspense>
+      <QuizInner />
+    </Suspense>
+  );
+}
+
+function QuizInner() {
   const router = useRouter();
+  const searchParams = useSearchParams();
   const [step, setStep] = useState(0);
   const [answers, setAnswers] = useState<QuizAnswers>(EMPTY_ANSWERS);
   const [animating, setAnimating] = useState(false);
@@ -36,8 +45,9 @@ export default function QuizPage() {
 
   // Track quiz start on mount
   useEffect(() => {
-    trackEvent("quiz_start");
-  }, []);
+    const ref = searchParams.get("ref");
+    trackEvent("quiz_start", ref ? { ref } : undefined);
+  }, [searchParams]);
 
   // Track each question as it's reached
   useEffect(() => {
@@ -76,8 +86,21 @@ export default function QuizPage() {
     }, 150);
   }
 
+  function trackAnswer(questionId: string, answer: string) {
+    trackEvent("question_answered", { questionId, answer });
+  }
+
   function advance() {
     if (!canAdvance() || animating) return;
+    if (question.type === "composite") {
+      trackAnswer(question.id, answers.q2_demographics);
+    } else if (question.type === "multi_select") {
+      const val =
+        question.id === "q5_diet"
+          ? answers.q5_diet.join("|")
+          : answers.q7_symptoms.join("|");
+      trackAnswer(question.id, val);
+    }
     animateForward(answers);
   }
 
@@ -166,6 +189,7 @@ export default function QuizPage() {
                     onClick={() => {
                       const updated = { ...answers, [answerKey]: opt.key };
                       setAnswers(updated);
+                      trackAnswer(question.id, opt.key);
                       setTimeout(() => animateForward(updated), 120);
                     }}
                   />
