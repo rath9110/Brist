@@ -1,8 +1,10 @@
 import Link from "next/link";
+import TrackPageView from "@/components/TrackPageView";
 
 export default function Home() {
   return (
     <main className="min-h-screen flex items-center justify-center px-6 py-12">
+      <TrackPageView />
       <div className="w-full max-w-content">
         {/* Wordmark */}
         <div

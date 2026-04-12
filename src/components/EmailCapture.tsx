@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { trackEvent } from "@/lib/analytics";
 
 export default function EmailCapture() {
   const [email, setEmail] = useState("");
@@ -10,6 +11,7 @@ export default function EmailCapture() {
     e.preventDefault();
     if (!email) return;
     localStorage.setItem("brist_email", email);
+    trackEvent("email_submitted");
     setSubmitted(true);
   }
 

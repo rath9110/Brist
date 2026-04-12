@@ -7,6 +7,7 @@ import OptionTile from "@/components/OptionTile";
 import type { QuizAnswers } from "@/lib/types";
 import { QUESTIONS } from "@/lib/questions";
 import { computeScores } from "@/lib/scoring";
+import { trackEvent } from "@/lib/analytics";
 
 const TOTAL = QUESTIONS.length;
 
@@ -33,6 +34,16 @@ export default function QuizPage() {
   const [demoAge, setDemoAge] = useState("");
   const [demoSex, setDemoSex] = useState("");
 
+  // Track quiz start on mount
+  useEffect(() => {
+    trackEvent("quiz_start");
+  }, []);
+
+  // Track each question as it's reached
+  useEffect(() => {
+    trackEvent("question_reached", { step, questionId: QUESTIONS[step].id });
+  }, [step]);
+
   const question = QUESTIONS[step];
   const answerKey = question.id as keyof QuizAnswers;
 
@@ -52,6 +63,7 @@ export default function QuizPage() {
       const result = computeScores(updatedAnswers);
       sessionStorage.setItem("brist_answers", JSON.stringify(updatedAnswers));
       sessionStorage.setItem("brist_results", JSON.stringify(result));
+      trackEvent("quiz_complete");
       router.push("/results");
       return;
     }

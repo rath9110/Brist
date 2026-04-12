@@ -6,8 +6,8 @@ import ProgressBar from "@/components/ProgressBar";
 import ResultCard from "@/components/ResultCard";
 import CTACard from "@/components/CTACard";
 import ProfileSummary from "@/components/ProfileSummary";
-import EmailCapture from "@/components/EmailCapture";
 import type { QuizAnswers, ScoringResult } from "@/lib/types";
+import { trackEvent } from "@/lib/analytics";
 import { PROTOCOLS } from "@/lib/protocols";
 
 const OUTPUT_FRAMING: Record<string, string> = {
@@ -53,6 +53,7 @@ export default function ResultsPage() {
         requestAnimationFrame(tick);
       } else {
         setLoadState("ready");
+        trackEvent("results_viewed");
       }
     }
     requestAnimationFrame(tick);
@@ -195,14 +196,12 @@ export default function ResultsPage() {
           </section>
         )}
 
-        {/* Section 8 — Email capture */}
-        <EmailCapture />
-
-        {/* Section 9 — Restart */}
+        {/* Section 8 — Restart */}
         <div className="text-center pb-4">
           <button
             type="button"
             onClick={() => {
+              trackEvent("quiz_restart");
               sessionStorage.removeItem("brist_answers");
               sessionStorage.removeItem("brist_results");
               router.push("/quiz");
