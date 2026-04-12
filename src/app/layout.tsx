@@ -21,6 +21,9 @@ export const metadata: Metadata = {
   title: "Brist — Vilka tillskott behöver du?",
   description:
     "Svara på 8 snabba frågor och få en personlig plan baserad på din livsstil, kost och träning. Hitta det du saknar.",
+  verification: {
+    google: "U_nHgh7XQEkNgbVmQwuNs2Su2Fa4Uxjr9oybAGtgGnQ",
+  },
   openGraph: {
     siteName: "Brist",
     title: "Brist — Vilka tillskott behöver du?",
