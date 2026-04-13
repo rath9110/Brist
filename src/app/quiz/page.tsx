@@ -9,7 +9,13 @@ import { QUESTIONS } from "@/lib/questions";
 import { computeScores } from "@/lib/scoring";
 import { trackEvent } from "@/lib/analytics";
 
-const TOTAL = QUESTIONS.length;
+// Returns indices of questions that should be shown given current answers
+function getVisibleIndices(answers: { q2_demographics: string }): number[] {
+  return QUESTIONS.reduce<number[]>((acc, q, i) => {
+    if (!q.showIf || q.showIf(answers)) acc.push(i);
+    return acc;
+  }, []);
+}
 
 const EMPTY_ANSWERS: QuizAnswers = {
   q1_goal: "",
@@ -21,6 +27,9 @@ const EMPTY_ANSWERS: QuizAnswers = {
   q6_frequency: "",
   q7_symptoms: [],
   q8_current_supplements: "",
+  q9_sun_exposure: "",
+  q10_fish_intake: "",
+  q11_menstrual_flow: "",
 };
 
 export default function QuizPage() {
@@ -54,6 +63,10 @@ function QuizInner() {
     trackEvent("question_reached", { step, questionId: QUESTIONS[step].id });
   }, [step]);
 
+  const visibleIndices = getVisibleIndices(answers);
+  const visiblePos = visibleIndices.indexOf(step); // 0-based position among visible
+  const visibleTotal = visibleIndices.length;
+
   const question = QUESTIONS[step];
   const answerKey = question.id as keyof QuizAnswers;
 
@@ -69,7 +82,12 @@ function QuizInner() {
   }
 
   function animateForward(updatedAnswers: QuizAnswers) {
-    if (step + 1 >= TOTAL) {
+    // Find next visible step after current, given updated answers
+    const nextVisible = getVisibleIndices(updatedAnswers);
+    const currentPos = nextVisible.indexOf(step);
+    const nextStep = currentPos >= 0 ? nextVisible[currentPos + 1] : undefined;
+
+    if (nextStep === undefined) {
       const result = computeScores(updatedAnswers);
       sessionStorage.setItem("brist_answers", JSON.stringify(updatedAnswers));
       sessionStorage.setItem("brist_results", JSON.stringify(result));
@@ -80,7 +98,7 @@ function QuizInner() {
     setDirection("out");
     setAnimating(true);
     setTimeout(() => {
-      setStep((s) => s + 1);
+      setStep(nextStep);
       setDirection("in");
       setAnimating(false);
     }, 150);
@@ -105,11 +123,12 @@ function QuizInner() {
   }
 
   function goBack() {
-    if (step === 0 || animating) return;
+    if (visiblePos <= 0 || animating) return;
+    const prevStep = visibleIndices[visiblePos - 1];
     setDirection("out");
     setAnimating(true);
     setTimeout(() => {
-      setStep((s) => s - 1);
+      setStep(prevStep);
       setDirection("in");
       setAnimating(false);
     }, 150);
@@ -157,10 +176,10 @@ function QuizInner() {
 
   return (
     <main className="min-h-screen flex flex-col">
-      <ProgressBar current={step + 1} total={TOTAL} />
+      <ProgressBar current={visiblePos + 1} total={visibleTotal} />
 
       {/* Back button */}
-      {step > 0 && (
+      {visiblePos > 0 && (
         <button
           type="button"
           onClick={goBack}

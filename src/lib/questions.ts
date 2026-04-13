@@ -19,12 +19,17 @@ export type Question = {
     | "q6_training"
     | "q6_frequency"
     | "q7_symptoms"
-    | "q8_current_supplements";
+    | "q8_current_supplements"
+    | "q9_sun_exposure"
+    | "q10_fish_intake"
+    | "q11_menstrual_flow";
   type: QuestionType;
   question: string;
   options?: Option[];
   // Composite-only
   rows?: { label: string; key: "age" | "sex"; options: Option[] }[];
+  // If set, question is only shown when this predicate is true
+  showIf?: (answers: { q2_demographics: string }) => boolean;
 };
 
 export const QUESTIONS: Question[] = [
@@ -167,6 +172,40 @@ export const QUESTIONS: Question[] = [
       },
       { key: "tried_and_stopped", label: "Har testat men slutat" },
       { key: "gym_recommendation", label: "Det gymmet rekommenderar" },
+    ],
+  },
+  {
+    id: "q9_sun_exposure",
+    type: "single_select",
+    question: "Hur mycket tid spenderar du utomhus i dagsljus?",
+    options: [
+      { key: "mostly_indoors", label: "Mestadels inomhus (kontor, hemma)" },
+      { key: "some_outdoor", label: "Lite utomhus — promenader, ärenden" },
+      { key: "regularly_outdoor", label: "Regelbundet utomhus varje dag" },
+      { key: "outdoor_work", label: "Jobbar eller tränar utomhus" },
+    ],
+  },
+  {
+    id: "q10_fish_intake",
+    type: "single_select",
+    question: "Hur ofta äter du fet fisk (lax, makrill, sill, sardiner)?",
+    options: [
+      { key: "rarely", label: "Sällan eller aldrig" },
+      { key: "once_week", label: "Ungefär en gång i veckan" },
+      { key: "two_plus_week", label: "Två gånger eller mer per vecka" },
+    ],
+  },
+  {
+    id: "q11_menstrual_flow",
+    type: "single_select",
+    question: "Hur är din mens normalt sett?",
+    showIf: (answers) =>
+      answers.q2_demographics.startsWith("female_") &&
+      answers.q2_demographics !== "female_50_plus",
+    options: [
+      { key: "light", label: "Lätt" },
+      { key: "normal", label: "Normal" },
+      { key: "heavy", label: "Kraftig (byter binda/tampong ofta, klumpar)" },
     ],
   },
 ];

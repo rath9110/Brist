@@ -84,6 +84,22 @@ const QUIZ_WEIGHTS: Record<string, Record<string, Weights>> = {
     digestive_issues: { zinc: 0.3, magnesium: 0.2 },
     none: {},
   },
+  q9_sun_exposure: {
+    mostly_indoors: { vitamin_d: 0.4 },
+    some_outdoor:   { vitamin_d: 0.2 },
+    regularly_outdoor: { vitamin_d: 0.0 },
+    outdoor_work:   { vitamin_d: -0.1 }, // protective
+  },
+  q10_fish_intake: {
+    rarely:        { omega3: 0.4 },
+    once_week:     { omega3: 0.1 },
+    two_plus_week: { omega3: -0.1 }, // protective
+  },
+  q11_menstrual_flow: {
+    light:  {},
+    normal: { iron: 0.1 },
+    heavy:  { iron: 0.5 },
+  },
 };
 
 const SELF_START = new Set<DeficiencyArea>(["vitamin_d", "magnesium", "omega3"]);
@@ -116,6 +132,9 @@ export function computeScores(answers: QuizAnswers): ScoringResult {
     { key: "q4_sleep", answerKey: "q4_sleep" },
     { key: "q6_training", answerKey: "q6_training" },
     { key: "q6_frequency", answerKey: "q6_frequency" },
+    { key: "q9_sun_exposure", answerKey: "q9_sun_exposure" },
+    { key: "q10_fish_intake", answerKey: "q10_fish_intake" },
+    { key: "q11_menstrual_flow", answerKey: "q11_menstrual_flow" },
   ];
 
   for (const { key, answerKey } of singleQuestions) {
@@ -153,8 +172,10 @@ export function computeScores(answers: QuizAnswers): ScoringResult {
 
   // --- Interaction rules (applied in order) ---
 
-  // 1. Sweden vitamin D baseline
-  scores.vitamin_d += 0.2;
+  // 1. Sweden vitamin D baseline (only applied when sun question not answered)
+  if (!answers.q9_sun_exposure) {
+    scores.vitamin_d += 0.2;
+  }
 
   // 2. Female endurance iron
   const isFemaleNotSenior =

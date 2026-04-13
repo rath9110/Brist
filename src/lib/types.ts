@@ -8,6 +8,9 @@ export type QuizAnswers = {
   q6_frequency: string;
   q7_symptoms: string[];
   q8_current_supplements: string;
+  q9_sun_exposure: string;
+  q10_fish_intake: string;
+  q11_menstrual_flow: string; // only set for females under 50; "" otherwise
 };
 
 export type DeficiencyArea =
@@ -35,7 +38,10 @@ export type QuestionKey =
   | "q5_diet"
   | "q6_training"
   | "q6_frequency"
-  | "q7_symptoms";
+  | "q7_symptoms"
+  | "q9_sun_exposure"
+  | "q10_fish_intake"
+  | "q11_menstrual_flow";
 
 export type TopFactor = {
   question: QuestionKey;
