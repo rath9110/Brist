@@ -81,6 +81,14 @@ const QUIZ_CTA: Record<string, QuizCta> = {
     hook: "Kan näring minska din ledvärk?",
     body: "Omega-3 och D-vitamin påverkar den inflammatoriska balansen direkt. Quizzen visar om brist på dessa är troligt för dig.",
   },
+  "vilka-kosttillskott-ska-jag-ta": {
+    hook: "Ta reda på vilka tillskott just du behöver.",
+    body: "Svara på 9 frågor om din kost, dina symtom och din livsstil. Du får en personlig lista — inte en generisk rekommendation.",
+  },
+  "magnesium-fore-somn": {
+    hook: "Är magnesiumbrist orsaken till dina sömnproblem?",
+    body: "Quizzen väger ihop din kost, träning och symtom och räknar ut hur troligt det är att du har magnesiumbrist.",
+  },
 };
 
 const DEFAULT_CTA: QuizCta = {
@@ -113,6 +121,11 @@ export function generateMetadata({
       type: "article",
       publishedTime: article.publishedAt,
     },
+    twitter: {
+      card: "summary",
+      title: article.metaTitle,
+      description: article.metaDescription,
+    },
   };
 }
 
@@ -140,16 +153,30 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
 
   const related = getRelatedArticles(article.relatedSlugs);
 
+  const articleUrl = `${SITE_URL}/artikel/${article.slug}`;
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "Article",
+    "@type": ["Article", "MedicalWebPage"],
     headline: article.title,
     description: article.metaDescription,
     datePublished: article.publishedAt,
     inLanguage: "sv-SE",
     author: { "@type": "Organization", name: "Peiling", url: SITE_URL },
     publisher: { "@type": "Organization", name: "Peiling", url: SITE_URL },
-    url: `${SITE_URL}/artikel/${article.slug}`,
+    url: articleUrl,
+    about: { "@type": "MedicalCause" },
+    audience: { "@type": "Patient" },
+  };
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Hem", item: SITE_URL },
+      { "@type": "ListItem", position: 2, name: "Artiklar", item: `${SITE_URL}/artikel` },
+      { "@type": "ListItem", position: 3, name: article.title, item: articleUrl },
+    ],
   };
 
   const faqLd = article.faq && article.faq.length > 0
@@ -169,6 +196,10 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
       />
       {faqLd && (
         <script

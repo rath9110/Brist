@@ -23,7 +23,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "vitaminbrist-tecken-test",
     title: "Vitaminbrist - Tecken, test och vad du kan göra",
-    metaTitle: "Vitaminbrist - Tecken, test och vad du kan göra | Peiling",
+    metaTitle: "Vitaminbrist - Tecken, test och vad du kan göra",
     metaDescription:
       "Lär dig känna igen de vanligaste tecknen på vitaminbrist, vilka tillskott du kan börja med direkt och när du bör ta ett blodprov.",
     publishedAt: "2026-04-12",
@@ -132,7 +132,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "d-vitaminbrist",
     title: "D-vitaminbrist - Varför nästan alla i Sverige bör testa sig",
-    metaTitle: "D-vitaminbrist: Symtom, test och tillskott | Peiling",
+    metaTitle: "D-vitaminbrist: Symtom, test och tillskott",
     metaDescription:
       "D-vitaminbrist är extremt vanligt i Sverige på grund av vårt geografiska läge. Lär dig symtomen, hur du testar och hur mycket du behöver.",
     publishedAt: "2026-04-12",
@@ -238,7 +238,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "jarnbrist-symptom",
     title: "Järnbrist - Mer än bara trötthet",
-    metaTitle: "Järnbrist symtom: trötthet, håravfall och ferritin - vad du behöver veta | Peiling",
+    metaTitle: "Järnbrist symtom: trötthet, håravfall och ferritin - vad du behöver veta",
     metaDescription:
       "Järnbrist är den vanligaste näringsbristsjukdomen i världen. Lär dig skillnaden mellan ferritin och hemoglobin, symtomen och varför du aldrig bör ta järntillskott utan test.",
     publishedAt: "2026-04-12",
@@ -352,7 +352,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "magnesiumbrist",
     title: "Magnesiumbrist - Kramper, sömn och stress",
-    metaTitle: "Magnesiumbrist: Symtom, former och dosering | Peiling",
+    metaTitle: "Magnesiumbrist: Symtom, former och dosering",
     metaDescription:
       "Magnesium deltar i 300+ enzymatiska reaktioner. Lär dig varför brist är så vanligt, vilken form du ska välja och hur tillskott kan förbättra sömn, kramper och återhämtning.",
     publishedAt: "2026-04-12",
@@ -433,7 +433,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "b12-brist",
     title: "B12-brist - Vad veganer, vegetarianer och personer över 50 behöver veta",
-    metaTitle: "B12-brist: Symtom, risk och tillskott | Peiling",
+    metaTitle: "B12-brist: Symtom, risk och tillskott",
     metaDescription:
       "B12 finns bara i animaliska produkter. Lär dig varför veganer, vegetarianer och äldre löper hög risk för B12-brist och vilken form av tillskott som fungerar bäst.",
     publishedAt: "2026-04-12",
@@ -516,7 +516,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "omega-3-tillskott",
     title: "Omega-3 - Behöver du tillskott om du inte äter fisk?",
-    metaTitle: "Omega-3 brist: Symtom, testtips och vilket tillskott du behöver | Peiling",
+    metaTitle: "Omega-3 brist: Symtom, testtips och vilket tillskott du behöver",
     metaDescription:
       "Det finns stor skillnad mellan omega-3 från växter och från fisk. Lär dig varför ALA-omvandlingen räcker sällan, och när ett tillskott faktiskt gör nytta.",
     publishedAt: "2026-04-12",
@@ -587,7 +587,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "zinkbrist",
     title: "Zinkbrist - Ett dolt problem vid växtbaserad kost och intensiv träning",
-    metaTitle: "Zinkbrist: Symtom, test och tillskott | Peiling",
+    metaTitle: "Zinkbrist: Symtom, test och tillskott",
     metaDescription:
       "Zinkbrist är vanligare än de flesta tror, särskilt vid växtbaserad kost och intensiv träning. Lär dig symtomen och hur du åtgärdar det.",
     publishedAt: "2026-04-12",
@@ -676,7 +676,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "alltid-trott-vitaminbrist",
     title: "Alltid trött? 5 näringsbristorsaker du bör utesluta",
-    metaTitle: "Alltid trött? 5 vitaminbrister som kan vara orsaken | Peiling",
+    metaTitle: "Alltid trött? 5 vitaminbrister som kan vara orsaken",
     metaDescription:
       "Kronisk trötthet beror ofta på järnbrist, B12-brist, D-vitaminbrist, sköldkörtelproblematik eller magnesiumbrist. Lär dig hur du utesluter var och en.",
     publishedAt: "2026-04-12",
@@ -754,7 +754,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "somnproblem-naringsbrist",
     title: "Sömnproblem och näringsbrist - vad forskningen säger",
-    metaTitle: "Svårt att sova? Näringsbrist som orsak - magnesium, D-vitamin och järn | Peiling",
+    metaTitle: "Svårt att sova? Näringsbrist som orsak - magnesium, D-vitamin och järn",
     metaDescription:
       "Sömnproblem beror ibland på näringsbrist. Magnesiumbrist är vanligast - men D-vitamin, järn och B12 spelar också roll. Lär dig tecknen och vad som faktiskt hjälper.",
     publishedAt: "2026-04-12",
@@ -827,7 +827,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "skora-naglar-haravfall-brist",
     title: "Sköra naglar och håravfall - brist eller något annat?",
-    metaTitle: "Sköra naglar och håravfall: Järn, zink eller sköldkörtel? | Peiling",
+    metaTitle: "Sköra naglar och håravfall: Järn, zink eller sköldkörtel?",
     metaDescription:
       "Håravfall och sköra naglar kan bero på järnbrist, zinkbrist eller sköldkörtelrubbning. Lär dig hur du hittar rätt orsak - och varför biotin sällan hjälper.",
     publishedAt: "2026-04-12",
@@ -905,7 +905,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "muskelkramper-magnesiumbrist",
     title: "Muskelkramper - Magnesiumbrist eller något mer?",
-    metaTitle: "Kramper i benen på natten - orsaker och vad som faktiskt hjälper | Peiling",
+    metaTitle: "Kramper i benen på natten - orsaker och vad som faktiskt hjälper",
     metaDescription:
       "Nattliga benkramper beror ofta på magnesiumbrist, men D-vitaminbrist och vätskebalans spelar också roll. Lär dig skillnaden och vilket tillskott som hjälper.",
     publishedAt: "2026-04-12",
@@ -971,7 +971,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "varfor-blir-jag-sjuk-sa-ofta",
     title: "Varför blir jag sjuk hela tiden? - Vanliga orsaker du kan åtgärda",
-    metaTitle: "Varför blir jag sjuk hela tiden? Orsaker och vad du kan göra | Peiling",
+    metaTitle: "Varför blir jag sjuk hela tiden? Orsaker och vad du kan göra",
     metaDescription:
       "Återkommande förkylningar och infektioner beror ofta på ett försvagat immunförsvar. D-vitaminbrist och zinkbrist är två av de vanligaste och mest åtgärdbara orsakerna.",
     publishedAt: "2026-04-13",
@@ -1041,7 +1041,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "hjarndimma-koncentrationssvaarigheter",
     title: "Hjärndimma och koncentrationssvårigheter - kan det vara näringsbrist?",
-    metaTitle: "Hjärndimma och koncentrationssvårigheter - näringsbrist som orsak | Peiling",
+    metaTitle: "Hjärndimma och koncentrationssvårigheter - näringsbrist som orsak",
     metaDescription:
       "Svårt att tänka klart, minnesproblem och koncentrationssvårigheter kan bero på järnbrist, B12-brist eller omega-3-brist. Lär dig känna igen tecknen och vad du kan göra.",
     publishedAt: "2026-04-13",
@@ -1108,7 +1108,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "standig-oro-och-angest",
     title: "Ständig oro och ångestkänslighet - kan kosten spela roll?",
-    metaTitle: "Ständig oro och ångest - kan näringsbrist vara orsaken? | Peiling",
+    metaTitle: "Ständig oro och ångest - kan näringsbrist vara orsaken?",
     metaDescription:
       "Magnesiumbrist och lågt omega-3-intag är kopplade till ökad stressnivå och ångestkänslighet. Lär dig hur kosten påverkar ditt nervsystem och vad forskningen visar.",
     publishedAt: "2026-04-13",
@@ -1178,7 +1178,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "ledvark-och-stelhet",
     title: "Ledvärk och stelhet utan känd orsak - vilken roll spelar näringen?",
-    metaTitle: "Ledvärk och stelhet - kan näringsbrist vara orsaken? | Peiling",
+    metaTitle: "Ledvärk och stelhet - kan näringsbrist vara orsaken?",
     metaDescription:
       "Omega-3-brist och D-vitaminbrist är kopplade till inflammation och ledvärk. Lär dig vilken roll näringen spelar och vad forskningen visar om tillskott.",
     publishedAt: "2026-04-13",
@@ -1246,7 +1246,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "vegansk-kost-tillskott",
     title: "Vegansk kost - Vilka tillskott behöver du verkligen?",
-    metaTitle: "Veganska tillskott: Vad du faktiskt behöver | Peiling",
+    metaTitle: "Veganska tillskott: Vad du faktiskt behöver",
     metaDescription:
       "En vegansk kost har förutsägbara näringsluckor. Lär dig vilka tillskott som är nödvändiga, vilka som är bra att ha och vilka du kan skippa.",
     publishedAt: "2026-04-12",
@@ -1324,7 +1324,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "tillskott-traning",
     title: "Tillskott för träning - Vad säger forskningen?",
-    metaTitle: "Kosttillskott för träning: Vad som faktiskt fungerar - och vad du kan skippa | Peiling",
+    metaTitle: "Kosttillskott för träning: Vad som faktiskt fungerar - och vad du kan skippa",
     metaDescription:
       "Träningsindustrin är full av överdrivna påståenden. Lär dig vilka tillskott som faktiskt gör skillnad för aktiva - och vilka du kan skippa.",
     publishedAt: "2026-04-12",
@@ -1400,7 +1400,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "vilka-vitaminer-testa-blodprov",
     title: "Vilka vitaminer bör man testa? En guide till blodprov",
-    metaTitle: "Vilka vitaminer bör du testa? Guide till blodprov för näringsstatus | Peiling",
+    metaTitle: "Vilka vitaminer bör du testa? Guide till blodprov för näringsstatus",
     metaDescription:
       "Vilka blodprover ska du be om? Var kan du testa? Hur tolkar du svaren? En praktisk guide för dig som vill förstå ditt faktiska näringsstatus.",
     publishedAt: "2026-04-12",
@@ -1471,6 +1471,190 @@ export const ARTICLES: Article[] = [
       {
         type: "callout",
         text: "Det bästa du kan göra för din hälsa är att ta ett blodprov en gång per år - det kostar mindre än ett gymkort och ger faktisk information om din kropp.",
+      },
+    ],
+  },
+  {
+    slug: "vilka-kosttillskott-ska-jag-ta",
+    title: "Vilka kosttillskott ska jag ta? — En guide baserad på din profil",
+    metaTitle: "Vilka kosttillskott ska jag ta? Guide för att hitta rätt",
+    metaDescription:
+      "Vilket kosttillskott du behöver beror på din kost, dina symtom och din livsstil. Den här guiden hjälper dig navigera marknaden och undvika onödiga köp.",
+    publishedAt: "2026-04-13",
+    category: "lifestyle",
+    relatedSlugs: [
+      "vitaminbrist-tecken-test",
+      "d-vitaminbrist",
+      "magnesiumbrist",
+      "vilka-vitaminer-testa-blodprov",
+    ],
+    blocks: [
+      {
+        type: "p",
+        text: "Kosttillskottmarknaden är enorm, förvirrande och fylld av produkter du inte behöver. Men rätt tillskott, i rätt dos, för rätt person — det kan göra verklig skillnad. Problemet är att de flesta tar fel saker baserat på reklam eller hörsägen snarare än baserat på sin faktiska profil.",
+      },
+      {
+        type: "h2",
+        text: "Börja med frågan: har du faktisk brist?",
+      },
+      {
+        type: "p",
+        text: "Det finns en viktig skillnad mellan tillskott du tar för att täcka en dokumenterad brist och tillskott du tar för att 'optimera'. Brist ger ett tydligt svar — du saknar X, du tar X, du mår bättre. Optimering är mer diffust, och bevisen för de flesta 'prestationshöjande' tillskott är svaga.",
+      },
+      {
+        type: "p",
+        text: "Prioritera att utesluta de vanligaste bristerna innan du experimenterar med andra produkter. De flesta i Sverige bör titta på D-vitamin, magnesium och — beroende på kost — B12 och järn.",
+      },
+      {
+        type: "h2",
+        text: "De tillskott som de flesta faktiskt behöver",
+      },
+      {
+        type: "ul",
+        items: [
+          "[D-vitamin](/artikel/d-vitaminbrist) 25–50 µg per dag — nästan alla i Sverige behöver detta under vinterhalvåret. Välj D3 i olja.",
+          "[Magnesium](/artikel/magnesiumbrist) 300–400 mg glycinat eller citrat — relevant om du är stressad, tränar intensivt eller sover dåligt.",
+          "[B12](/artikel/b12-brist) — kritiskt om du är vegan eller vegetarian, viktigt för personer över 50.",
+          "[Omega-3](/artikel/omega-3-tillskott) 1–2 g EPA+DHA — om du sällan äter fet fisk.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Tillskott som kräver ett blodprov först",
+      },
+      {
+        type: "ul",
+        items: [
+          "[Järn](/artikel/jarnbrist-symptom) — ta aldrig utan att testa ferritin. Järnöverskott är skadligt.",
+          "Zink i höga doser — kan störa kopparupptaget vid överdosering.",
+          "Folat i höga doser — kan maskera B12-brist.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Populära tillskott med begränsat stöd",
+      },
+      {
+        type: "p",
+        text: "Biotin för håravfall — hjälper bara vid konstaterad biotinbrist, vilket är ovanligt. Collagen — absorberas som aminosyror, kroppen bestämmer själv vart de går. Antioxidantcocktails — mat är en bättre källa, höga doser av isolerade antioxidanter kan ge bakslag.",
+      },
+      {
+        type: "h2",
+        text: "Hur vet du vad just du behöver?",
+      },
+      {
+        type: "p",
+        text: "Det beror på din kost, dina symtom, din träning och din demografiska profil. En vegetarian i 30-årsåldern som tränar hårt har ett helt annat behov än en allätare i 55-årsåldern med stillasittande arbete. Det enda sättet att veta säkert är ett blodprov — men du kan komma långt med en välunderbyggd bedömning baserad på din livsstil.",
+      },
+      {
+        type: "callout",
+        text: "Peilings quiz analyserar din kost, dina symtom och din livsstil och pekar ut vilka brister som är troligast för just dig — på 3 minuter.",
+      },
+    ],
+    faq: [
+      {
+        q: "Vilket kosttillskott ska jag börja med?",
+        a: "För de flesta i Sverige är D-vitamin det viktigaste tillskottet att börja med — nästan alla har otillräckliga nivåer under vinterhalvåret. Magnesium är det näst vanligaste behovet, särskilt vid stress, sömnproblem eller intensiv träning.",
+      },
+      {
+        q: "Kan jag ta för många vitaminer?",
+        a: "Vattenlösliga vitaminer (B-vitaminer, C-vitamin) utsöndras via njurarna och är svåra att överdosera. Fettlösliga vitaminer (A, D, E, K) lagras i kroppen och kan ackumuleras till toxiska nivåer vid mycket höga doser. D-vitamin i standarddoser på 25-100 µg är säkert.",
+      },
+      {
+        q: "Ska jag ta kosttillskott varje dag?",
+        a: "Ja — tillskott fungerar bäst vid konsekvent daglig dosering. D-vitamin och magnesium behöver tas dagligen för stabil effekt. B12 kan tas i högre veckodos om daglig dosering är opraktiskt.",
+      },
+    ],
+  },
+  {
+    slug: "magnesium-fore-somn",
+    title: "Magnesium för sömn — fungerar det och hur mycket ska du ta?",
+    metaTitle: "Magnesium för sömn: Dosering, form och vad forskningen visar",
+    metaDescription:
+      "Magnesium är ett av de mest studerade naturliga sömnmedlen. Lär dig vilken form som fungerar bäst, rätt dosering och vad forskningen faktiskt visar.",
+    publishedAt: "2026-04-13",
+    category: "lifestyle",
+    relatedSlugs: [
+      "magnesiumbrist",
+      "somnproblem-naringsbrist",
+      "standig-oro-och-angest",
+      "muskelkramper-magnesiumbrist",
+    ],
+    blocks: [
+      {
+        type: "p",
+        text: "Sömnproblem är ett av de vanligaste hälsoklagomålen. Många provar melatonin, antihistaminer eller sömnmedel — men en av de mest välstuderade och säkraste interventionerna för sömn är magnesium. Det är inte ett sömnmedel i traditionell mening; det behandlar en underliggande brist som kan hålla dig vaken.",
+      },
+      {
+        type: "h2",
+        text: "Varför påverkar magnesium sömnen?",
+      },
+      {
+        type: "p",
+        text: "Magnesium reglerar GABA-receptorer i hjärnan — samma receptorsystem som bensodiazepiner (sömnmedel) verkar på, men utan beroendeproblematiken. GABA är hjärnans viktigaste hämmande neurotransmittor: det sänker nervaktiviteten och skapar det lugn som behövs för att somna. Utan tillräckligt magnesium fungerar GABA-receptorerna sämre.",
+      },
+      {
+        type: "p",
+        text: "Dessutom reglerar magnesium melatoninproduktionen via dess roll i enzymatiska reaktioner i tallkottkörteln. Magnesiumbrist kan alltså störa den naturliga sömnhormoncykeln direkt.",
+      },
+      {
+        type: "h2",
+        text: "Vad visar forskningen?",
+      },
+      {
+        type: "p",
+        text: "Kliniska studier på äldre med sömnproblem visar att magnesiumtillskott förbättrar sömnkvalitet, ökar sömnlängden och minskar tidigt uppvaknande. En randomiserad studie från 2012 (Abbasi et al.) visade signifikant förbättring i insomni-index, melatoninvärden och kortisol hos äldre som fick 500 mg magnesium dagligen.",
+      },
+      {
+        type: "p",
+        text: "Effekten är störst hos individer med faktisk magnesiumbrist — men eftersom magnesiumbrist är vanlig och sällan diagnostiseras, är det en relevant kandidat för de flesta med sömnproblem.",
+      },
+      {
+        type: "h2",
+        text: "Vilken form av magnesium är bäst för sömn?",
+      },
+      {
+        type: "ul",
+        items: [
+          "Magnesiumglycinat — bäst för sömn. Glycin har egna lugnande egenskaper och förbättrar sömnkvaliteten separat. Absorberas väl utan laxerande effekt.",
+          "Magnesiumtaurat — bra alternativ, taurin har GABA-modulerande effekter.",
+          "Magnesiumcitrat — absorberas väl men kan ge lös mage i höga doser, vilket kan störa sömnen.",
+          "Magnesiumoxid — undvik. Absorberas mycket dåligt (4%), ger framförallt laxerande effekt.",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Dosering och timing",
+      },
+      {
+        type: "p",
+        text: "200–400 mg elementärt magnesium, intaget 30–60 minuter före sänggåendet, är standardprotokoll i studier. Kontrollera alltid mängden elementärt magnesium på förpackningen — inte den totala vikten av magnesiumsaltet. 400 mg magnesiumglycinat innehåller till exempel ungefär 50 mg elementärt magnesium.",
+      },
+      {
+        type: "p",
+        text: "De flesta märker förbättring inom 1–4 veckor. Är du inte säker på om du har magnesiumbrist — [läs om de vanligaste symtomen](/artikel/magnesiumbrist) och börja med en lägre dos (200 mg) för att se hur du reagerar.",
+      },
+      {
+        type: "callout",
+        text: "Magnesiumglycinat 200–400 mg på kvällen är ett av de säkraste och mest välstuderade naturliga sömnmedlen — och kräver inget blodprov för att börja.",
+      },
+    ],
+    faq: [
+      {
+        q: "Hur snabbt hjälper magnesium mot sömnproblem?",
+        a: "De flesta märker skillnad inom 1–4 veckor av konsekvent daglig dosering. Vissa upplever effekt redan första veckan, framförallt på muskelspänning och insomningstid.",
+      },
+      {
+        q: "Vilken dos magnesium ska jag ta för sömn?",
+        a: "200–400 mg elementärt magnesium per kväll är standarddosen. Börja med 200 mg och öka om nödvändigt. Se alltid till att kontrollera mängden elementärt magnesium på förpackningen, inte bara den totala vikten av magnesiumsaltet.",
+      },
+      {
+        q: "Kan man ta magnesium varje kväll?",
+        a: "Ja, daglig dosering är både säkert och rekommenderat. Magnesium är vattenlösligt och överskott utsöndras via njurarna. Den enda kontraindikationen är svår njursvikt.",
+      },
+      {
+        q: "Är magnesiumglycinat bättre än magnesiumcitrat för sömn?",
+        a: "För sömn är magnesiumglycinat att föredra. Glycin har egna lugnande egenskaper och förstärker sömneffekten. Magnesiumcitrat absorberas bra men kan ge lös mage i höga doser.",
       },
     ],
   },
