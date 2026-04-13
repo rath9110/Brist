@@ -1,10 +1,10 @@
-# Brist — Results Page
+# Brist - Results Page
 
 After Q8: show 1.5s loading state (progress bar pulses and fills to 100%), then transition to results.
 
 ---
 
-## Section 1 — Profile Summary
+## Section 1 - Profile Summary
 
 Show "brist" wordmark top-left (DM Serif Display 20px, primary green, lowercase).
 
@@ -12,13 +12,13 @@ A compact card reflecting back key inputs: goal, age/sex, training type, diet. N
 
 ---
 
-## Section 2 — Personalized Intro
+## Section 2 - Personalized Intro
 
 Based on q8 outputFraming. See 01_brand.md for the 5 copy variants keyed by q8 answer.
 
 ---
 
-## Section 3 — High Symptom Load Warning (conditional)
+## Section 3 - High Symptom Load Warning (conditional)
 
 Show only if highSymptomLoad = true.
 Visual: card with amber/warning (#D68910) left-border.
@@ -26,17 +26,17 @@ Copy: "Du upplever flera symtom samtidigt. Även om enskilda tillskott kan hjäl
 
 ---
 
-## Section 4 — Absorption Concern Note (conditional)
+## Section 4 - Absorption Concern Note (conditional)
 
 Show only if absorptionConcern = true.
 Visual: subtle info card (no color border).
-Copy: "Magbesvär kan försämra näringsupptaget. Dina faktiska nivåer kan vara lägre än din kost antyder — att testa är extra värdefullt i ditt fall."
+Copy: "Magbesvär kan försämra näringsupptaget. Dina faktiska nivåer kan vara lägre än din kost antyder - att testa är extra värdefullt i ditt fall."
 
 ---
 
-## Section 5 — Tier 1: Börja direkt
+## Section 5 - Tier 1: Börja direkt
 
-Header: "Börja direkt — hög säkerhet"
+Header: "Börja direkt - hög säkerhet"
 ResultCards for each Tier 1 nutrient, sorted by score descending.
 
 Each card:
@@ -48,9 +48,9 @@ Each card:
 
 ---
 
-## Section 6 — Tier 2: Testa först
+## Section 6 - Tier 2: Testa först
 
-Header: "Testa först — bekräfta innan du börjar"
+Header: "Testa först - bekräfta innan du börjar"
 ResultCards for each Tier 2 nutrient.
 
 Each card:
@@ -58,31 +58,31 @@ Each card:
 - Why testing is needed (use safety rationale from 06_protocols.md, e.g. "Supplementera inte järn utan att veta ditt ferritinvärde")
 - Biomarker to test (e.g. "Be om: Ferritin")
 
-Below tier 2 cards — Testing Guidance CTACard:
+Below tier 2 cards - Testing Guidance CTACard:
 - **Headline:** "Hur du testar"
 - **Body:** "Du kan testa dessa markörer via din vårdcentral, valfri hemtesttjänst, eller företagshälsovården. En vitamin- och mineralpanel kostar vanligtvis 500–1500 kr. Tips: Om du beskriver symtom (trötthet, sömnproblem) kan många av dessa tester täckas via sjukvården."
 - List specific markers from tier 2 results. Always include TSH if thyroid scored > 0.
 
 ---
 
-## Section 7 — Tier 3: Professional (conditional)
+## Section 7 - Tier 3: Professional (conditional)
 
 Show only if thyroid flagged OR highSymptomLoad = true.
-Visual: neutral warm tone, no green — visually distinct from other cards.
-Copy: "Dina svar tyder på att detta kan behöva professionell bedömning snarare än bara tillskott. Det är inget att oroa sig för — det betyder bara att en vårdgivare kan hjälpa dig mer effektivt än vi kan."
+Visual: neutral warm tone, no green - visually distinct from other cards.
+Copy: "Dina svar tyder på att detta kan behöva professionell bedömning snarare än bara tillskott. Det är inget att oroa sig för - det betyder bara att en vårdgivare kan hjälpa dig mer effektivt än vi kan."
 
 ---
 
-## Section 8 — Email Capture
+## Section 8 - Email Capture
 
 - **Headline:** "Vill du spara dina resultat?"
-- **Subtext:** "Ange din e-post så skickar vi en sammanfattning — och meddelar dig när Brist lanserar produktrekommendationer."
+- **Subtext:** "Ange din e-post så skickar vi en sammanfattning - och meddelar dig när Brist lanserar produktrekommendationer."
 - Email input + "Skicka" button
-- MVP: store in localStorage or console.log — no backend.
+- MVP: store in localStorage or console.log - no backend.
 
 ---
 
-## Section 9 — Restart
+## Section 9 - Restart
 
 Small text link at bottom: "Gör om quizzen"
 Action: reset all state, navigate to Q1.
@@ -160,4 +160,4 @@ q7_symptoms:
 | omega3 | "omega-3" |
 | zinc | "zink" |
 | folate | "folat" |
-| thyroid | (no explanation sentence — Tier 3 only) |
+| thyroid | (no explanation sentence - Tier 3 only) |

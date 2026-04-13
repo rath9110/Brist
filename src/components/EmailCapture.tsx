@@ -31,7 +31,7 @@ export default function EmailCapture() {
         Vill du spara dina resultat?
       </h3>
       <p className="font-sans text-[14px] text-text-muted mb-4 leading-relaxed">
-        Ange din e-post så skickar vi en sammanfattning — och meddelar dig när
+        Ange din e-post så skickar vi en sammanfattning - och meddelar dig när
         Peiling lanserar produktrekommendationer.
       </p>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">

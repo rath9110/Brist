@@ -1,4 +1,4 @@
-# Brist — Scoring Engine
+# Brist - Scoring Engine
 
 ## Deficiency Areas (8)
 vitamin_d | iron | b12 | magnesium | omega3 | zinc | folate | thyroid
@@ -66,7 +66,7 @@ endurance_focused: { iron: 0.3, magnesium: 0.4, omega3: 0.2, zinc: 0.2 }
 mixed:             { magnesium: 0.4, iron: 0.2, zinc: 0.3, omega3: 0.2, vitamin_d: 0.2 }
 ```
 
-### q7_symptoms (multi-select — add weights for ALL selected options)
+### q7_symptoms (multi-select - add weights for ALL selected options)
 ```
 frequent_illness:   { vitamin_d: 0.4, zinc: 0.3 }
 brittle_hair_nails: { iron: 0.4, zinc: 0.3, thyroid: 0.2 }
@@ -78,7 +78,7 @@ digestive_issues:   { zinc: 0.3, magnesium: 0.2 }
 none:               {}
 ```
 
-Q8 has no base weights — sets outputFraming only.
+Q8 has no base weights - sets outputFraming only.
 
 ---
 
@@ -117,7 +117,7 @@ Q8 has no base weights — sets outputFraming only.
 | >= 0.5 | "Mycket troligt" | Yes |
 | 0.3–0.49 | "Troligt" | Yes |
 | 0.15–0.29 | "Värt att kontrollera" | Yes |
-| < 0.15 | — | No |
+| < 0.15 | - | No |
 
 ---
 

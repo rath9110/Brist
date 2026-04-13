@@ -1,6 +1,6 @@
-# Brist — Design System
+# Brist - Design System
 
-## Color Palette — Nordic Green
+## Color Palette - Nordic Green
 
 ```css
 --color-bg:           #F4F6F4   /* page background */
@@ -15,27 +15,27 @@
 --color-warning:      #D68910
 ```
 
-**Rule:** Green is only used for action and trust — never decoratively. Every green element means "this is important" or "tap here."
+**Rule:** Green is only used for action and trust - never decoratively. Every green element means "this is important" or "tap here."
 
 ## Typography
 
 | Use | Font | Size | Weight |
 |---|---|---|---|
-| Headings / quiz questions | DM Serif Display | 24px | — |
+| Headings / quiz questions | DM Serif Display | 24px | - |
 | Option labels | DM Sans | 16px | Medium |
 | Supporting text | DM Sans | 14px | Regular / text-secondary color |
 | CTA buttons | DM Sans | 16px | SemiBold / uppercase / 0.05em letter-spacing |
-| Wordmark | DM Serif Display | 20px | — |
-| Landing headline | DM Serif Display | 32px | — |
-| Landing tagline | DM Sans | 18px | — / secondary green |
-| Landing subtext | DM Sans | 16px | — / text-secondary |
+| Wordmark | DM Serif Display | 20px | - |
+| Landing headline | DM Serif Display | 32px | - |
+| Landing tagline | DM Sans | 18px | - / secondary green |
+| Landing subtext | DM Sans | 16px | - / text-secondary |
 
-Both fonts: Google Fonts — load in `app/layout.tsx`.
+Both fonts: Google Fonts - load in `app/layout.tsx`.
 
 ## Layout Rules
 
-- **Mobile-first** — designed at 375px
-- **Desktop** — content centered, max-width **480px**, never wider
+- **Mobile-first** - designed at 375px
+- **Desktop** - content centered, max-width **480px**, never wider
 - Everything single-column, full-width options
 - **Base grid:** 16px
 - **Border-radius:** 12px on all cards

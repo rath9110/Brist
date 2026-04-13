@@ -6,9 +6,10 @@ import ProgressBar from "@/components/ProgressBar";
 import ResultCard from "@/components/ResultCard";
 import CTACard from "@/components/CTACard";
 import ProfileSummary from "@/components/ProfileSummary";
-import type { QuizAnswers, ScoringResult } from "@/lib/types";
+import type { QuizAnswers, ScoredNutrient, ScoringResult } from "@/lib/types";
 import { trackEvent } from "@/lib/analytics";
 import { PROTOCOLS } from "@/lib/protocols";
+import { NUTRIENT_NAMES_SV } from "@/lib/factors";
 
 const OUTPUT_FRAMING: Record<string, string> = {
   nothing:
@@ -23,6 +24,22 @@ const OUTPUT_FRAMING: Record<string, string> = {
     "Gymrekommendationer är en utgångspunkt, men de är utformade för genomsnittspersonen — inte specifikt för dig. Din träningstyp, kost och symtom ger en mer specifik bild.",
 };
 
+function buildShareText(tier1: ScoredNutrient[], tier2: ScoredNutrient[]): string {
+  const lines: string[] = ["Mina näringsbristresultat från Peiling:", ""];
+  if (tier1.length > 0) {
+    lines.push("Börja direkt:");
+    for (const n of tier1) lines.push(`• ${NUTRIENT_NAMES_SV[n.key]} — ${n.confidence}`);
+    lines.push("");
+  }
+  if (tier2.length > 0) {
+    lines.push("Testa först:");
+    for (const n of tier2) lines.push(`• ${NUTRIENT_NAMES_SV[n.key]} — ${n.confidence}`);
+    lines.push("");
+  }
+  lines.push("Testa dig själv på peiling.se/quiz");
+  return lines.join("\n");
+}
+
 type LoadState = "loading" | "ready";
 
 export default function ResultsPage() {
@@ -31,6 +48,7 @@ export default function ResultsPage() {
   const [progress, setProgress] = useState(0);
   const [answers, setAnswers] = useState<QuizAnswers | null>(null);
   const [result, setResult] = useState<ScoringResult | null>(null);
+  const [copied, setCopied] = useState(false);
 
   useEffect(() => {
     const rawAnswers = sessionStorage.getItem("peiling_answers");
@@ -64,7 +82,7 @@ export default function ResultsPage() {
       <main className="min-h-screen flex items-center justify-center">
         <ProgressBar current={progress} total={100} pulse />
         <p className="font-sans text-[14px] text-text-muted">
-          Analyserar din profil…
+          Analyserar din profil...
         </p>
       </main>
     );
@@ -84,6 +102,15 @@ export default function ResultsPage() {
   const testMarkers = tier2.map((n) => PROTOCOLS[n.key].biomarker).filter(Boolean);
   const thyroidScore = result.nutrients.find((n) => n.key === "thyroid")?.score ?? 0;
   if (thyroidScore >= 0.15 && !testMarkers.includes("TSH")) testMarkers.push("TSH");
+
+  function handleShare() {
+    const text = buildShareText(tier1, tier2);
+    navigator.clipboard.writeText(text).then(() => {
+      setCopied(true);
+      trackEvent("results_shared");
+      setTimeout(() => setCopied(false), 2500);
+    });
+  }
 
   return (
     <main className="min-h-screen pb-16">
@@ -196,8 +223,15 @@ export default function ResultsPage() {
           </section>
         )}
 
-        {/* Section 8 — Restart */}
-        <div className="text-center pb-4">
+        {/* Section 8 — Share + Restart */}
+        <div className="flex flex-col items-center gap-4 pb-4">
+          <button
+            type="button"
+            onClick={handleShare}
+            className="font-sans text-[14px] text-primary font-medium hover:opacity-75 transition-opacity"
+          >
+            {copied ? "Kopierat!" : "Kopiera sammanfattning"}
+          </button>
           <button
             type="button"
             onClick={() => {

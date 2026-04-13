@@ -1,10 +1,10 @@
-# Brist — Quiz Questions
+# Brist - Quiz Questions
 
 8 questions total. All question copy is Swedish. Internal keys are English.
 
 ---
 
-## Q1 — Primary Goal
+## Q1 - Primary Goal
 **Type:** single_select
 **Swedish:** "Vad är ditt främsta mål?"
 
@@ -18,7 +18,7 @@
 
 ---
 
-## Q2 — Demographics
+## Q2 - Demographics
 **Type:** composite (two selection rows on ONE screen)
 **Swedish:** "Ålder och biologiskt kön"
 
@@ -42,7 +42,7 @@ Both rows must be selected before advancing.
 
 ---
 
-## Q3 — Energy Pattern
+## Q3 - Energy Pattern
 **Type:** single_select
 **Swedish:** "Hur skulle du beskriva din energi under dagen?"
 
@@ -56,7 +56,7 @@ Both rows must be selected before advancing.
 
 ---
 
-## Q4 — Sleep
+## Q4 - Sleep
 **Type:** single_select
 **Swedish:** "Hur sover du?"
 
@@ -70,7 +70,7 @@ Both rows must be selected before advancing.
 
 ---
 
-## Q5 — Diet
+## Q5 - Diet
 **Type:** single_select
 **Swedish:** "Hur ser en vanlig matdag ut för dig?"
 
@@ -84,7 +84,7 @@ Both rows must be selected before advancing.
 
 ---
 
-## Q6 — Training
+## Q6 - Training
 **Type:** single_select
 **Swedish:** "Hur mycket tränar du, och vilken typ?"
 
@@ -94,11 +94,11 @@ Both rows must be selected before advancing.
 | `light_activity` | "Lätt aktivitet 2–3 gånger i veckan" |
 | `strength_focused` | "Styrketräning 3–5 gånger i veckan" |
 | `endurance_focused` | "Uthållighet (löpning, cykling)" |
-| `mixed` | "Blandat — både styrka och uthållighet" |
+| `mixed` | "Blandat - både styrka och uthållighet" |
 
 ---
 
-## Q7 — Symptoms
+## Q7 - Symptoms
 **Type:** multi_select
 **Swedish:** "Välj allt som stämmer in på dig"
 
@@ -120,7 +120,7 @@ Both rows must be selected before advancing.
 
 ---
 
-## Q8 — Current Supplements
+## Q8 - Current Supplements
 **Type:** single_select
 **Swedish:** "Tar du några kosttillskott just nu?"
 
@@ -132,4 +132,4 @@ Both rows must be selected before advancing.
 | `tried_and_stopped` | "Har testat men slutat" |
 | `gym_recommendation` | "Det gymmet rekommenderar" |
 
-**Note:** Q8 does not affect deficiency scores directly — it only determines the `outputFraming` for the results page intro. See `01_brand.md` for framing copy.
+**Note:** Q8 does not affect deficiency scores directly - it only determines the `outputFraming` for the results page intro. See `01_brand.md` for framing copy.

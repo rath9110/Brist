@@ -18,7 +18,7 @@ const dmSerifDisplay = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Peiling — Vilka tillskott behöver du?",
+  title: "Peiling - Vilka tillskott behöver du?",
   description:
     "Svara på 8 snabba frågor och få en personlig plan baserad på din livsstil, kost och träning. Hitta det du saknar.",
   verification: {
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     siteName: "Peiling",
-    title: "Peiling — Vilka tillskott behöver du?",
+    title: "Peiling - Vilka tillskott behöver du?",
     description:
       "Svara på 8 snabba frågor och få en personlig plan baserad på din livsstil, kost och träning. Hitta det du saknar.",
   },

@@ -1,3 +1,4 @@
+import React from "react";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
@@ -10,7 +11,7 @@ type QuizCta = { hook: string; body: string };
 const QUIZ_CTA: Record<string, QuizCta> = {
   "vitaminbrist-tecken-test": {
     hook: "Vilka brister är troliga för dig?",
-    body: "Svara på 9 frågor om din kost, dina symtom och din livsstil. Du får en personlig bild av vilka brister som är mest sannolika — och vad du kan göra åt dem.",
+    body: "Svara på 9 frågor om din kost, dina symtom och din livsstil. Du får en personlig bild av vilka brister som är mest sannolika - och vad du kan göra åt dem.",
   },
   "d-vitaminbrist": {
     hook: "Får du tillräckligt med D-vitamin?",
@@ -18,7 +19,7 @@ const QUIZ_CTA: Record<string, QuizCta> = {
   },
   "jarnbrist-symptom": {
     hook: "Känner du igen dig i symtomen?",
-    body: "Järnbrist beror ofta på kost, träning och livsstil — quizzen räknar ut hur troligt det är för just dig och vad du kan göra.",
+    body: "Järnbrist beror ofta på kost, träning och livsstil - quizzen räknar ut hur troligt det är för just dig och vad du kan göra.",
   },
   "magnesiumbrist": {
     hook: "Är magnesium en bristvara för dig?",
@@ -26,7 +27,7 @@ const QUIZ_CTA: Record<string, QuizCta> = {
   },
   "b12-brist": {
     hook: "Täcker din kost B12-behovet?",
-    body: "Veganer och vegetarianer är extra utsatta — men även köttätare kan ha låga nivåer. Quizzen visar var du hamnar baserat på din kost och dina symtom.",
+    body: "Veganer och vegetarianer är extra utsatta - men även köttätare kan ha låga nivåer. Quizzen visar var du hamnar baserat på din kost och dina symtom.",
   },
   "omega-3-tillskott": {
     hook: "Behöver du tillskott av omega-3?",
@@ -46,7 +47,7 @@ const QUIZ_CTA: Record<string, QuizCta> = {
   },
   "skora-naglar-haravfall-brist": {
     hook: "Vad säger dina naglar och ditt hår?",
-    body: "Sköra naglar och håravfall är ofta kopplade till specifika brister — quizzen hjälper dig identifiera vilka som är troliga för just dig.",
+    body: "Sköra naglar och håravfall är ofta kopplade till specifika brister - quizzen hjälper dig identifiera vilka som är troliga för just dig.",
   },
   "muskelkramper-magnesiumbrist": {
     hook: "Hänger dina kramper ihop med magnesium?",
@@ -64,11 +65,27 @@ const QUIZ_CTA: Record<string, QuizCta> = {
     hook: "Vilka prover är värda att ta för dig?",
     body: "Det beror på din kost, dina symtom och din livsstil. Quizzen hjälper dig prioritera vilka markörer som är mest relevanta för just dig.",
   },
+  "varfor-blir-jag-sjuk-sa-ofta": {
+    hook: "Kan näringsbrist försvaga ditt immunförsvar?",
+    body: "D-vitamin och zink är de vanligaste bristerna kopplade till täta infektioner. Quizzen räknar ut hur troligt det är för just dig baserat på din kost och livsstil.",
+  },
+  "hjarndimma-koncentrationssvaarigheter": {
+    hook: "Kan näringsbrist förklara din hjärndimma?",
+    body: "B12, järn och omega-3 påverkar alla hjärnans funktion. Quizzen identifierar vilka luckor som är troligast baserat på din kost och dina symtom.",
+  },
+  "standig-oro-och-angest": {
+    hook: "Saknar ditt nervsystem magnesium eller omega-3?",
+    body: "Magnesiumbrist och lågt omega-3-intag är kopplade till stresskänslighet och oro. Quizzen räknar ut sannolikheten baserat på din profil.",
+  },
+  "ledvark-och-stelhet": {
+    hook: "Kan näring minska din ledvärk?",
+    body: "Omega-3 och D-vitamin påverkar den inflammatoriska balansen direkt. Quizzen visar om brist på dessa är troligt för dig.",
+  },
 };
 
 const DEFAULT_CTA: QuizCta = {
   hook: "Vad gäller för just dig?",
-  body: "Svara på 9 frågor om dina mål, din kost och dina symtom. Du får en personlig bild av vilka brister som är mest troliga — och vad du kan göra åt dem.",
+  body: "Svara på 9 frågor om dina mål, din kost och dina symtom. Du får en personlig bild av vilka brister som är mest troliga - och vad du kan göra åt dem.",
 };
 
 export function generateStaticParams() {
@@ -99,6 +116,22 @@ export function generateMetadata({
   };
 }
 
+// Parses [link text](/path) markdown within a string and returns React nodes.
+function renderRichText(text: string): React.ReactNode {
+  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+  return parts.map((part, i) => {
+    const match = part.match(/^\[([^\]]+)\]\(([^)]+)\)$/);
+    if (match) {
+      return (
+        <Link key={i} href={match[2]} className="text-primary underline underline-offset-2 hover:opacity-75 transition-opacity">
+          {match[1]}
+        </Link>
+      );
+    }
+    return part;
+  });
+}
+
 export default function ArticlePage({ params }: { params: { slug: string } }) {
   const article = getArticle(params.slug);
   if (!article) notFound();
@@ -119,12 +152,30 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     url: `${SITE_URL}/artikel/${article.slug}`,
   };
 
+  const faqLd = article.faq && article.faq.length > 0
+    ? {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        mainEntity: article.faq.map((item) => ({
+          "@type": "Question",
+          name: item.q,
+          acceptedAnswer: { "@type": "Answer", text: item.a },
+        })),
+      }
+    : null;
+
   return (
     <main className="min-h-screen pb-20">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      {faqLd && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }}
+        />
+      )}
 
       <div className="max-w-content mx-auto px-6 pt-8">
         {/* Breadcrumb */}
@@ -163,7 +214,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                     key={i}
                     className="font-sans text-[15px] text-text leading-relaxed"
                   >
-                    {block.text}
+                    {renderRichText(block.text)}
                   </p>
                 );
               }
@@ -176,7 +227,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
                         className="font-sans text-[15px] text-text leading-relaxed flex gap-2"
                       >
                         <span className="text-primary mt-[3px] shrink-0">•</span>
-                        <span>{item}</span>
+                        <span>{renderRichText(item)}</span>
                       </li>
                     ))}
                   </ul>

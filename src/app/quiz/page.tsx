@@ -197,7 +197,7 @@ function QuizInner() {
               {question.question}
             </h2>
 
-            {/* Single select — auto-advances on pick */}
+            {/* Single select - auto-advances on pick */}
             {question.type === "single_select" && (
               <div className="flex flex-col gap-3">
                 {question.options!.map((opt) => (
@@ -216,7 +216,7 @@ function QuizInner() {
               </div>
             )}
 
-            {/* Composite (Q2 — age + sex) */}
+            {/* Composite (Q2 - age + sex) */}
             {question.type === "composite" && (
               <div className="flex flex-col gap-6">
                 {question.rows!.map((row) => (

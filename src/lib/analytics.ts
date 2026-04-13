@@ -47,7 +47,7 @@ export function trackEvent(
       body: payload,
       keepalive: true,
     }).catch(() => {
-      // Silently ignore — analytics must never break the app
+      // Silently ignore - analytics must never break the app
     });
   } catch {
     // Silently ignore

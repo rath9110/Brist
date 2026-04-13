@@ -5,7 +5,7 @@ import { ARTICLES } from "@/lib/articles";
 export const metadata: Metadata = {
   title: "Artiklar om näringsbrist och tillskott | Peiling",
   description:
-    "Läs om de vanligaste näringsbristerna, deras symtom och vad du kan göra — baserat på forskning och anpassat för svenska förhållanden.",
+    "Läs om de vanligaste näringsbristerna, deras symtom och vad du kan göra - baserat på forskning och anpassat för svenska förhållanden.",
   alternates: { canonical: "https://peiling.se/artikel" },
 };
 
@@ -41,7 +41,7 @@ export default function ArticleIndexPage() {
           Artiklar
         </h1>
         <p className="font-sans text-[15px] text-text-muted leading-relaxed mb-10">
-          Guider om näringsbrist, symtom och hur du optimerar ditt intag —
+          Guider om näringsbrist, symtom och hur du optimerar ditt intag -
           skrivna för dig som vill förstå vad kroppen egentligen behöver.
         </p>
 
@@ -78,7 +78,7 @@ export default function ArticleIndexPage() {
             Vad gäller för just dig?
           </h3>
           <p className="font-sans text-[14px] text-text-muted leading-relaxed mb-4">
-            Artiklarna ger dig bakgrunden — quizzen ger dig din personliga bild.
+            Artiklarna ger dig bakgrunden - quizzen ger dig din personliga bild.
             Svara på 9 frågor om din kost, dina symtom och din livsstil.
           </p>
           <Link href="/quiz" className="btn-cta block text-center">

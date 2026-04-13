@@ -24,7 +24,7 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* CTA button — uppercase, semibold, letter-spaced */
+/* CTA button - uppercase, semibold, letter-spaced */
 .btn-cta {
   font-family: var(--font-dm-sans), system-ui, sans-serif;
   font-size: 16px;

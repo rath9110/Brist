@@ -124,7 +124,7 @@ export const QUESTIONS: Question[] = [
       { key: "light_activity", label: "Lätt aktivitet (promenader, yoga, cykling)" },
       { key: "strength_focused", label: "Styrketräning" },
       { key: "endurance_focused", label: "Uthållighetsträning (löpning, cykling, rodd)" },
-      { key: "mixed", label: "Blandat — styrka och uthållighet" },
+      { key: "mixed", label: "Blandat - styrka och uthållighet" },
     ],
   },
   {
@@ -180,7 +180,7 @@ export const QUESTIONS: Question[] = [
     question: "Hur mycket tid spenderar du utomhus i dagsljus?",
     options: [
       { key: "mostly_indoors", label: "Mestadels inomhus (kontor, hemma)" },
-      { key: "some_outdoor", label: "Lite utomhus — promenader, ärenden" },
+      { key: "some_outdoor", label: "Lite utomhus - promenader, ärenden" },
       { key: "regularly_outdoor", label: "Regelbundet utomhus varje dag" },
       { key: "outdoor_work", label: "Jobbar eller tränar utomhus" },
     ],

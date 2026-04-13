@@ -25,7 +25,7 @@ const DIET_LABELS: Record<string, string> = {
 };
 
 function getDemographicsLabel(key: string): string {
-  if (!key) return "—";
+  if (!key) return "-";
   const [sex, ...ageParts] = key.split("_");
   const age = ageParts.join("_").replace("_plus", "+").replace(/_/g, "–");
   const sexLabel = sex === "female" ? "Kvinna" : "Man";
@@ -39,7 +39,7 @@ export default function ProfileSummary({ answers }: { answers: QuizAnswers }) {
     { label: "Träning", value: TRAINING_LABELS[answers.q6_training] ?? answers.q6_training },
     {
       label: "Kost",
-      value: answers.q5_diet.map((d) => DIET_LABELS[d] ?? d).join(", ") || "—",
+      value: answers.q5_diet.map((d) => DIET_LABELS[d] ?? d).join(", ") || "-",
     },
   ];
 
