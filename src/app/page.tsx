@@ -9,9 +9,9 @@ export default function Home() {
         {/* Wordmark */}
         <div
           className="font-serif text-[20px] lowercase text-primary mb-8"
-          aria-label="Brist"
+          aria-label="Peiling"
         >
-          brist
+          peiling
         </div>
 
         {/* Headline */}

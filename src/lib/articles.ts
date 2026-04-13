@@ -20,7 +20,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "vitaminbrist-tecken-test",
     title: "Vitaminbrist — Tecken, test och vad du kan göra",
-    metaTitle: "Vitaminbrist — Tecken, test och vad du kan göra | Brist",
+    metaTitle: "Vitaminbrist — Tecken, test och vad du kan göra | Peiling",
     metaDescription:
       "Lär dig känna igen de vanligaste tecknen på vitaminbrist, vilka tillskott du kan börja med direkt och när du bör ta ett blodprov.",
     publishedAt: "2026-04-12",
@@ -102,7 +102,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "callout",
-        text: "Vet inte var du ska börja? Gör Brist-quizzen — 9 frågor om dina mål, din kost och dina symtom ger en personlig bild av vilka brister som är mest troliga för dig.",
+        text: "Vet inte var du ska börja? Gör Peiling-quizzen — 9 frågor om dina mål, din kost och dina symtom ger en personlig bild av vilka brister som är mest troliga för dig.",
       },
     ],
   },
@@ -111,7 +111,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "d-vitaminbrist",
     title: "D-vitaminbrist — Varför nästan alla i Sverige bör testa sig",
-    metaTitle: "D-vitaminbrist: Symtom, test och tillskott | Brist",
+    metaTitle: "D-vitaminbrist: Symtom, test och tillskott | Peiling",
     metaDescription:
       "D-vitaminbrist är extremt vanligt i Sverige på grund av vårt geografiska läge. Lär dig symtomen, hur du testar och hur mycket du behöver.",
     publishedAt: "2026-04-12",
@@ -199,7 +199,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "jarnbrist-symptom",
     title: "Järnbrist — Mer än bara trötthet",
-    metaTitle: "Järnbrist: Symtom, ferritin och varför du måste testa | Brist",
+    metaTitle: "Järnbrist: Symtom, ferritin och varför du måste testa | Peiling",
     metaDescription:
       "Järnbrist är den vanligaste näringsbristsjukdomen i världen. Lär dig skillnaden mellan ferritin och hemoglobin, symtomen och varför du aldrig bör ta järntillskott utan test.",
     publishedAt: "2026-04-12",
@@ -295,7 +295,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "magnesiumbrist",
     title: "Magnesiumbrist — Kramper, sömn och stress",
-    metaTitle: "Magnesiumbrist: Symtom, former och dosering | Brist",
+    metaTitle: "Magnesiumbrist: Symtom, former och dosering | Peiling",
     metaDescription:
       "Magnesium deltar i 300+ enzymatiska reaktioner. Lär dig varför brist är så vanligt, vilken form du ska välja och hur tillskott kan förbättra sömn, kramper och återhämtning.",
     publishedAt: "2026-04-12",
@@ -376,7 +376,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "b12-brist",
     title: "B12-brist — Vad veganer, vegetarianer och personer över 50 behöver veta",
-    metaTitle: "B12-brist: Symtom, risk och tillskott | Brist",
+    metaTitle: "B12-brist: Symtom, risk och tillskott | Peiling",
     metaDescription:
       "B12 finns bara i animaliska produkter. Lär dig varför veganer, vegetarianer och äldre löper hög risk för B12-brist och vilken form av tillskott som fungerar bäst.",
     publishedAt: "2026-04-12",
@@ -459,7 +459,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "omega-3-tillskott",
     title: "Omega-3 — Behöver du tillskott om du inte äter fisk?",
-    metaTitle: "Omega-3 tillskott: ALA, EPA och DHA — vad du behöver veta | Brist",
+    metaTitle: "Omega-3 tillskott: ALA, EPA och DHA — vad du behöver veta | Peiling",
     metaDescription:
       "Det finns stor skillnad mellan omega-3 från växter och från fisk. Lär dig varför ALA-omvandlingen räcker sällan, och när ett tillskott faktiskt gör nytta.",
     publishedAt: "2026-04-12",
@@ -530,7 +530,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "zinkbrist",
     title: "Zinkbrist — Ett dolt problem vid växtbaserad kost och intensiv träning",
-    metaTitle: "Zinkbrist: Symtom, test och tillskott | Brist",
+    metaTitle: "Zinkbrist: Symtom, test och tillskott | Peiling",
     metaDescription:
       "Zinkbrist är vanligare än de flesta tror, särskilt vid växtbaserad kost och intensiv träning. Lär dig symtomen och hur du åtgärdar det.",
     publishedAt: "2026-04-12",
@@ -619,7 +619,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "alltid-trott-vitaminbrist",
     title: "Alltid trött? 5 näringsbristorsaker du bör utesluta",
-    metaTitle: "Alltid trött? 5 vitaminbrister som kan vara orsaken | Brist",
+    metaTitle: "Alltid trött? 5 vitaminbrister som kan vara orsaken | Peiling",
     metaDescription:
       "Kronisk trötthet beror ofta på järnbrist, B12-brist, D-vitaminbrist, sköldkörtelproblematik eller magnesiumbrist. Lär dig hur du utesluter var och en.",
     publishedAt: "2026-04-12",
@@ -697,7 +697,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "somnproblem-naringsbrist",
     title: "Sömnproblem och näringsbrist — vad forskningen säger",
-    metaTitle: "Sömnproblem och näringsbrist: Magnesium, D-vitamin och mer | Brist",
+    metaTitle: "Sömnproblem och näringsbrist: Magnesium, D-vitamin och mer | Peiling",
     metaDescription:
       "Svårt att sova? Näringsbrist kan vara en underliggande orsak. Magnesium, D-vitamin och järn påverkar alla sömnkvaliteten på dokumenterade sätt.",
     publishedAt: "2026-04-12",
@@ -770,7 +770,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "skora-naglar-haravfall-brist",
     title: "Sköra naglar och håravfall — brist eller något annat?",
-    metaTitle: "Sköra naglar och håravfall: Järn, zink eller sköldkörtel? | Brist",
+    metaTitle: "Sköra naglar och håravfall: Järn, zink eller sköldkörtel? | Peiling",
     metaDescription:
       "Håravfall och sköra naglar kan bero på järnbrist, zinkbrist eller sköldkörtelrubbning. Lär dig hur du hittar rätt orsak — och varför biotin sällan hjälper.",
     publishedAt: "2026-04-12",
@@ -848,7 +848,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "muskelkramper-magnesiumbrist",
     title: "Muskelkramper — Magnesiumbrist eller något mer?",
-    metaTitle: "Muskelkramper och magnesiumbrist: orsaker och åtgärder | Brist",
+    metaTitle: "Muskelkramper och magnesiumbrist: orsaker och åtgärder | Peiling",
     metaDescription:
       "Muskelkramper beror ofta på magnesiumbrist, men dehydrering, D-vitaminbrist och elektrolytbalans spelar också roll. Lär dig skillnaden och vad som faktiskt hjälper.",
     publishedAt: "2026-04-12",
@@ -915,7 +915,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "vegansk-kost-tillskott",
     title: "Vegansk kost — Vilka tillskott behöver du verkligen?",
-    metaTitle: "Veganska tillskott: Vad du faktiskt behöver | Brist",
+    metaTitle: "Veganska tillskott: Vad du faktiskt behöver | Peiling",
     metaDescription:
       "En vegansk kost har förutsägbara näringsluckor. Lär dig vilka tillskott som är nödvändiga, vilka som är bra att ha och vilka du kan skippa.",
     publishedAt: "2026-04-12",
@@ -993,7 +993,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "tillskott-traning",
     title: "Tillskott för träning — Vad säger forskningen?",
-    metaTitle: "Tillskott för träning: Vad som faktiskt fungerar | Brist",
+    metaTitle: "Tillskott för träning: Vad som faktiskt fungerar | Peiling",
     metaDescription:
       "Träningsindustrin är full av överdrivna påståenden. Lär dig vilka tillskott som faktiskt gör skillnad för aktiva — och vilka du kan skippa.",
     publishedAt: "2026-04-12",
@@ -1069,7 +1069,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "vilka-vitaminer-testa-blodprov",
     title: "Vilka vitaminer bör man testa? En guide till blodprov",
-    metaTitle: "Blodprov vitaminer och mineraler: En komplett guide | Brist",
+    metaTitle: "Blodprov vitaminer och mineraler: En komplett guide | Peiling",
     metaDescription:
       "Vilka blodprover ska du be om? Var kan du testa? Hur tolkar du svaren? En praktisk guide för dig som vill förstå ditt faktiska näringsstatus.",
     publishedAt: "2026-04-12",

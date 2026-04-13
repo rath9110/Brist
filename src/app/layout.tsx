@@ -18,15 +18,15 @@ const dmSerifDisplay = DM_Serif_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Brist — Vilka tillskott behöver du?",
+  title: "Peiling — Vilka tillskott behöver du?",
   description:
     "Svara på 8 snabba frågor och få en personlig plan baserad på din livsstil, kost och träning. Hitta det du saknar.",
   verification: {
     google: "U_nHgh7XQEkNgbVmQwuNs2Su2Fa4Uxjr9oybAGtgGnQ",
   },
   openGraph: {
-    siteName: "Brist",
-    title: "Brist — Vilka tillskott behöver du?",
+    siteName: "Peiling",
+    title: "Peiling — Vilka tillskott behöver du?",
     description:
       "Svara på 8 snabba frågor och få en personlig plan baserad på din livsstil, kost och träning. Hitta det du saknar.",
   },

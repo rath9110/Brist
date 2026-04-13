@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 import { ARTICLES } from "@/lib/articles";
 
-const SITE_URL = "https://brist.se";
+const SITE_URL = "https://peiling.se";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const staticRoutes: MetadataRoute.Sitemap = [

@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { getArticle, getAllSlugs, getRelatedArticles } from "@/lib/articles";
 
-const SITE_URL = "https://brist.se";
+const SITE_URL = "https://peiling.se";
 
 type QuizCta = { hook: string; body: string };
 
@@ -91,7 +91,7 @@ export function generateMetadata({
       title: article.metaTitle,
       description: article.metaDescription,
       url,
-      siteName: "Brist",
+      siteName: "Peiling",
       locale: "sv_SE",
       type: "article",
       publishedTime: article.publishedAt,
@@ -114,8 +114,8 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     description: article.metaDescription,
     datePublished: article.publishedAt,
     inLanguage: "sv-SE",
-    author: { "@type": "Organization", name: "Brist", url: SITE_URL },
-    publisher: { "@type": "Organization", name: "Brist", url: SITE_URL },
+    author: { "@type": "Organization", name: "Peiling", url: SITE_URL },
+    publisher: { "@type": "Organization", name: "Peiling", url: SITE_URL },
     url: `${SITE_URL}/artikel/${article.slug}`,
   };
 

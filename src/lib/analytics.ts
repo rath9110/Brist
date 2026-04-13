@@ -1,4 +1,4 @@
-const CONSENT_KEY = "brist_consent";
+const CONSENT_KEY = "peiling_consent";
 
 export function getConsent(): "yes" | "no" | null {
   if (typeof localStorage === "undefined") return null;
@@ -13,7 +13,7 @@ export function setConsent(value: "yes" | "no"): void {
 }
 
 function getSessionId(): string {
-  const KEY = "brist_session_id";
+  const KEY = "peiling_session_id";
   let id = sessionStorage.getItem(KEY);
   if (!id) {
     id = crypto.randomUUID();

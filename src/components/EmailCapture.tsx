@@ -10,7 +10,7 @@ export default function EmailCapture() {
   function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!email) return;
-    localStorage.setItem("brist_email", email);
+    localStorage.setItem("peiling_email", email);
     trackEvent("email_submitted");
     setSubmitted(true);
   }
@@ -19,7 +19,7 @@ export default function EmailCapture() {
     return (
       <div className="bg-surface rounded-card p-6 text-center">
         <p className="font-sans text-[15px] text-text">
-          Tack. Vi hör av oss när Brist lanserar.
+          Tack. Vi hör av oss när Peiling lanserar.
         </p>
       </div>
     );
@@ -32,7 +32,7 @@ export default function EmailCapture() {
       </h3>
       <p className="font-sans text-[14px] text-text-muted mb-4 leading-relaxed">
         Ange din e-post så skickar vi en sammanfattning — och meddelar dig när
-        Brist lanserar produktrekommendationer.
+        Peiling lanserar produktrekommendationer.
       </p>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
         <input

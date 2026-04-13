@@ -33,8 +33,8 @@ export default function ResultsPage() {
   const [result, setResult] = useState<ScoringResult | null>(null);
 
   useEffect(() => {
-    const rawAnswers = sessionStorage.getItem("brist_answers");
-    const rawResult = sessionStorage.getItem("brist_results");
+    const rawAnswers = sessionStorage.getItem("peiling_answers");
+    const rawResult = sessionStorage.getItem("peiling_results");
     if (!rawAnswers || !rawResult) {
       router.replace("/quiz");
       return;
@@ -89,8 +89,8 @@ export default function ResultsPage() {
     <main className="min-h-screen pb-16">
       <div className="max-w-content mx-auto px-6 pt-10 space-y-8">
         {/* Wordmark */}
-        <div className="font-serif text-[20px] lowercase text-primary" aria-label="Brist">
-          brist
+        <div className="font-serif text-[20px] lowercase text-primary" aria-label="Peiling">
+          peiling
         </div>
 
         {/* Section 1 — Profile summary */}
@@ -202,8 +202,8 @@ export default function ResultsPage() {
             type="button"
             onClick={() => {
               trackEvent("quiz_restart");
-              sessionStorage.removeItem("brist_answers");
-              sessionStorage.removeItem("brist_results");
+              sessionStorage.removeItem("peiling_answers");
+              sessionStorage.removeItem("peiling_results");
               router.push("/quiz");
             }}
             className="font-sans text-[14px] text-text-muted hover:text-text transition-colors"

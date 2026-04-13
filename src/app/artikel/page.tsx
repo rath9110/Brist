@@ -3,10 +3,10 @@ import type { Metadata } from "next";
 import { ARTICLES } from "@/lib/articles";
 
 export const metadata: Metadata = {
-  title: "Artiklar om näringsbrist och tillskott | Brist",
+  title: "Artiklar om näringsbrist och tillskott | Peiling",
   description:
     "Läs om de vanligaste näringsbristerna, deras symtom och vad du kan göra — baserat på forskning och anpassat för svenska förhållanden.",
-  alternates: { canonical: "https://brist.se/artikel" },
+  alternates: { canonical: "https://peiling.se/artikel" },
 };
 
 const CATEGORY_LABELS: Record<string, string> = {
@@ -32,9 +32,9 @@ export default function ArticleIndexPage() {
         <Link
           href="/"
           className="font-serif text-[20px] lowercase text-primary block mb-10"
-          aria-label="Brist"
+          aria-label="Peiling"
         >
-          brist
+          peiling
         </Link>
 
         <h1 className="font-serif text-[28px] leading-snug text-text mb-3">

@@ -13,8 +13,8 @@ let db: Database.Database | null = null;
 function getDb(): Database.Database {
   if (db) return db;
   const dbPath = process.env.VERCEL
-    ? path.join("/tmp", "brist_events.db")
-    : path.join(process.cwd(), "brist_events.db");
+    ? path.join("/tmp", "peiling_events.db")
+    : path.join(process.cwd(), "peiling_events.db");
   db = new Database(dbPath);
   db.pragma("journal_mode = WAL");
   db.exec(`

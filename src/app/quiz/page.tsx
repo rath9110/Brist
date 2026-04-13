@@ -89,8 +89,8 @@ function QuizInner() {
 
     if (nextStep === undefined) {
       const result = computeScores(updatedAnswers);
-      sessionStorage.setItem("brist_answers", JSON.stringify(updatedAnswers));
-      sessionStorage.setItem("brist_results", JSON.stringify(result));
+      sessionStorage.setItem("peiling_answers", JSON.stringify(updatedAnswers));
+      sessionStorage.setItem("peiling_results", JSON.stringify(result));
       trackEvent("quiz_complete");
       router.push("/results");
       return;
