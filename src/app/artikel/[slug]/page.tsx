@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import type { Metadata } from "next";
 import { getArticle, getAllSlugs, getRelatedArticles } from "@/lib/articles";
+import StickyQuizBar from "@/components/StickyQuizBar";
 
 const SITE_URL = "https://peiling.se";
 
@@ -192,7 +193,7 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
     : null;
 
   return (
-    <main className="min-h-screen pb-20">
+    <main className="min-h-screen pb-28">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -228,56 +229,87 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           </h1>
 
           <div className="space-y-5">
-            {article.blocks.map((block, i) => {
-              if (block.type === "h2") {
-                return (
-                  <h2
-                    key={i}
-                    className="font-serif text-[22px] text-text pt-4 leading-snug"
-                  >
-                    {block.text}
-                  </h2>
-                );
-              }
-              if (block.type === "p") {
-                return (
-                  <p
-                    key={i}
-                    className="font-sans text-[15px] text-text leading-relaxed"
-                  >
-                    {renderRichText(block.text)}
-                  </p>
-                );
-              }
-              if (block.type === "ul") {
-                return (
-                  <ul key={i} className="space-y-2 pl-1">
-                    {block.items.map((item, j) => (
-                      <li
-                        key={j}
-                        className="font-sans text-[15px] text-text leading-relaxed flex gap-2"
-                      >
-                        <span className="text-primary mt-[3px] shrink-0">•</span>
-                        <span>{renderRichText(item)}</span>
-                      </li>
-                    ))}
-                  </ul>
-                );
-              }
-              if (block.type === "callout") {
-                return (
-                  <div
-                    key={i}
-                    className="bg-primary-tint border-l-4 border-primary rounded-card p-5"
-                  >
-                    <p className="font-sans text-[14px] text-text leading-relaxed">
+            {(() => {
+              let firstH2Seen = false;
+              const nodes: React.ReactNode[] = [];
+              article.blocks.forEach((block, i) => {
+                if (block.type === "h2") {
+                  if (firstH2Seen) {
+                    // Mid-article CTA before every subsequent h2
+                  } else {
+                    firstH2Seen = true;
+                  }
+                  nodes.push(
+                    <h2
+                      key={i}
+                      className="font-serif text-[22px] text-text pt-4 leading-snug"
+                    >
                       {block.text}
+                    </h2>
+                  );
+                  // Inject inline CTA after the second h2 (index 1)
+                  const h2Count = article.blocks
+                    .slice(0, i + 1)
+                    .filter((b) => b.type === "h2").length;
+                  if (h2Count === 2) {
+                    nodes.push(
+                      <div
+                        key={`inline-cta-${i}`}
+                        className="bg-surface rounded-card p-5 border-l-4 border-primary"
+                      >
+                        <p className="font-sans text-[14px] font-medium text-text mb-1">
+                          {cta.hook}
+                        </p>
+                        <p className="font-sans text-[13px] text-text-muted leading-relaxed mb-3">
+                          {cta.body}
+                        </p>
+                        <Link
+                          href={`/quiz?ref=${article.slug}`}
+                          className="btn-cta block text-center text-[13px] py-2"
+                        >
+                          Starta quizzen →
+                        </Link>
+                      </div>
+                    );
+                  }
+                } else if (block.type === "p") {
+                  nodes.push(
+                    <p
+                      key={i}
+                      className="font-sans text-[15px] text-text leading-relaxed"
+                    >
+                      {renderRichText(block.text)}
                     </p>
-                  </div>
-                );
-              }
-              return null;
-            })}
+                  );
+                } else if (block.type === "ul") {
+                  nodes.push(
+                    <ul key={i} className="space-y-2 pl-1">
+                      {block.items.map((item, j) => (
+                        <li
+                          key={j}
+                          className="font-sans text-[15px] text-text leading-relaxed flex gap-2"
+                        >
+                          <span className="text-primary mt-[3px] shrink-0">•</span>
+                          <span>{renderRichText(item)}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  );
+                } else if (block.type === "callout") {
+                  nodes.push(
+                    <div
+                      key={i}
+                      className="bg-primary-tint border-l-4 border-primary rounded-card p-5"
+                    >
+                      <p className="font-sans text-[14px] text-text leading-relaxed">
+                        {block.text}
+                      </p>
+                    </div>
+                  );
+                }
+              });
+              return nodes;
+            })()}
           </div>
 
           {/* CTA */}
@@ -322,6 +354,8 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
           )}
         </article>
       </div>
+
+      <StickyQuizBar articleSlug={article.slug} />
     </main>
   );
 }
