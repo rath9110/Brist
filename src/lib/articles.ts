@@ -22,8 +22,8 @@ export const ARTICLES: Article[] = [
   // ── PILLAR ────────────────────────────────────────────────────────────────
   {
     slug: "vitaminbrist-tecken-test",
-    title: "Vitaminbrist - Tecken, test och vad du kan göra",
-    metaTitle: "Vitaminbrist - Tecken, test och vad du kan göra",
+    title: "Vitaminbrist: tecken, test och vad du kan göra",
+    metaTitle: "Vitaminbrist: tecken, test och vad du kan göra",
     metaDescription:
       "Lär dig känna igen de vanligaste tecknen på vitaminbrist, vilka tillskott du kan börja med direkt och när du bör ta ett blodprov.",
     publishedAt: "2026-04-12",
@@ -38,7 +38,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Nästan alla vet att vitaminer är viktiga - men de flesta vet inte om de faktiskt får i sig tillräckligt. Vitaminbrist är vanligare än vi tror, och symtomen är ofta diffusa: trötthet, sämre sömn, håravfall eller återkommande förkylningar. Det är sällan dramatiskt, men det påverkar hur du mår varje dag.",
+        text: "Nästan alla vet att vitaminer är viktiga, men de flesta vet inte om de faktiskt får i sig tillräckligt. Vitaminbrist är vanligare än vi tror och symtomen är ofta diffusa: trötthet, sämre sömn, håravfall eller återkommande förkylningar. Det är sällan dramatiskt, men det påverkar hur du mår varje dag.",
       },
       {
         type: "h2",
@@ -46,7 +46,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Sverige ligger på 59–68 graders nordlig breddgrad, vilket innebär att solen är för låg på himlen under vinterhalvåret för att huden ska kunna producera D-vitamin. Från oktober till mars är D-vitaminbrist praktiskt taget oundviklig utan tillskott - oavsett hur hälsosamt du äter.",
+        text: "Sverige ligger på 59–68 graders nordlig breddgrad, vilket innebär att solen är för låg på himlen under vinterhalvåret för att huden ska kunna producera D-vitamin. Från oktober till mars är D-vitaminbrist praktiskt taget oundviklig utan tillskott, oavsett hur hälsosamt du äter.",
       },
       {
         type: "p",
@@ -73,7 +73,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Det svåra med näringsbrist är att symtomen sällan är specifika. Trötthet kan bero på järnbrist, D-vitaminbrist, B12-brist eller sköldkörtelproblem. Håravfall kopplas till järn, zink och sköldkörteln. Muskekramper pekar mot magnesium och D-vitamin. Det krävs ofta ett blodprov för att veta vad som faktiskt är lågt.",
+        text: "Det svåra med näringsbrist är att symtomen sällan är specifika. Trötthet kan bero på järnbrist, D-vitaminbrist, B12-brist eller sköldkörtelproblem. Håravfall kopplas till järn, zink och sköldkörteln. Muskelkramper pekar mot magnesium och D-vitamin. Det krävs ofta ett blodprov för att veta vad som faktiskt är lågt.",
       },
       {
         type: "p",
@@ -85,7 +85,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "För vissa tillskott är det helt säkert att starta utan test. D-vitamin och magnesium har brett säkerhetsfönster - det är svårt att skada sig, och behovet är stort för nästan alla i Sverige. Om du bor i Sverige och inte tar D-vitamintillskott under vinterhalvåret är sannolikheten hög att du har för låga nivåer.",
+        text: "För vissa tillskott är det helt säkert att starta utan test. D-vitamin och magnesium har brett säkerhetsfönster; det är svårt att skada sig och behovet är stort för nästan alla i Sverige. Om du bor i Sverige och inte tar D-vitamintillskott under vinterhalvåret är sannolikheten hög att du har för låga nivåer.",
       },
       {
         type: "p",
@@ -105,7 +105,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "callout",
-        text: "Vet inte var du ska börja? Gör Peiling-quizzen - 9 frågor om dina mål, din kost och dina symtom ger en personlig bild av vilka brister som är mest troliga för dig.",
+        text: "Vet inte var du ska börja? Gör Peiling-quizzen. Svara på några frågor om dina mål, din kost och dina symtom och få en personlig bild av vilka brister som är mest troliga för dig.",
       },
     ],
     faq: [
@@ -115,11 +115,11 @@ export const ARTICLES: Article[] = [
       },
       {
         q: "Hur vet jag om jag har vitaminbrist?",
-        a: "Symtom på vitaminbrist varierar beroende på vilken brist det handlar om, men vanliga tecken inkluderar kronisk trötthet, håravfall, sköra naglar, muskelkramper, sömnproblem och täta infektioner. Det säkraste sättet att veta är ett blodprov — be om ferritin, 25-OH-D3, B12 och TSH.",
+        a: "Symtom på vitaminbrist varierar beroende på vilken brist det handlar om, men vanliga tecken inkluderar kronisk trötthet, håravfall, sköra naglar, muskelkramper, sömnproblem och täta infektioner. Det säkraste sättet att veta är ett blodprov - be om ferritin, 25-OH-D3, B12 och TSH.",
       },
       {
         q: "Kan jag ta vitamintillskott utan att testa mig?",
-        a: "För D-vitamin och magnesium är det säkert att börja utan test — de har breda säkerhetsfönster och de flesta i Sverige har otillräckliga nivåer. Järntillskott bör du aldrig ta utan att ha testat ferritinvärdet, eftersom järnöverskott är skadligt.",
+        a: "För D-vitamin och magnesium är det säkert att börja utan test - de har breda säkerhetsfönster och de flesta i Sverige har otillräckliga nivåer. Järntillskott bör du aldrig ta utan att ha testat ferritinvärdet, eftersom järnöverskott är skadligt.",
       },
       {
         q: "Vad kostar ett blodprov för vitaminer?",
@@ -131,7 +131,7 @@ export const ARTICLES: Article[] = [
   // ── NUTRIENT CLUSTER ──────────────────────────────────────────────────────
   {
     slug: "d-vitaminbrist",
-    title: "D-vitaminbrist - Varför nästan alla i Sverige bör testa sig",
+    title: "D-vitaminbrist: varför nästan alla i Sverige bör testa sig",
     metaTitle: "D-vitaminbrist: Symtom, test och tillskott",
     metaDescription:
       "D-vitaminbrist är extremt vanligt i Sverige på grund av vårt geografiska läge. Lär dig symtomen, hur du testar och hur mycket du behöver.",
@@ -146,7 +146,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "D-vitaminbrist är ett av Sveriges mest underskattade folkhälsoproblem. Uppskattningsvis 50–80 procent av befolkningen har otillräckliga nivåer under vinterhalvåret - inte för att vi äter dåligt, utan för att vi bor på fel breddgrad.",
+        text: "D-vitaminbrist är ett av Sveriges mest underskattade folkhälsoproblem. Uppskattningsvis 50–80 procent av befolkningen har otillräckliga nivåer under vinterhalvåret, inte för att vi äter dåligt utan för att vi bor på fel breddgrad.",
       },
       {
         type: "h2",
@@ -177,7 +177,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Det svåra är att symtomen är vaga och lätta att bortförklara. De flesta tänker inte att tröttheten i mars beror på D-vitaminbrist - de tror att de är stressade, undersomniga eller sjuka. Men när man testar sig och börjar supplementera märker många en tydlig förändring inom 6–8 veckor.",
+        text: "Det svåra är att symtomen är vaga och lätta att bortförklara. De flesta tänker inte att tröttheten i mars beror på D-vitaminbrist. De tror att de är stressade, undersomniga eller sjuka. Men när man testar sig och börjar supplementera märker många en tydlig förändring inom 6–8 veckor.",
       },
       {
         type: "h2",
@@ -205,11 +205,11 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Fet fisk (lax, makrill, sill, sardiner), äggula och berikad mjölk innehåller D-vitamin - men mängderna är för små för att täcka behovet under vinterhalvåret. Du skulle behöva äta lax varje dag för att kompensera för den uteblivna solexponeringen.",
+        text: "Fet fisk (lax, makrill, sill, sardiner), äggula och berikad mjölk innehåller D-vitamin, men mängderna är för små för att täcka behovet under vinterhalvåret. Du skulle behöva äta lax varje dag för att kompensera för den uteblivna solexponeringen.",
       },
       {
         type: "p",
-        text: "D3 (kolekalciferol) är den form kroppen föredrar och absorberar bättre än D2. Ta tillskottet med ett fettinnehållande mål - D-vitamin är fettlösligt och absorberas bäst i närvaro av fett. Välj kapslar eller oljedroppar framför tabletter för bästa biotillgänglighet.",
+        text: "D3 (kolekalciferol) är den form kroppen föredrar och absorberar bättre än D2. Ta tillskottet till en fettinnehållande måltid. D-vitamin är fettlösligt och absorberas bäst i närvaro av fett. Välj kapslar eller oljedroppar framför tabletter för bästa biotillgänglighet.",
       },
       {
         type: "callout",
@@ -227,11 +227,11 @@ export const ARTICLES: Article[] = [
       },
       {
         q: "Kan man få för mycket D-vitamin?",
-        a: "D-vitamin är fettlösligt och kan ackumuleras i kroppen. Toxicitet inträffar vid mycket höga doser över lång tid — vanligtvis över 250 µg (10 000 IE) per dag under månader. Standarddoser på 25–100 µg per dag anses säkra för de flesta vuxna.",
+        a: "D-vitamin är fettlösligt och kan ackumuleras i kroppen. Toxicitet inträffar vid mycket höga doser över lång tid - vanligtvis över 250 µg (10 000 IE) per dag under månader. Standarddoser på 25–100 µg per dag anses säkra för de flesta vuxna.",
       },
       {
         q: "Vilken D-vitaminform är bäst?",
-        a: "D3 (kolekalciferol) är den form kroppen producerar i huden och är klart effektivare än D2 vid supplementering. Välj D3 i olja eller fettsyraburen form för bästa absorption — D-vitamin är fettlösligt och absorberas bättre med ett fettmål.",
+        a: "D3 (kolekalciferol) är den form kroppen producerar i huden och är klart effektivare än D2 vid supplementering. Välj D3 i olja eller fettsyraburen form för bästa absorption - D-vitamin är fettlösligt och absorberas bättre med ett fettmål.",
       },
     ],
   },
@@ -337,7 +337,7 @@ export const ARTICLES: Article[] = [
       },
       {
         q: "Vad är ferritin och varför är det viktigt?",
-        a: "Ferritin är kroppens järnlager-protein och det känsligaste måttet på järnstatus. Ett normalt hemoglobin utesluter inte järnbrist — ferritin kan vara lågt trots normalt hemoglobin. Be specifikt om ferritin, inte bara blodstatus.",
+        a: "Ferritin är kroppens järnlager-protein och det känsligaste måttet på järnstatus. Ett normalt hemoglobin utesluter inte järnbrist - ferritin kan vara lågt trots normalt hemoglobin. Be specifikt om ferritin, inte bara blodstatus.",
       },
       {
         q: "Kan man ta järntillskott utan recept?",
@@ -1476,7 +1476,7 @@ export const ARTICLES: Article[] = [
   },
   {
     slug: "vilka-kosttillskott-ska-jag-ta",
-    title: "Vilka kosttillskott ska jag ta? — En guide baserad på din profil",
+    title: "Vilka kosttillskott ska jag ta? - En guide baserad på din profil",
     metaTitle: "Vilka kosttillskott ska jag ta? Guide för att hitta rätt",
     metaDescription:
       "Vilket kosttillskott du behöver beror på din kost, dina symtom och din livsstil. Den här guiden hjälper dig navigera marknaden och undvika onödiga köp.",
@@ -1491,7 +1491,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Kosttillskottmarknaden är enorm, förvirrande och fylld av produkter du inte behöver. Men rätt tillskott, i rätt dos, för rätt person — det kan göra verklig skillnad. Problemet är att de flesta tar fel saker baserat på reklam eller hörsägen snarare än baserat på sin faktiska profil.",
+        text: "Kosttillskottmarknaden är enorm, förvirrande och fylld av produkter du inte behöver. Men rätt tillskott, i rätt dos, för rätt person - det kan göra verklig skillnad. Problemet är att de flesta tar fel saker baserat på reklam eller hörsägen snarare än baserat på sin faktiska profil.",
       },
       {
         type: "h2",
@@ -1499,11 +1499,11 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Det finns en viktig skillnad mellan tillskott du tar för att täcka en dokumenterad brist och tillskott du tar för att 'optimera'. Brist ger ett tydligt svar — du saknar X, du tar X, du mår bättre. Optimering är mer diffust, och bevisen för de flesta 'prestationshöjande' tillskott är svaga.",
+        text: "Det finns en viktig skillnad mellan tillskott du tar för att täcka en dokumenterad brist och tillskott du tar för att 'optimera'. Brist ger ett tydligt svar - du saknar X, du tar X, du mår bättre. Optimering är mer diffust, och bevisen för de flesta 'prestationshöjande' tillskott är svaga.",
       },
       {
         type: "p",
-        text: "Prioritera att utesluta de vanligaste bristerna innan du experimenterar med andra produkter. De flesta i Sverige bör titta på D-vitamin, magnesium och — beroende på kost — B12 och järn.",
+        text: "Prioritera att utesluta de vanligaste bristerna innan du experimenterar med andra produkter. De flesta i Sverige bör titta på D-vitamin, magnesium och - beroende på kost - B12 och järn.",
       },
       {
         type: "h2",
@@ -1512,10 +1512,10 @@ export const ARTICLES: Article[] = [
       {
         type: "ul",
         items: [
-          "[D-vitamin](/artikel/d-vitaminbrist) 25–50 µg per dag — nästan alla i Sverige behöver detta under vinterhalvåret. Välj D3 i olja.",
-          "[Magnesium](/artikel/magnesiumbrist) 300–400 mg glycinat eller citrat — relevant om du är stressad, tränar intensivt eller sover dåligt.",
-          "[B12](/artikel/b12-brist) — kritiskt om du är vegan eller vegetarian, viktigt för personer över 50.",
-          "[Omega-3](/artikel/omega-3-tillskott) 1–2 g EPA+DHA — om du sällan äter fet fisk.",
+          "[D-vitamin](/artikel/d-vitaminbrist) 25–50 µg per dag - nästan alla i Sverige behöver detta under vinterhalvåret. Välj D3 i olja.",
+          "[Magnesium](/artikel/magnesiumbrist) 300–400 mg glycinat eller citrat - relevant om du är stressad, tränar intensivt eller sover dåligt.",
+          "[B12](/artikel/b12-brist) - kritiskt om du är vegan eller vegetarian, viktigt för personer över 50.",
+          "[Omega-3](/artikel/omega-3-tillskott) 1–2 g EPA+DHA - om du sällan äter fet fisk.",
         ],
       },
       {
@@ -1525,9 +1525,9 @@ export const ARTICLES: Article[] = [
       {
         type: "ul",
         items: [
-          "[Järn](/artikel/jarnbrist-symptom) — ta aldrig utan att testa ferritin. Järnöverskott är skadligt.",
-          "Zink i höga doser — kan störa kopparupptaget vid överdosering.",
-          "Folat i höga doser — kan maskera B12-brist.",
+          "[Järn](/artikel/jarnbrist-symptom) - ta aldrig utan att testa ferritin. Järnöverskott är skadligt.",
+          "Zink i höga doser - kan störa kopparupptaget vid överdosering.",
+          "Folat i höga doser - kan maskera B12-brist.",
         ],
       },
       {
@@ -1536,7 +1536,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Biotin för håravfall — hjälper bara vid konstaterad biotinbrist, vilket är ovanligt. Collagen — absorberas som aminosyror, kroppen bestämmer själv vart de går. Antioxidantcocktails — mat är en bättre källa, höga doser av isolerade antioxidanter kan ge bakslag.",
+        text: "Biotin för håravfall - hjälper bara vid konstaterad biotinbrist, vilket är ovanligt. Collagen - absorberas som aminosyror, kroppen bestämmer själv vart de går. Antioxidantcocktails - mat är en bättre källa, höga doser av isolerade antioxidanter kan ge bakslag.",
       },
       {
         type: "h2",
@@ -1544,17 +1544,17 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Det beror på din kost, dina symtom, din träning och din demografiska profil. En vegetarian i 30-årsåldern som tränar hårt har ett helt annat behov än en allätare i 55-årsåldern med stillasittande arbete. Det enda sättet att veta säkert är ett blodprov — men du kan komma långt med en välunderbyggd bedömning baserad på din livsstil.",
+        text: "Det beror på din kost, dina symtom, din träning och din demografiska profil. En vegetarian i 30-årsåldern som tränar hårt har ett helt annat behov än en allätare i 55-årsåldern med stillasittande arbete. Det enda sättet att veta säkert är ett blodprov - men du kan komma långt med en välunderbyggd bedömning baserad på din livsstil.",
       },
       {
         type: "callout",
-        text: "Peilings quiz analyserar din kost, dina symtom och din livsstil och pekar ut vilka brister som är troligast för just dig — på 3 minuter.",
+        text: "Peilings quiz analyserar din kost, dina symtom och din livsstil och pekar ut vilka brister som är troligast för just dig - på 3 minuter.",
       },
     ],
     faq: [
       {
         q: "Vilket kosttillskott ska jag börja med?",
-        a: "För de flesta i Sverige är D-vitamin det viktigaste tillskottet att börja med — nästan alla har otillräckliga nivåer under vinterhalvåret. Magnesium är det näst vanligaste behovet, särskilt vid stress, sömnproblem eller intensiv träning.",
+        a: "För de flesta i Sverige är D-vitamin det viktigaste tillskottet att börja med - nästan alla har otillräckliga nivåer under vinterhalvåret. Magnesium är det näst vanligaste behovet, särskilt vid stress, sömnproblem eller intensiv träning.",
       },
       {
         q: "Kan jag ta för många vitaminer?",
@@ -1562,13 +1562,13 @@ export const ARTICLES: Article[] = [
       },
       {
         q: "Ska jag ta kosttillskott varje dag?",
-        a: "Ja — tillskott fungerar bäst vid konsekvent daglig dosering. D-vitamin och magnesium behöver tas dagligen för stabil effekt. B12 kan tas i högre veckodos om daglig dosering är opraktiskt.",
+        a: "Ja - tillskott fungerar bäst vid konsekvent daglig dosering. D-vitamin och magnesium behöver tas dagligen för stabil effekt. B12 kan tas i högre veckodos om daglig dosering är opraktiskt.",
       },
     ],
   },
   {
     slug: "magnesium-fore-somn",
-    title: "Magnesium för sömn — fungerar det och hur mycket ska du ta?",
+    title: "Magnesium för sömn - fungerar det och hur mycket ska du ta?",
     metaTitle: "Magnesium för sömn: Dosering, form och vad forskningen visar",
     metaDescription:
       "Magnesium är ett av de mest studerade naturliga sömnmedlen. Lär dig vilken form som fungerar bäst, rätt dosering och vad forskningen faktiskt visar.",
@@ -1583,7 +1583,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Sömnproblem är ett av de vanligaste hälsoklagomålen. Många provar melatonin, antihistaminer eller sömnmedel — men en av de mest välstuderade och säkraste interventionerna för sömn är magnesium. Det är inte ett sömnmedel i traditionell mening; det behandlar en underliggande brist som kan hålla dig vaken.",
+        text: "Sömnproblem är ett av de vanligaste hälsoklagomålen. Många provar melatonin, antihistaminer eller sömnmedel - men en av de mest välstuderade och säkraste interventionerna för sömn är magnesium. Det är inte ett sömnmedel i traditionell mening; det behandlar en underliggande brist som kan hålla dig vaken.",
       },
       {
         type: "h2",
@@ -1591,7 +1591,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Magnesium reglerar GABA-receptorer i hjärnan — samma receptorsystem som bensodiazepiner (sömnmedel) verkar på, men utan beroendeproblematiken. GABA är hjärnans viktigaste hämmande neurotransmittor: det sänker nervaktiviteten och skapar det lugn som behövs för att somna. Utan tillräckligt magnesium fungerar GABA-receptorerna sämre.",
+        text: "Magnesium reglerar GABA-receptorer i hjärnan - samma receptorsystem som bensodiazepiner (sömnmedel) verkar på, men utan beroendeproblematiken. GABA är hjärnans viktigaste hämmande neurotransmittor: det sänker nervaktiviteten och skapar det lugn som behövs för att somna. Utan tillräckligt magnesium fungerar GABA-receptorerna sämre.",
       },
       {
         type: "p",
@@ -1607,7 +1607,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Effekten är störst hos individer med faktisk magnesiumbrist — men eftersom magnesiumbrist är vanlig och sällan diagnostiseras, är det en relevant kandidat för de flesta med sömnproblem.",
+        text: "Effekten är störst hos individer med faktisk magnesiumbrist - men eftersom magnesiumbrist är vanlig och sällan diagnostiseras, är det en relevant kandidat för de flesta med sömnproblem.",
       },
       {
         type: "h2",
@@ -1616,10 +1616,10 @@ export const ARTICLES: Article[] = [
       {
         type: "ul",
         items: [
-          "Magnesiumglycinat — bäst för sömn. Glycin har egna lugnande egenskaper och förbättrar sömnkvaliteten separat. Absorberas väl utan laxerande effekt.",
-          "Magnesiumtaurat — bra alternativ, taurin har GABA-modulerande effekter.",
-          "Magnesiumcitrat — absorberas väl men kan ge lös mage i höga doser, vilket kan störa sömnen.",
-          "Magnesiumoxid — undvik. Absorberas mycket dåligt (4%), ger framförallt laxerande effekt.",
+          "Magnesiumglycinat - bäst för sömn. Glycin har egna lugnande egenskaper och förbättrar sömnkvaliteten separat. Absorberas väl utan laxerande effekt.",
+          "Magnesiumtaurat - bra alternativ, taurin har GABA-modulerande effekter.",
+          "Magnesiumcitrat - absorberas väl men kan ge lös mage i höga doser, vilket kan störa sömnen.",
+          "Magnesiumoxid - undvik. Absorberas mycket dåligt (4%), ger framförallt laxerande effekt.",
         ],
       },
       {
@@ -1628,15 +1628,15 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "200–400 mg elementärt magnesium, intaget 30–60 minuter före sänggåendet, är standardprotokoll i studier. Kontrollera alltid mängden elementärt magnesium på förpackningen — inte den totala vikten av magnesiumsaltet. 400 mg magnesiumglycinat innehåller till exempel ungefär 50 mg elementärt magnesium.",
+        text: "200–400 mg elementärt magnesium, intaget 30–60 minuter före sänggåendet, är standardprotokoll i studier. Kontrollera alltid mängden elementärt magnesium på förpackningen - inte den totala vikten av magnesiumsaltet. 400 mg magnesiumglycinat innehåller till exempel ungefär 50 mg elementärt magnesium.",
       },
       {
         type: "p",
-        text: "De flesta märker förbättring inom 1–4 veckor. Är du inte säker på om du har magnesiumbrist — [läs om de vanligaste symtomen](/artikel/magnesiumbrist) och börja med en lägre dos (200 mg) för att se hur du reagerar.",
+        text: "De flesta märker förbättring inom 1–4 veckor. Är du inte säker på om du har magnesiumbrist - [läs om de vanligaste symtomen](/artikel/magnesiumbrist) och börja med en lägre dos (200 mg) för att se hur du reagerar.",
       },
       {
         type: "callout",
-        text: "Magnesiumglycinat 200–400 mg på kvällen är ett av de säkraste och mest välstuderade naturliga sömnmedlen — och kräver inget blodprov för att börja.",
+        text: "Magnesiumglycinat 200–400 mg på kvällen är ett av de säkraste och mest välstuderade naturliga sömnmedlen - och kräver inget blodprov för att börja.",
       },
     ],
     faq: [

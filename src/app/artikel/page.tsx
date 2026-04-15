@@ -41,8 +41,8 @@ export default function ArticleIndexPage() {
           Artiklar
         </h1>
         <p className="font-sans text-[15px] text-text-muted leading-relaxed mb-10">
-          Guider om näringsbrist, symtom och hur du optimerar ditt intag -
-          skrivna för dig som vill förstå vad kroppen egentligen behöver.
+          Guider om näringsbrist, symtom och hur du optimerar ditt intag.
+          Skrivna för dig som vill förstå vad kroppen egentligen behöver.
         </p>
 
         <div className="space-y-12">
@@ -78,8 +78,8 @@ export default function ArticleIndexPage() {
             Vad gäller för just dig?
           </h3>
           <p className="font-sans text-[14px] text-text-muted leading-relaxed mb-4">
-            Artiklarna ger dig bakgrunden - quizzen ger dig din personliga bild.
-            Svara på 9 frågor om din kost, dina symtom och din livsstil.
+            Artiklarna ger dig bakgrunden. Quizzen ger dig den personliga bilden.
+            Svara på några frågor om din kost, dina symtom och din livsstil.
           </p>
           <Link href="/quiz" className="btn-cta block text-center">
             Starta quizzen →

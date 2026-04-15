@@ -12,7 +12,7 @@ type QuizCta = { hook: string; body: string };
 const QUIZ_CTA: Record<string, QuizCta> = {
   "vitaminbrist-tecken-test": {
     hook: "Vilka brister är troliga för dig?",
-    body: "Svara på 9 frågor om din kost, dina symtom och din livsstil. Du får en personlig bild av vilka brister som är mest sannolika - och vad du kan göra åt dem.",
+    body: "Svara på några frågor om din kost, dina symtom och din livsstil. Du får en personlig bild av vilka brister som är mest sannolika och vad du kan göra åt dem.",
   },
   "d-vitaminbrist": {
     hook: "Får du tillräckligt med D-vitamin?",
@@ -20,7 +20,7 @@ const QUIZ_CTA: Record<string, QuizCta> = {
   },
   "jarnbrist-symptom": {
     hook: "Känner du igen dig i symtomen?",
-    body: "Järnbrist beror ofta på kost, träning och livsstil - quizzen räknar ut hur troligt det är för just dig och vad du kan göra.",
+    body: "Järnbrist beror ofta på kost, träning och livsstil. Quizzen räknar ut hur troligt det är för just dig och vad du kan göra.",
   },
   "magnesiumbrist": {
     hook: "Är magnesium en bristvara för dig?",
@@ -28,7 +28,7 @@ const QUIZ_CTA: Record<string, QuizCta> = {
   },
   "b12-brist": {
     hook: "Täcker din kost B12-behovet?",
-    body: "Veganer och vegetarianer är extra utsatta - men även köttätare kan ha låga nivåer. Quizzen visar var du hamnar baserat på din kost och dina symtom.",
+    body: "Veganer och vegetarianer är extra utsatta, men även köttätare kan ha låga nivåer. Quizzen visar var du hamnar baserat på din kost och dina symtom.",
   },
   "omega-3-tillskott": {
     hook: "Behöver du tillskott av omega-3?",
@@ -40,7 +40,7 @@ const QUIZ_CTA: Record<string, QuizCta> = {
   },
   "alltid-trott-vitaminbrist": {
     hook: "Vad orsakar din trötthet?",
-    body: "Trötthet kan ha flera näringsorsakar och de ser olika ut för olika personer. Quizzen pekar ut vilka som är mest sannolika för dig.",
+    body: "Trötthet kan ha flera näringsbristorsaker och de ser olika ut för olika personer. Quizzen pekar ut vilka som är mest sannolika för dig.",
   },
   "somnproblem-naringsbrist": {
     hook: "Kan näringsbrist störa din sömn?",
@@ -48,7 +48,7 @@ const QUIZ_CTA: Record<string, QuizCta> = {
   },
   "skora-naglar-haravfall-brist": {
     hook: "Vad säger dina naglar och ditt hår?",
-    body: "Sköra naglar och håravfall är ofta kopplade till specifika brister - quizzen hjälper dig identifiera vilka som är troliga för just dig.",
+    body: "Sköra naglar och håravfall är ofta kopplade till specifika brister. Quizzen hjälper dig identifiera vilka som är troliga för just dig.",
   },
   "muskelkramper-magnesiumbrist": {
     hook: "Hänger dina kramper ihop med magnesium?",
@@ -84,7 +84,7 @@ const QUIZ_CTA: Record<string, QuizCta> = {
   },
   "vilka-kosttillskott-ska-jag-ta": {
     hook: "Ta reda på vilka tillskott just du behöver.",
-    body: "Svara på 9 frågor om din kost, dina symtom och din livsstil. Du får en personlig lista — inte en generisk rekommendation.",
+    body: "Svara på några frågor om din kost, dina symtom och din livsstil. Du får en personlig lista, ingen generisk rekommendation.",
   },
   "magnesium-fore-somn": {
     hook: "Är magnesiumbrist orsaken till dina sömnproblem?",
@@ -94,7 +94,7 @@ const QUIZ_CTA: Record<string, QuizCta> = {
 
 const DEFAULT_CTA: QuizCta = {
   hook: "Vad gäller för just dig?",
-  body: "Svara på 9 frågor om dina mål, din kost och dina symtom. Du får en personlig bild av vilka brister som är mest troliga - och vad du kan göra åt dem.",
+  body: "Svara på några frågor om dina mål, din kost och dina symtom. Du får en personlig bild av vilka brister som är mest troliga och vad du kan göra åt dem.",
 };
 
 export function generateStaticParams() {

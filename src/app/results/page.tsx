@@ -14,27 +14,27 @@ import { NUTRIENT_NAMES_SV } from "@/lib/factors";
 
 const OUTPUT_FRAMING: Record<string, string> = {
   nothing:
-    "Du tar inget just nu — vilket innebär att vi utgår från en ren baslinje. Här är vad din profil visar.",
+    "Du tar inget just nu, vilket innebär att vi utgår från en ren baslinje. Här är vad din profil visar.",
   multivitamin:
-    "Du tar ett multivitamin, vilket ger en bred bas. Men ett generiskt multi kan inte ta hänsyn till just din träningsbelastning, kost och livsstil. Här är var en riktad insats skulle göra större skillnad.",
+    "Du tar ett multivitamin, vilket ger en bred bas. Men ett generiskt multi kan inte ta hänsyn till just din träningsbelastning, kost och livsstil. Här är var en riktad insats skulle göra störst skillnad.",
   specific_supplements:
-    "Du vet redan vad du tar — bra. Låt oss se om ditt nuvarande upplägg matchar vad din profil faktiskt visar. Ett blodprov är bästa sättet att bekräfta att du täcker rätt områden.",
+    "Du vet redan vad du tar. Låt oss se om ditt nuvarande upplägg matchar vad din profil faktiskt visar. Ett blodprov är bästa sättet att bekräfta att du täcker rätt områden.",
   tried_and_stopped:
-    "Du har testat tillskott tidigare och slutat. Det är vanligt — och beror ofta på att resultaten kändes oklara. Testning tar bort gissandet: du ser exakt vad som är lågt, supplementerar med precision, och testar igen för att bekräfta att det fungerar.",
+    "Du har testat tillskott tidigare och slutat. Det är vanligt och beror ofta på att resultaten kändes oklara. Testning tar bort gissandet: du ser exakt vad som är lågt, supplementerar med precision och testar igen för att bekräfta att det fungerar.",
   gym_recommendation:
-    "Gymrekommendationer är en utgångspunkt, men de är utformade för genomsnittspersonen — inte specifikt för dig. Din träningstyp, kost och symtom ger en mer specifik bild.",
+    "Gymrekommendationer är en utgångspunkt, men de är utformade för genomsnittspersonen och inte specifikt för dig. Din träningstyp, kost och symtom ger en mer träffsäker bild.",
 };
 
 function buildShareText(tier1: ScoredNutrient[], tier2: ScoredNutrient[]): string {
   const lines: string[] = ["Mina näringsbristresultat från Peiling:", ""];
   if (tier1.length > 0) {
     lines.push("Börja direkt:");
-    for (const n of tier1) lines.push(`• ${NUTRIENT_NAMES_SV[n.key]} — ${n.confidence}`);
+    for (const n of tier1) lines.push(`• ${NUTRIENT_NAMES_SV[n.key]} - ${n.confidence}`);
     lines.push("");
   }
   if (tier2.length > 0) {
     lines.push("Testa först:");
-    for (const n of tier2) lines.push(`• ${NUTRIENT_NAMES_SV[n.key]} — ${n.confidence}`);
+    for (const n of tier2) lines.push(`• ${NUTRIENT_NAMES_SV[n.key]} - ${n.confidence}`);
     lines.push("");
   }
   lines.push("Testa dig själv på peiling.se/quiz");
@@ -131,15 +131,15 @@ export default function ResultsPage() {
           peiling
         </div>
 
-        {/* Section 1 — Profile summary */}
+        {/* Section 1 - Profile summary */}
         <ProfileSummary answers={answers} />
 
-        {/* Section 2 — Personalized intro */}
+        {/* Section 2 - Personalized intro */}
         <p className="font-sans text-[15px] text-text-muted leading-relaxed">
           {OUTPUT_FRAMING[result.outputFraming] ?? OUTPUT_FRAMING.nothing}
         </p>
 
-        {/* Section 3 — High symptom load warning */}
+        {/* Section 3 - High symptom load warning */}
         {result.flags.highSymptomLoad && (
           <div className="bg-surface rounded-card p-6 border-l-4 border-warning">
             <p className="font-sans text-[14px] text-text leading-relaxed">
@@ -150,22 +150,22 @@ export default function ResultsPage() {
           </div>
         )}
 
-        {/* Section 4 — Absorption concern */}
+        {/* Section 4 - Absorption concern */}
         {result.flags.absorptionConcern && (
           <div className="bg-surface rounded-card p-6">
             <p className="font-sans text-[14px] text-text-muted leading-relaxed">
               Magbesvär kan försämra näringsupptaget. Dina faktiska nivåer kan
-              vara lägre än din kost antyder — att testa är extra värdefullt i
+              vara lägre än din kost antyder - att testa är extra värdefullt i
               ditt fall.
             </p>
           </div>
         )}
 
-        {/* Section 5 — Tier 1 */}
+        {/* Section 5 - Tier 1 */}
         {tier1.length > 0 && (
           <section>
             <h2 className="font-serif text-[22px] text-text mb-4">
-              Börja direkt — hög säkerhet
+              Börja direkt
             </h2>
             <div className="space-y-4">
               {tier1.map((n) => (
@@ -175,7 +175,7 @@ export default function ResultsPage() {
           </section>
         )}
 
-        {/* Section 5b — Email capture */}
+        {/* Section 5b - Email capture */}
         {sessionId && (
           <EmailCapture
             resultSummary={{
@@ -186,11 +186,11 @@ export default function ResultsPage() {
           />
         )}
 
-        {/* Section 6 — Tier 2 */}
+        {/* Section 6 - Tier 2 */}
         {tier2.length > 0 && (
           <section>
             <h2 className="font-serif text-[22px] text-text mb-4">
-              Testa först — bekräfta innan du börjar
+              Testa först
             </h2>
             <div className="space-y-4 mb-6">
               {tier2.map((n) => (
@@ -223,7 +223,7 @@ export default function ResultsPage() {
           </section>
         )}
 
-        {/* Section 7 — Tier 3 / professional */}
+        {/* Section 7 - Tier 3 / professional */}
         {showTier3 && (
           <section>
             <div className="bg-[#FAF8F5] rounded-card p-6 border border-accent">
@@ -232,7 +232,7 @@ export default function ResultsPage() {
               </h2>
               <p className="font-sans text-[14px] text-text-muted leading-relaxed">
                 Dina svar tyder på att detta kan behöva professionell bedömning
-                snarare än bara tillskott. Det är inget att oroa sig för — det
+                snarare än bara tillskott. Det är inget att oroa sig för - det
                 betyder bara att en vårdgivare kan hjälpa dig mer effektivt än
                 vi kan.
               </p>
@@ -245,7 +245,7 @@ export default function ResultsPage() {
           </section>
         )}
 
-        {/* Section 8 — Share + Restart */}
+        {/* Section 8 - Share + Restart */}
         <div className="flex flex-col items-center gap-4 pb-4">
           <button
             type="button"

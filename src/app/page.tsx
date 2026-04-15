@@ -29,8 +29,8 @@ export default function Home() {
         {/* Subtext */}
         <p className="font-sans text-[16px] text-text-muted mb-8 leading-relaxed">
           Svara på ett par frågor om din kost, dina symtom och din livsstil. Du
-          får en personlig bild av vilka näringsbristar som är troliga för just
-          dig — och vad du kan göra åt dem.
+          får en personlig bild av vilka näringsbrister som är troliga för just
+          dig - och vad du kan göra åt dem.
         </p>
 
         {/* CTA */}

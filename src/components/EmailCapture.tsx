@@ -67,7 +67,7 @@ export default function EmailCapture({ resultSummary, sessionId }: Props) {
       </h3>
       <p className="font-sans text-[14px] text-text-muted mb-4 leading-relaxed">
         Ange din e-post så sparar vi din personliga profil. Vi skickar en
-        sammanfattning så fort det är möjligt — ingen reklam, inga nyhetsbrev.
+        sammanfattning så fort det är möjligt. Ingen reklam, inga nyhetsbrev.
       </p>
       <form onSubmit={handleSubmit} className="flex flex-col gap-3">
         <input

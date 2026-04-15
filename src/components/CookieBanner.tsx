@@ -26,7 +26,7 @@ export default function CookieBanner() {
     <div className="fixed bottom-0 inset-x-0 z-50 bg-surface border-t border-accent shadow-lg">
       <div className="max-w-content mx-auto px-6 py-4 flex flex-col sm:flex-row sm:items-center gap-4">
         <p className="font-sans text-[13px] text-text-muted leading-relaxed flex-1">
-          Vi samlar anonym statistik om hur quizzen används - vilka frågor som
+          Vi samlar anonym statistik om hur quizzen används: vilka frågor som
           ställs och vilka svar som väljs. Inga personuppgifter lagras. Det
           hjälper oss förbättra verktyget.
         </p>
