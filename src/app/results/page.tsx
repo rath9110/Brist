@@ -6,6 +6,7 @@ import ProgressBar from "@/components/ProgressBar";
 import ResultCard from "@/components/ResultCard";
 import CTACard from "@/components/CTACard";
 import ProfileSummary from "@/components/ProfileSummary";
+import EmailCapture from "@/components/EmailCapture";
 import type { QuizAnswers, ScoredNutrient, ScoringResult } from "@/lib/types";
 import { trackEvent } from "@/lib/analytics";
 import { PROTOCOLS } from "@/lib/protocols";
@@ -49,6 +50,7 @@ export default function ResultsPage() {
   const [answers, setAnswers] = useState<QuizAnswers | null>(null);
   const [result, setResult] = useState<ScoringResult | null>(null);
   const [copied, setCopied] = useState(false);
+  const [sessionId, setSessionId] = useState("");
 
   useEffect(() => {
     const rawAnswers = sessionStorage.getItem("peiling_answers");
@@ -59,6 +61,15 @@ export default function ResultsPage() {
     }
     setAnswers(JSON.parse(rawAnswers));
     setResult(JSON.parse(rawResult));
+
+    // Grab or create session id for email capture
+    const KEY = "peiling_session_id";
+    let sid = sessionStorage.getItem(KEY);
+    if (!sid) {
+      sid = crypto.randomUUID();
+      sessionStorage.setItem(KEY, sid);
+    }
+    setSessionId(sid);
 
     // 1.5s loading animation: ramp progress to 100, then show results
     const start = Date.now();
@@ -162,6 +173,17 @@ export default function ResultsPage() {
               ))}
             </div>
           </section>
+        )}
+
+        {/* Section 5b — Email capture */}
+        {sessionId && (
+          <EmailCapture
+            resultSummary={{
+              tier1: tier1.map((n) => n.key),
+              tier2: tier2.map((n) => n.key),
+            }}
+            sessionId={sessionId}
+          />
         )}
 
         {/* Section 6 — Tier 2 */}

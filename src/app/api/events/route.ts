@@ -45,6 +45,7 @@ const ALLOWED_EVENTS = new Set([
   "quiz_complete",
   "results_viewed",
   "email_submitted",
+  "results_shared",
   "quiz_restart",
 ]);
 

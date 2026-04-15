@@ -8,6 +8,12 @@ type EventRow = {
   metadata: string | null;
 };
 
+export type SubscriberRow = {
+  email: string;
+  result_summary: string; // JSON snapshot of tier1/tier2 keys
+  session_id: string;
+};
+
 let db: Database.Database | null = null;
 
 function getDb(): Database.Database {
@@ -28,6 +34,15 @@ function getDb(): Database.Database {
     );
     CREATE INDEX IF NOT EXISTS idx_events_event ON events(event);
     CREATE INDEX IF NOT EXISTS idx_events_session ON events(session_id);
+
+    CREATE TABLE IF NOT EXISTS subscribers (
+      id             INTEGER PRIMARY KEY AUTOINCREMENT,
+      email          TEXT NOT NULL,
+      result_summary TEXT NOT NULL,
+      session_id     TEXT NOT NULL,
+      created_at     TEXT DEFAULT (datetime('now'))
+    );
+    CREATE UNIQUE INDEX IF NOT EXISTS idx_subscribers_email ON subscribers(email);
   `);
   return db;
 }
@@ -37,4 +52,16 @@ export function insertEvent(row: EventRow): void {
     "INSERT INTO events (event, session_id, timestamp, metadata) VALUES (?, ?, ?, ?)"
   );
   stmt.run(row.event, row.session_id, row.timestamp, row.metadata);
+}
+
+export function upsertSubscriber(row: SubscriberRow): void {
+  const stmt = getDb().prepare(`
+    INSERT INTO subscribers (email, result_summary, session_id)
+    VALUES (?, ?, ?)
+    ON CONFLICT(email) DO UPDATE SET
+      result_summary = excluded.result_summary,
+      session_id     = excluded.session_id,
+      created_at     = datetime('now')
+  `);
+  stmt.run(row.email, row.result_summary, row.session_id);
 }
