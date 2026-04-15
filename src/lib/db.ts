@@ -65,3 +65,56 @@ export function upsertSubscriber(row: SubscriberRow): void {
   `);
   stmt.run(row.email, row.result_summary, row.session_id);
 }
+
+// --- Analytics read queries ---
+
+export type FunnelRow = { event: string; sessions: number };
+export type StepRow = { step: number; question_id: string; sessions: number };
+export type DailyRow = { date: string; starts: number };
+
+export function getFunnelCounts(): FunnelRow[] {
+  return getDb()
+    .prepare(
+      `SELECT event, COUNT(DISTINCT session_id) AS sessions
+       FROM events
+       WHERE event IN ('quiz_start','quiz_complete','results_viewed','email_submitted')
+       GROUP BY event`
+    )
+    .all() as FunnelRow[];
+}
+
+export function getQuestionDropOff(): StepRow[] {
+  return getDb()
+    .prepare(
+      `SELECT
+         CAST(json_extract(metadata, '$.step') AS INTEGER) AS step,
+         json_extract(metadata, '$.questionId')            AS question_id,
+         COUNT(DISTINCT session_id)                        AS sessions
+       FROM events
+       WHERE event = 'question_reached'
+         AND metadata IS NOT NULL
+       GROUP BY step
+       ORDER BY step`
+    )
+    .all() as StepRow[];
+}
+
+export function getDailyStarts(days = 30): DailyRow[] {
+  return getDb()
+    .prepare(
+      `SELECT date(timestamp) AS date, COUNT(DISTINCT session_id) AS starts
+       FROM events
+       WHERE event = 'quiz_start'
+         AND timestamp >= date('now', ? || ' days')
+       GROUP BY date(timestamp)
+       ORDER BY date`
+    )
+    .all(`-${days}`) as DailyRow[];
+}
+
+export function getSubscriberCount(): number {
+  const row = getDb()
+    .prepare(`SELECT COUNT(*) AS n FROM subscribers`)
+    .get() as { n: number };
+  return row.n;
+}

@@ -59,12 +59,12 @@ export const ARTICLES: Article[] = [
       {
         type: "ul",
         items: [
-          "[D-vitaminbrist](/artikel/d-vitaminbrist) - nästan alla i Sverige har låga nivåer under vinterhalvåret",
-          "[Järnbrist](/artikel/jarnbrist-symptom) - vanligast hos kvinnor med kraftig menstruation och uthållighetsidrottare",
-          "[Magnesiumbrist](/artikel/magnesiumbrist) - utarmas av stress, träning och processad kost",
-          "[B12-brist](/artikel/b12-brist) - kritisk risk för veganer, vegetarianer och personer över 50",
-          "[Omega-3](/artikel/omega-3-tillskott) - bristfälligt om du inte äter fet fisk 2–3 gånger per vecka",
-          "[Zinkbrist](/artikel/zinkbrist) - undervärderat problem vid växtbaserad kost och intensiv träning",
+          "[D-vitaminbrist](/artikel/d-vitaminbrist): nästan alla i Sverige har låga nivåer under vinterhalvåret",
+          "[Järnbrist](/artikel/jarnbrist-symptom): vanligast hos kvinnor med kraftig menstruation och uthållighetsidrottare",
+          "[Magnesiumbrist](/artikel/magnesiumbrist): utarmas av stress, träning och processad kost",
+          "[B12-brist](/artikel/b12-brist): kritisk risk för veganer, vegetarianer och personer över 50",
+          "[Omega-3](/artikel/omega-3-tillskott): bristfälligt om du inte äter fet fisk 2–3 gånger per vecka",
+          "[Zinkbrist](/artikel/zinkbrist): undervärderat problem vid växtbaserad kost och intensiv träning",
         ],
       },
       {
@@ -89,7 +89,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "För järn är situationen den motsatta. Järnöverskott är skadligt och järnöverladdning (hemokromatos) är en relativt vanlig genetisk sjukdom i Sverige. Ta aldrig järntillskott utan att ha testat ditt ferritinvärde. Detsamma gäller zink i högre doser - mer är inte alltid bättre.",
+        text: "För järn är situationen den motsatta. Järnöverskott är skadligt och järnöverladdning (hemokromatos) är en relativt vanlig genetisk sjukdom i Sverige. Ta aldrig järntillskott utan att ha testat ditt ferritinvärde. Detsamma gäller zink i högre doser; mer är inte alltid bättre.",
       },
       {
         type: "h2",
@@ -115,11 +115,11 @@ export const ARTICLES: Article[] = [
       },
       {
         q: "Hur vet jag om jag har vitaminbrist?",
-        a: "Symtom på vitaminbrist varierar beroende på vilken brist det handlar om, men vanliga tecken inkluderar kronisk trötthet, håravfall, sköra naglar, muskelkramper, sömnproblem och täta infektioner. Det säkraste sättet att veta är ett blodprov - be om ferritin, 25-OH-D3, B12 och TSH.",
+        a: "Symtom på vitaminbrist varierar beroende på vilken brist det handlar om, men vanliga tecken inkluderar kronisk trötthet, håravfall, sköra naglar, muskelkramper, sömnproblem och täta infektioner. Det säkraste sättet att veta är ett blodprov. Be om ferritin, 25-OH-D3, B12 och TSH.",
       },
       {
         q: "Kan jag ta vitamintillskott utan att testa mig?",
-        a: "För D-vitamin och magnesium är det säkert att börja utan test - de har breda säkerhetsfönster och de flesta i Sverige har otillräckliga nivåer. Järntillskott bör du aldrig ta utan att ha testat ferritinvärdet, eftersom järnöverskott är skadligt.",
+        a: "För D-vitamin och magnesium är det säkert att börja utan test. De har breda säkerhetsfönster och de flesta i Sverige har otillräckliga nivåer. Järntillskott bör du aldrig ta utan att ha testat ferritinvärdet, eftersom järnöverskott är skadligt.",
       },
       {
         q: "Vad kostar ett blodprov för vitaminer?",
@@ -154,7 +154,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Huden producerar D-vitamin när UVB-strålning träffar huden. Men Sverige ligger på 59–68 graders nordlig breddgrad, och från oktober till mars är solens vinkel för låg för att ge tillräcklig UVB-strålning - även en solig dag. Det innebär att kroppen inte kan producera D-vitamin alls under vinterhalvåret, oavsett hur mycket tid du spenderar utomhus.",
+        text: "Huden producerar D-vitamin när UVB-strålning träffar huden. Men Sverige ligger på 59–68 graders nordlig breddgrad, och från oktober till mars är solens vinkel för låg för att ge tillräcklig UVB-strålning, även en solig dag. Det innebär att kroppen inte kan producera D-vitamin alls under vinterhalvåret, oavsett hur mycket tid du spenderar utomhus.",
       },
       {
         type: "p",
@@ -193,7 +193,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Det officiella rekommenderade intaget i Sverige är 10–20 µg per dag (400–800 IE). Men de flesta experter och studier tyder på att 50–100 µg per dag (2 000–4 000 IE) behövs för att upprätthålla optimala blodnivåer under vinterhalvåret - särskilt om du startar från låga nivåer.",
+        text: "Det officiella rekommenderade intaget i Sverige är 10–20 µg per dag (400–800 IE). Men de flesta experter och studier tyder på att 50–100 µg per dag (2 000–4 000 IE) behövs för att upprätthålla optimala blodnivåer under vinterhalvåret, särskilt om du startar från låga nivåer.",
       },
       {
         type: "p",
@@ -213,7 +213,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "callout",
-        text: "D-vitamin är ett av de få tillskott som de flesta i Sverige verkligen behöver under vinterhalvåret - oavsett hur hälsosamt de äter.",
+        text: "D-vitamin är ett av de få tillskott som de flesta i Sverige verkligen behöver under vinterhalvåret, oavsett hur hälsosamt de äter.",
       },
     ],
     faq: [
@@ -227,18 +227,18 @@ export const ARTICLES: Article[] = [
       },
       {
         q: "Kan man få för mycket D-vitamin?",
-        a: "D-vitamin är fettlösligt och kan ackumuleras i kroppen. Toxicitet inträffar vid mycket höga doser över lång tid - vanligtvis över 250 µg (10 000 IE) per dag under månader. Standarddoser på 25–100 µg per dag anses säkra för de flesta vuxna.",
+        a: "D-vitamin är fettlösligt och kan ackumuleras i kroppen. Toxicitet inträffar vid mycket höga doser över lång tid, vanligtvis över 250 µg (10 000 IE) per dag under månader. Standarddoser på 25–100 µg per dag anses säkra för de flesta vuxna.",
       },
       {
         q: "Vilken D-vitaminform är bäst?",
-        a: "D3 (kolekalciferol) är den form kroppen producerar i huden och är klart effektivare än D2 vid supplementering. Välj D3 i olja eller fettsyraburen form för bästa absorption - D-vitamin är fettlösligt och absorberas bättre med ett fettmål.",
+        a: "D3 (kolekalciferol) är den form kroppen producerar i huden och är klart effektivare än D2 vid supplementering. Välj D3 i olja eller fettsyraburen form för bästa absorption. D-vitamin är fettlösligt och absorberas bättre till en fetthaltigt måltid.",
       },
     ],
   },
   {
     slug: "jarnbrist-symptom",
-    title: "Järnbrist - Mer än bara trötthet",
-    metaTitle: "Järnbrist symtom: trötthet, håravfall och ferritin - vad du behöver veta",
+    title: "Järnbrist: mer än bara trötthet",
+    metaTitle: "Järnbrist symtom: trötthet, håravfall och ferritin",
     metaDescription:
       "Järnbrist är den vanligaste näringsbristsjukdomen i världen. Lär dig skillnaden mellan ferritin och hemoglobin, symtomen och varför du aldrig bör ta järntillskott utan test.",
     publishedAt: "2026-04-12",
@@ -260,7 +260,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Trötthet är det mest kända symtomet, men järnbrist påverkar kroppen på fler sätt. Hjärndimma och koncentrationssvårigheter är vanliga - järn är nödvändigt för dopaminproduktionen i hjärnan. Hjärtklappningar, andfåddhet vid lättare ansträngning, kalla händer och fötter, och restless legs-syndrom är andra klassiska tecken.",
+        text: "Trötthet är det mest kända symtomet, men järnbrist påverkar kroppen på fler sätt. Hjärndimma och koncentrationssvårigheter är vanliga, eftersom järn är nödvändigt för dopaminproduktionen i hjärnan. Hjärtklappningar, andfåddhet vid lättare ansträngning, kalla händer och fötter och restless legs-syndrom är andra klassiska tecken.",
       },
       {
         type: "ul",
@@ -270,26 +270,26 @@ export const ARTICLES: Article[] = [
           "Hjärtklappningar",
           "Sköra naglar och håravfall",
           "Kalla händer och fötter",
-          "Restless legs - oroliga ben vid vila",
+          "Restless legs: oroliga ben vid vila",
           "Blek hud och slemhinnor",
           "Sug efter is eller lera (pica)",
         ],
       },
       {
         type: "h2",
-        text: "Ferritin vs. hemoglobin - en kritisk skillnad",
+        text: "Ferritin och hemoglobin: en kritisk skillnad",
       },
       {
         type: "p",
-        text: "Det finns en viktig skillnad mellan järnbrist och järnbristanemi. Järnbristanemi innebär att hemoglobinet är lågt - det är vad de flesta blodprover mäter. Men järnlagren (ferritin) börjar sina månader innan hemoglobinet sjunker. Du kan ha ett normalt hemoglobin och ändå ha järnbrist.",
+        text: "Det finns en viktig skillnad mellan järnbrist och järnbristanemi. Järnbristanemi innebär att hemoglobinet är lågt, vilket är vad de flesta blodprover mäter. Men järnlagren (ferritin) börjar sina månader innan hemoglobinet sjunker. Du kan ha ett normalt hemoglobin och ändå ha järnbrist.",
       },
       {
         type: "p",
-        text: "Ferritin är det känsligare måttet. Symtom på järnbrist uppstår ofta redan vid ferritinnivåer under 30 µg/L, och många aktiva personer mår bäst med ferritin över 70–100 µg/L. Det officiella referensintervallet (undre gräns 12–15 µg/L) är satt för att utesluta sjukdom - inte för att säkerställa att du mår bra.",
+        text: "Ferritin är det känsligare måttet. Symtom på järnbrist uppstår ofta redan vid ferritinnivåer under 30 µg/L, och många aktiva personer mår bäst med ferritin över 70–100 µg/L. Det officiella referensintervallet (undre gräns 12–15 µg/L) är satt för att utesluta sjukdom, inte för att säkerställa att du mår bra.",
       },
       {
         type: "callout",
-        text: "Be din läkare specifikt om ferritinvärde - det ingår inte alltid i ett standardblodprov men ger en mycket bättre bild av ditt järnstatus.",
+        text: "Be din läkare specifikt om ferritinvärde. Det ingår inte alltid i ett standardblodprov men ger en mycket bättre bild av ditt järnstatus.",
       },
       {
         type: "h2",
@@ -307,11 +307,11 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "h2",
-        text: "Absorption - varför inte all järn är likvärdig",
+        text: "Absorption: varför inte all järn är likvärdig",
       },
       {
         type: "p",
-        text: "Hemjärn från kött absorberas till 15–35 procent. Icke-hemjärn från växter absorberas bara till 2–20 procent, och mängden beror starkt på vad du äter samtidigt. C-vitamin ökar järnabsorptionen dramatiskt - ät spenat med paprika, linser med citron, eller ta ett C-vitamintillskott till järnrika måltider.",
+        text: "Hemjärn från kött absorberas till 15–35 procent. Icke-hemjärn från växter absorberas bara till 2–20 procent, och mängden beror starkt på vad du äter samtidigt. C-vitamin ökar järnabsorptionen dramatiskt. Ät spenat med paprika, linser med citron, eller ta ett C-vitamintillskott till järnrika måltider.",
       },
       {
         type: "p",
@@ -323,11 +323,11 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Järnöverladdning (hemokromatos) är en av de vanligaste genetiska sjukdomarna i Sverige - en av 200–300 personer bär på den. Vid hemokromatos lagrar kroppen för mycket järn, och extra tillskott kan orsaka allvarliga organskador. Dessutom kan järntillskott i höga doser orsaka oxidativ stress och gastrointestinala biverkningar.",
+        text: "Järnöverladdning (hemokromatos) är en av de vanligaste genetiska sjukdomarna i Sverige; en av 200–300 personer bär på den. Vid hemokromatos lagrar kroppen för mycket järn, och extra tillskott kan orsaka allvarliga organskador. Dessutom kan järntillskott i höga doser orsaka oxidativ stress och gastrointestinala biverkningar.",
       },
       {
         type: "p",
-        text: "Ta ett blodprov med ferritin och hemoglobin, och eventuellt TIBC (totalt järnbindningskapacitet), innan du börjar med järntillskott. Om järnet faktiskt är lågt - supplementera med rätt dos under läkarkontroll och testa om efter 3 månader.",
+        text: "Ta ett blodprov med ferritin och hemoglobin, och eventuellt TIBC (totalt järnbindningskapacitet), innan du börjar med järntillskott. Om järnet faktiskt är lågt, supplementera med rätt dos under läkarkontroll och testa om efter 3 månader.",
       },
     ],
     faq: [
@@ -351,7 +351,7 @@ export const ARTICLES: Article[] = [
   },
   {
     slug: "magnesiumbrist",
-    title: "Magnesiumbrist - Kramper, sömn och stress",
+    title: "Magnesiumbrist: kramper, sömn och stress",
     metaTitle: "Magnesiumbrist: Symtom, former och dosering",
     metaDescription:
       "Magnesium deltar i 300+ enzymatiska reaktioner. Lär dig varför brist är så vanligt, vilken form du ska välja och hur tillskott kan förbättra sömn, kramper och återhämtning.",
@@ -601,7 +601,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Zink är involverat i hundratals enzymatiska processer, men det pratas sällan om det. Det är inte lika känt som järn eller D-vitamin - trots att brist är vanlig och konsekvenserna påtagliga, särskilt för immunförsvaret, sårläkning och reproduktiv hälsa.",
+        text: "Zink är involverat i hundratals enzymatiska processer, men det pratas sällan om det. Det är inte lika känt som järn eller D-vitamin, trots att brist är vanlig och konsekvenserna påtagliga, särskilt för immunförsvaret, sårläkning och reproduktiv hälsa.",
       },
       {
         type: "h2",
@@ -620,7 +620,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "h2",
-        text: "Fytater - den dolda bromsmekanismen",
+        text: "Fytater: den dolda bromsmekanismen",
       },
       {
         type: "p",
@@ -667,7 +667,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "callout",
-        text: "Om du äter växtbaserat och tränar intensivt - ett enkelt S-Zink-prov ger svar på om brist föreligger.",
+        text: "Om du äter växtbaserat och tränar intensivt är ett enkelt S-Zink-prov ett bra sätt att avgöra om brist föreligger.",
       },
     ],
   },
@@ -695,19 +695,19 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "h2",
-        text: "1. Järnbrist - den vanligaste orsaken",
+        text: "1. Järnbrist: den vanligaste orsaken",
       },
       {
         type: "p",
-        text: "Järn är nödvändigt för att hemoglobin ska kunna transportera syre till kroppens celler. Utan tillräckligt järn fungerar cellernas energiproduktion sämre - du orkar helt enkelt mindre. Det subtila är att [järnbrist](/artikel/jarnbrist-symptom) kan ge trötthet redan innan hemoglobinet sjunkit till anemi-nivåer. Ferritinvärdet (järnlagren) är det känsligare måttet.",
+        text: "Järn är nödvändigt för att hemoglobin ska kunna transportera syre till kroppens celler. Utan tillräckligt järn fungerar cellernas energiproduktion sämre; du orkar helt enkelt mindre. Det subtila är att [järnbrist](/artikel/jarnbrist-symptom) kan ge trötthet redan innan hemoglobinet sjunkit till aneminivåer. Ferritinvärdet (järnlagren) är det känsligare måttet.",
       },
       {
         type: "p",
-        text: "Riskgrupper: kvinnor med kraftig menstruation, vegetarianer och veganer, uthållighetsidrottare. Om du är kvinna och konstant trött - be specifikt om ett ferritinprov. Normalt hemoglobin utesluter inte järnbrist.",
+        text: "Riskgrupper: kvinnor med kraftig menstruation, vegetarianer och veganer, uthållighetsidrottare. Om du är kvinna och konstant trött, be specifikt om ett ferritinprov. Normalt hemoglobin utesluter inte järnbrist.",
       },
       {
         type: "h2",
-        text: "2. B12-brist - energi på cellnivå",
+        text: "2. B12-brist: energi på cellnivå",
       },
       {
         type: "p",
@@ -715,11 +715,11 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Veganer riskerar [B12-brist](/artikel/b12-brist) om de inte supplementerar. Äldre personer (50+) producerar ofta för lite intrinsic factor i magsäcken, vilket krävs för att B12 ska absorberas. Om du tillhör någon av dessa grupper och är trött - testa S-B12.",
+        text: "Veganer riskerar [B12-brist](/artikel/b12-brist) om de inte supplementerar. Äldre personer (50+) producerar ofta för lite intrinsic factor i magsäcken, vilket krävs för att B12 ska absorberas. Om du tillhör någon av dessa grupper och är trött, testa S-B12.",
       },
       {
         type: "h2",
-        text: "3. D-vitaminbrist - mer än ett solbristproblem",
+        text: "3. D-vitaminbrist: mer än ett solbristproblem",
       },
       {
         type: "p",
@@ -727,7 +727,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "h2",
-        text: "4. Sköldkörteln - ett förbisett organ",
+        text: "4. Sköldkörteln: ett förbisett organ",
       },
       {
         type: "p",
@@ -739,7 +739,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "h2",
-        text: "5. Magnesiumbrist - mitokondriernas bränsle",
+        text: "5. Magnesiumbrist: mitokondriernas bränsle",
       },
       {
         type: "p",
@@ -747,14 +747,14 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "callout",
-        text: "Om du är kroniskt trött utan klar orsak - be om ett blodprov med ferritin, S-B12, 25-OH-D3 och TSH. Det är de fyra viktigaste markörerna att utesluta.",
+        text: "Om du är kroniskt trött utan klar orsak, be om ett blodprov med ferritin, S-B12, 25-OH-D3 och TSH. Det är de fyra viktigaste markörerna att utesluta.",
       },
     ],
   },
   {
     slug: "somnproblem-naringsbrist",
-    title: "Sömnproblem och näringsbrist - vad forskningen säger",
-    metaTitle: "Svårt att sova? Näringsbrist som orsak - magnesium, D-vitamin och järn",
+    title: "Sömnproblem och näringsbrist: vad forskningen säger",
+    metaTitle: "Svårt att sova? Näringsbrist som orsak: magnesium, D-vitamin och järn",
     metaDescription:
       "Sömnproblem beror ibland på näringsbrist. Magnesiumbrist är vanligast - men D-vitamin, järn och B12 spelar också roll. Lär dig tecknen och vad som faktiskt hjälper.",
     publishedAt: "2026-04-12",
@@ -768,15 +768,15 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Sömnproblem är multifaktoriella - stress, skärmtid, oregelbundna sovtider och koffein är välkända boven. Men näringsstatus är en faktor som ofta förbises. Magnesium, D-vitamin, B12 och järn påverkar alla sömnen på dokumenterade sätt.",
+        text: "Sömnproblem är multifaktoriella: stress, skärmtid, oregelbundna sovtider och koffein är välkända bovar. Men näringsstatus är en faktor som ofta förbises. Magnesium, D-vitamin, B12 och järn påverkar alla sömnen på dokumenterade sätt.",
       },
       {
         type: "h2",
-        text: "Magnesium och sömn - den starkaste kopplingen",
+        text: "Magnesium och sömn: den starkaste kopplingen",
       },
       {
         type: "p",
-        text: "Magnesium aktiverar GABA-receptorer i hjärnan - samma receptor som lugnar nervsystemet och signalerar att det är dags att sova. Det verkar också muskelrelaxerande, vilket minskar spänningar och underlättar insomnandet. Flera randomiserade studier har visat att magnesiumtillskott förbättrar sömnkvaliteten, särskilt hos äldre och stressade individer.",
+        text: "Magnesium aktiverar GABA-receptorer i hjärnan, samma receptor som lugnar nervsystemet och signalerar att det är dags att sova. Det verkar också muskelrelaxerande, vilket minskar spänningar och underlättar insomnandet. Flera randomiserade studier har visat att magnesiumtillskott förbättrar sömnkvaliteten, särskilt hos äldre och stressade individer.",
       },
       {
         type: "p",
@@ -808,7 +808,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Restless legs-syndrom (RLS) - den obehagliga känslan av att behöva röra på benen vid vila - har en stark koppling till låga ferritinnivåer. Studier visar att RLS förbättras avsevärt när ferritin korrigeras till över 50–75 µg/L. Detta är inte ett problem som löses med magnesium - det kräver järnstatus-testning och eventuell järnsupplementering.",
+        text: "Restless legs-syndrom (RLS), den obehagliga känslan av att behöva röra på benen vid vila, har en stark koppling till låga ferritinnivåer. Studier visar att RLS förbättras avsevärt när ferritin korrigeras till över 50–75 µg/L. Detta är inte ett problem som löses med magnesium. Det kräver järnstatustestning och eventuell järnsupplementering.",
       },
       {
         type: "h2",
@@ -816,17 +816,17 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Börja med sömnhygienen: regelbundna sovtider, ingen skärm 60 minuter före sänggåendet, svalt och mörkt sovrum. Lägg sedan till magnesiumglycinat 200–400 mg på kvällen - det är ett av de säkrare och mer välstuderade naturliga sömnstöden. Om sömnproblemen kvarstår, eller om du har rastlösa ben - ta ett blodprov med ferritin, D-vitamin och B12.",
+        text: "Börja med sömnhygienen: regelbundna sovtider, ingen skärm 60 minuter före sänggåendet, svalt och mörkt sovrum. Lägg sedan till magnesiumglycinat 200–400 mg på kvällen, ett av de säkrare och mer välstuderade naturliga sömnstöden. Om sömnproblemen kvarstår, eller om du har rastlösa ben, ta ett blodprov med ferritin, D-vitamin och B12.",
       },
       {
         type: "callout",
-        text: "Magnesiumglycinat är ett av de mest välstuderade naturliga sömnstöden - och ett av de säkrare tillskotten att prova utan blodprov.",
+        text: "Magnesiumglycinat är ett av de mest välstuderade naturliga sömnstöden och ett av de säkrare tillskotten att prova utan blodprov.",
       },
     ],
   },
   {
     slug: "skora-naglar-haravfall-brist",
-    title: "Sköra naglar och håravfall - brist eller något annat?",
+    title: "Sköra naglar och håravfall: brist eller något annat?",
     metaTitle: "Sköra naglar och håravfall: Järn, zink eller sköldkörtel?",
     metaDescription:
       "Håravfall och sköra naglar kan bero på järnbrist, zinkbrist eller sköldkörtelrubbning. Lär dig hur du hittar rätt orsak - och varför biotin sällan hjälper.",
@@ -841,7 +841,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Håravfall och sköra naglar är symtom som drabbar många och kan ha en rad orsaker. Näringsbrist är en av de mer åtgärdbara - men det gäller att identifiera rätt brist. Att ta fel tillskott ger ingenting, och att ignorera en korrigerbar orsak innebär månader av onödigt lidande.",
+        text: "Håravfall och sköra naglar är symtom som drabbar många och kan ha en rad orsaker. Näringsbrist är en av de mer åtgärdbara, men det gäller att identifiera rätt brist. Att ta fel tillskott ger ingenting, och att ignorera en korrigerbar orsak innebär månader av onödigt lidande.",
       },
       {
         type: "h2",
@@ -853,7 +853,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Det frustrerande är att hemoglobinet ofta är normalt, så en standard blodräkning ger inte svaret. Be specifikt om ferritin. Om nivån är under 50–70 µg/L och du har håravfall - järnstatus är troligen bidragande. Håret börjar växa tillbaka när ferritin korregerats, men processen tar 3–6 månader.",
+        text: "Det frustrerande är att hemoglobinet ofta är normalt, så en standard blodräkning ger inte svaret. Be specifikt om ferritin. Om nivån är under 50–70 µg/L och du har håravfall är järnstatus troligen bidragande. Håret börjar växa tillbaka när ferritin korrigerats, men processen tar 3–6 månader.",
       },
       {
         type: "h2",
@@ -881,7 +881,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Både underaktiv (hypotyreos) och överaktiv (hypertyreos) sköldkörtel kan orsaka håravfall. Det är ett av de symtom som ibland uppstår redan vid gränsfall av sköldkörtelrubbning, innan andra klassiska symtom visar sig. Om du har håravfall kombinerat med trötthet, viktkänslighet eller temperaturkänslighet - be om TSH.",
+        text: "Både underaktiv (hypotyreos) och överaktiv (hypertyreos) sköldkörtel kan orsaka håravfall. Det är ett av de symtom som ibland uppstår redan vid gränsfall av sköldkörtelrubbning, innan andra klassiska symtom visar sig. Om du har håravfall kombinerat med trötthet, viktkänslighet eller temperaturkänslighet, be om TSH.",
       },
       {
         type: "h2",
@@ -904,7 +904,7 @@ export const ARTICLES: Article[] = [
   },
   {
     slug: "muskelkramper-magnesiumbrist",
-    title: "Muskelkramper - Magnesiumbrist eller något mer?",
+    title: "Muskelkramper: magnesiumbrist eller något mer?",
     metaTitle: "Kramper i benen på natten - orsaker och vad som faktiskt hjälper",
     metaDescription:
       "Nattliga benkramper beror ofta på magnesiumbrist, men D-vitaminbrist och vätskebalans spelar också roll. Lär dig skillnaden och vilket tillskott som hjälper.",
@@ -919,7 +919,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Muskelkramper är vanliga och kan vara allt från milt irriterande till plågsamt störande. Nattliga vadkramper är ett klassiskt problem som väcker folk ur sömnen. För de flesta finns en enkel biokemisk förklaring - och en lika enkel lösning.",
+        text: "Muskelkramper är vanliga och kan vara allt från milt irriterande till plågsamt störande. Nattliga vadkramper är ett klassiskt problem som väcker folk ur sömnen. För de flesta finns en enkel biokemisk förklaring och ofta en lika enkel lösning.",
       },
       {
         type: "h2",
@@ -970,7 +970,7 @@ export const ARTICLES: Article[] = [
 
   {
     slug: "varfor-blir-jag-sjuk-sa-ofta",
-    title: "Varför blir jag sjuk hela tiden? - Vanliga orsaker du kan åtgärda",
+    title: "Varför blir jag sjuk hela tiden? Vanliga orsaker du kan åtgärda",
     metaTitle: "Varför blir jag sjuk hela tiden? Orsaker och vad du kan göra",
     metaDescription:
       "Återkommande förkylningar och infektioner beror ofta på ett försvagat immunförsvar. D-vitaminbrist och zinkbrist är två av de vanligaste och mest åtgärdbara orsakerna.",
@@ -985,11 +985,11 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Att drabbas av 2–3 förkylningar per år räknas som normalt. Blir du sjuk oftare än så - eller tar dina infektioner längre tid att läka - finns det ofta en identifierbar orsak. Immunsystemet är beroende av specifika näringsstoffer för att fungera, och brist på dessa är vanligare än de flesta tror.",
+        text: "Att drabbas av 2–3 förkylningar per år räknas som normalt. Blir du sjuk oftare än så, eller tar dina infektioner längre tid att läka, finns det ofta en identifierbar orsak. Immunsystemet är beroende av specifika näringsstoffer för att fungera, och brist på dessa är vanligare än de flesta tror.",
       },
       {
         type: "h2",
-        text: "D-vitaminbrist - immunförsvarets viktigaste partner",
+        text: "D-vitaminbrist: immunförsvarets viktigaste partner",
       },
       {
         type: "p",
@@ -997,11 +997,11 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "I Sverige är D-vitaminbrist praktiskt taget oundviklig under vinterhalvåret. Om du blir sjuk oftast under höst och vinter är det inte bara slump - det sammanfaller med att D-vitaminnivåerna är som lägst.",
+        text: "I Sverige är D-vitaminbrist praktiskt taget oundviklig under vinterhalvåret. Om du blir sjuk oftast under höst och vinter är det inte bara slump. Det sammanfaller med att D-vitaminnivåerna är som lägst.",
       },
       {
         type: "h2",
-        text: "Zinkbrist - ett underskattat immunproblem",
+        text: "Zinkbrist: ett underskattat immunproblem",
       },
       {
         type: "p",
@@ -1018,10 +1018,10 @@ export const ARTICLES: Article[] = [
       {
         type: "ul",
         items: [
-          "Sömnbrist - under 6 timmars sömn per natt halverar nästan risken att motstå ett virusexponering",
-          "Kronisk stress - kortisol dämpar immunaktiviteten på lång sikt",
-          "Lågt C-vitaminintag - vanligt vid ensidig kost, ökar infektionskänsligheten",
-          "Järnbrist - påverkar produktionen av vita blodkroppar",
+          "Sömnbrist: under sex timmars sömn per natt halverar nästan förmågan att motstå virusexponering",
+          "Kronisk stress: kortisol dämpar immunaktiviteten på lång sikt",
+          "Lågt C-vitaminintag: vanligt vid ensidig kost och ökar infektionskänsligheten",
+          "Järnbrist: påverkar produktionen av vita blodkroppar",
         ],
       },
       {
@@ -1040,8 +1040,8 @@ export const ARTICLES: Article[] = [
   },
   {
     slug: "hjarndimma-koncentrationssvaarigheter",
-    title: "Hjärndimma och koncentrationssvårigheter - kan det vara näringsbrist?",
-    metaTitle: "Hjärndimma och koncentrationssvårigheter - näringsbrist som orsak",
+    title: "Hjärndimma och koncentrationssvårigheter: kan det vara näringsbrist?",
+    metaTitle: "Hjärndimma och koncentrationssvårigheter: näringsbrist som orsak",
     metaDescription:
       "Svårt att tänka klart, minnesproblem och koncentrationssvårigheter kan bero på järnbrist, B12-brist eller omega-3-brist. Lär dig känna igen tecknen och vad du kan göra.",
     publishedAt: "2026-04-13",
@@ -1056,11 +1056,11 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Känslan av att inte kunna tänka klart - att ord försvinner, fokus skiftar ofrivilligt och minnesluckor uppstår oftare än de borde - kallas ibland hjärndimma. Det är inte en diagnos utan ett symtomkluster, och orsakerna är många. Näringsbrist är en av de mer åtgärdbara, och ofta förbisedd.",
+        text: "Känslan av att inte kunna tänka klart, att ord försvinner, fokus skiftar ofrivilligt och minnesluckor uppstår oftare än de borde, kallas ibland hjärndimma. Det är inte en diagnos utan ett symtomkluster, och orsakerna är många. Näringsbrist är en av de mer åtgärdbara och ofta förbisedda.",
       },
       {
         type: "h2",
-        text: "B12 - hjärnans mest kritiska vitamin",
+        text: "B12: hjärnans mest kritiska vitamin",
       },
       {
         type: "p",
@@ -1093,10 +1093,10 @@ export const ARTICLES: Article[] = [
       {
         type: "ul",
         items: [
-          "D-vitaminbrist - receptorer för D-vitamin finns i hippocampus och påverkar minne och humör",
-          "Sömnbrist - hjärnan rensar metabola avfallsprodukter under sömn, brist ger direkt kognitiv påverkan",
-          "Sköldkörteln - hypotryreos ger klassisk mental trötthet och minnesproblem, utesluts med TSH-test",
-          "Dehydrering - redan mild vätskeförlust (1–2%) påverkar kognition mätbart",
+          "D-vitaminbrist: receptorer för D-vitamin finns i hippocampus och påverkar minne och humör",
+          "Sömnbrist: hjärnan rensar metabola avfallsprodukter under sömnen, och brist ger direkt kognitiv påverkan",
+          "Sköldkörteln: hypotyreos ger klassisk mental trötthet och minnesproblem, utesluts med TSH-test",
+          "Dehydrering: redan mild vätskeförlust (1–2 procent) påverkar kognition mätbart",
         ],
       },
       {
@@ -1107,7 +1107,7 @@ export const ARTICLES: Article[] = [
   },
   {
     slug: "standig-oro-och-angest",
-    title: "Ständig oro och ångestkänslighet - kan kosten spela roll?",
+    title: "Ständig oro och ångestkänslighet: kan kosten spela roll?",
     metaTitle: "Ständig oro och ångest - kan näringsbrist vara orsaken?",
     metaDescription:
       "Magnesiumbrist och lågt omega-3-intag är kopplade till ökad stressnivå och ångestkänslighet. Lär dig hur kosten påverkar ditt nervsystem och vad forskningen visar.",
@@ -1122,7 +1122,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Oro, stresskänslighet och en känsla av att alltid vara på helspänn är vanliga upplevelser. De har många möjliga orsaker - livsomständigheter, sömnbrist, hormonbalans. Men en faktor som sällan diskuteras är näringens påverkan på nervsystemets funktion. Magnesiumbrist är särskilt väldokumenterat i det sammanhanget.",
+        text: "Oro, stresskänslighet och en känsla av att alltid vara på helspänn är vanliga upplevelser. De har många möjliga orsaker: livsomständigheter, sömnbrist och hormonbalans. Men en faktor som sällan diskuteras är näringens påverkan på nervsystemets funktion. Magnesiumbrist är särskilt väldokumenterat i det sammanhanget.",
       },
       {
         type: "h2",
@@ -1142,7 +1142,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "EPA och DHA (de marina omega-3-fettsyrorna) har anti-inflammatoriska egenskaper och påverkar produktionen av neurotransmittorer inklusive serotonin och dopamin. Forskning kopplar lågt omega-3-intag till depression och ångessymtom, och kliniska studier på EPA-tillskott visar lovande resultat vid mild till måttlig depression. Effekten på ångest är mer modest men konsistent.",
+        text: "EPA och DHA (de marina omega-3-fettsyrorna) har antiinflammatoriska egenskaper och påverkar produktionen av neurotransmittorer inklusive serotonin och dopamin. Forskning kopplar lågt omega-3-intag till depression och ångestsymtom, och kliniska studier på EPA-tillskott visar lovande resultat vid mild till måttlig depression. Effekten på ångest är mer modest men konsistent.",
       },
       {
         type: "h2",
@@ -1159,8 +1159,8 @@ export const ARTICLES: Article[] = [
       {
         type: "ul",
         items: [
-          "Magnesiumglycinat 300–400 mg på kvällen - en av de säkrare supplementen att prova utan test",
-          "Omega-3 (EPA + DHA) 1–2 g per dag - i synnerhet om du sällan äter fet fisk",
+          "Magnesiumglycinat 300–400 mg på kvällen: ett av de säkrare supplementen att prova utan test",
+          "Omega-3 (EPA + DHA) 1–2 g per dag, i synnerhet om du sällan äter fet fisk",
           "Kontrollera B12 via blodprov om du är vegan eller vegetarian",
           "Begränsa koffein - förstärker adrenalinfrisättning och konkurrerar med magnesiumupptaget",
         ],
@@ -1196,7 +1196,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "h2",
-        text: "Omega-3 - kroppens naturliga antiinflammatoriska",
+        text: "Omega-3: kroppens naturliga antiinflammatoriska",
       },
       {
         type: "p",
@@ -1204,7 +1204,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Det moderna västerländska kostmönstret ger ett omega-6:omega-3-förhållande på 15–20:1 - evolutionärt optimalt är närmre 4:1. Utan regelbundet intag av fet fisk är detta förhållande svårt att balansera enbart via kost.",
+        text: "Det moderna västerländska kostmönstret ger ett omega-6:omega-3-förhållande på 15–20:1, medan evolutionärt optimalt är närmre 4:1. Utan regelbundet intag av fet fisk är detta förhållande svårt att balansera enbart via kost.",
       },
       {
         type: "h2",
@@ -1224,7 +1224,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "h2",
-        text: "Vad att göra - och vad att utesluta",
+        text: "Vad du kan göra och vad du bör utesluta",
       },
       {
         type: "ul",
@@ -1261,15 +1261,15 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "En vegansk kost är hälsosam och kan täcka de flesta näringsbehov - men den har förutsägbara blinda fläckar. Att känna till dem och åtgärda dem aktivt är skillnaden mellan att thriving och att gradvis utarma sina lager av kritiska mikronäringsämnen.",
+        text: "En vegansk kost är hälsosam och kan täcka de flesta näringsbehov, men den har förutsägbara blinda fläckar. Att känna till dem och åtgärda dem aktivt är skillnaden mellan att må bra och att gradvis utarma sina lager av kritiska mikronäringsämnen.",
       },
       {
         type: "h2",
-        text: "B12 - icke förhandlingsbart",
+        text: "B12: ett måste",
       },
       {
         type: "p",
-        text: "Det finns inget bioaktivt B12 i växter. Det är ett faktum, inte en åsikt. Om du är vegan och inte supplementerar med B12 - börja idag. Brist tar år att utvecklas eftersom kroppen lagrar B12 i levern, men när symtomen väl uppstår kan nervskadorna vara bestående.",
+        text: "Det finns inget bioaktivt B12 i växter. Det är ett faktum, inte en åsikt. Om du är vegan och inte supplementerar med B12, börja idag. Brist tar år att utvecklas eftersom kroppen lagrar B12 i levern, men när symtomen väl uppstår kan nervskadorna vara bestående.",
       },
       {
         type: "p",
@@ -1277,7 +1277,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "h2",
-        text: "D-vitamin - samma problem som alla i Sverige",
+        text: "D-vitamin: samma problem som alla i Sverige",
       },
       {
         type: "p",
@@ -1285,7 +1285,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "h2",
-        text: "Omega-3 - frön räcker inte",
+        text: "Omega-3: frön räcker inte",
       },
       {
         type: "p",
@@ -1293,7 +1293,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "h2",
-        text: "Järn - biotillgängligheten är avgörande",
+        text: "Järn: biotillgängligheten är avgörande",
       },
       {
         type: "p",
@@ -1324,7 +1324,7 @@ export const ARTICLES: Article[] = [
   {
     slug: "tillskott-traning",
     title: "Tillskott för träning - Vad säger forskningen?",
-    metaTitle: "Kosttillskott för träning: Vad som faktiskt fungerar - och vad du kan skippa",
+    metaTitle: "Kosttillskott för träning: vad som faktiskt fungerar och vad du kan skippa",
     metaDescription:
       "Träningsindustrin är full av överdrivna påståenden. Lär dig vilka tillskott som faktiskt gör skillnad för aktiva - och vilka du kan skippa.",
     publishedAt: "2026-04-12",
@@ -1347,7 +1347,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Magnesium och zink förloras i svett. Järn förlörs av uthållighetsidrottare via fotstötshemolys (löpning bryter bokstavligen sönder röda blodkroppar) och svettförluster. Omega-3 konsumeras snabbare vid hög inflammation. D-vitamin utarmas inte direkt av träning, men aktiva personer som tränar inomhus mycket kan ha extra låga nivåer.",
+        text: "Magnesium och zink förloras i svett. Järn förloras av uthållighetsidrottare via fotstötshemolys (löpning bryter bokstavligen sönder röda blodkroppar) och svettförluster. Omega-3 konsumeras snabbare vid hög inflammation. D-vitamin utarmas inte direkt av träning, men aktiva personer som tränar mycket inomhus kan ha extra låga nivåer.",
       },
       {
         type: "h2",
@@ -1367,7 +1367,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Järnbrist är ett utbrett problem bland uthållighetsidrottare, och bland kvinnliga löpare är prevalensen uppskattad till 30–50%. Järnbrist sänker syretransportkapaciteten och ger sämre uthållighet, snabbare trötthet och längre återhämtningstid. Testa ferritin var 6:e månad om du tränar hårt - och supplementera aldrig järn utan att ha testat dig.",
+        text: "Järnbrist är ett utbrett problem bland uthållighetsidrottare, och bland kvinnliga löpare är prevalensen uppskattad till 30–50 procent. Järnbrist sänker syretransportkapaciteten och ger sämre uthållighet, snabbare trötthet och längre återhämtningstid. Testa ferritin var sjätte månad om du tränar hårt, och supplementera aldrig järn utan att ha testat dig.",
       },
       {
         type: "h2",
@@ -1375,7 +1375,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Intensiv träning skapar systemisk inflammation, vilket är en del av anpassningsprocessen. Omega-3, särskilt EPA, modulerar de inflammatoriska svaret och kan minska muskelömhet och förkorta återhämtningstiden. 1–3 g EPA+DHA per dag är en vanlig dos för aktiva individer. Fiskolja och algolja fungerar båda.",
+        text: "Intensiv träning skapar systemisk inflammation, vilket är en del av anpassningsprocessen. Omega-3, särskilt EPA, modulerar det inflammatoriska svaret och kan minska muskelömhet och förkorta återhämtningstiden. 1–3 g EPA+DHA per dag är en vanlig dos för aktiva individer. Fiskolja och algolja fungerar båda.",
       },
       {
         type: "h2",
@@ -1415,7 +1415,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Att ta ett blodprov är det mest rationella sättet att förhålla sig till näringsbrist. Istället för att gissa baserat på symtom, kost eller marknadsföringspåståenden - ser du faktiska siffror. Du vet vad som är lågt, supplementerar precist och testar om för att bekräfta att det fungerar.",
+        text: "Att ta ett blodprov är det mest rationella sättet att förhålla sig till näringsbrist. I stället för att gissa baserat på symtom, kost eller marknadsföringspåståenden ser du faktiska siffror. Du vet vad som är lågt, supplementerar precist och testar om för att bekräfta att det fungerar.",
       },
       {
         type: "h2",
@@ -1424,12 +1424,12 @@ export const ARTICLES: Article[] = [
       {
         type: "ul",
         items: [
-          "25-OH-D3 - D-vitaminets aktiva lagringsform (mät detta, inte D2 separat)",
-          "Ferritin - järnlager, mer känsligt än hemoglobin",
-          "S-B12 - vitamin B12 i serum",
-          "TSH - sköldkörtelfunktion",
-          "Folat (erytrocytfolat) - B9, viktig vid graviditet och vid B12-brist",
-          "S-Zink - zink i serum (imperfekt men ger en indikation)",
+          "25-OH-D3: D-vitaminets aktiva lagringsform (mät detta, inte D2 separat)",
+          "Ferritin: järnlagren, känsligare mått än hemoglobin",
+          "S-B12: vitamin B12 i serum",
+          "TSH: sköldkörtelfunktion",
+          "Folat (erytrocytfolat): B9, viktig vid graviditet och vid B12-brist",
+          "S-Zink: zink i serum (inte perfekt men ger en indikation)",
         ],
       },
       {
@@ -1442,7 +1442,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Via din vårdcentral kan du ofta få de viktigaste proverna via remiss om du beskriver symtom. Nämn trötthet, sömnproblem, håravfall eller muskelkramper - det öppnar dörren för relevanta tester. Tips: be specifikt om ferritin, inte bara en blodstatus (hemoglobin). Ferritin ingår inte i standardpaketet.",
+        text: "Via din vårdcentral kan du ofta få de viktigaste proverna via remiss om du beskriver symtom. Nämn trötthet, sömnproblem, håravfall eller muskelkramper, det öppnar dörren för relevanta tester. Be specifikt om ferritin, inte bara en blodstatus (hemoglobin). Ferritin ingår inte i standardpaketet.",
       },
       {
         type: "p",
@@ -1458,7 +1458,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Med andra ord - ett svar inom referensintervallet utesluter inte brist i funktionell mening. Läs dina värden i relation till dina symtom, inte bara mot laboratoriegränserna.",
+        text: "Med andra ord utesluter ett svar inom referensintervallet inte brist i funktionell mening. Läs dina värden i relation till dina symtom, inte bara mot laboratoriegränserna.",
       },
       {
         type: "h2",
@@ -1476,7 +1476,7 @@ export const ARTICLES: Article[] = [
   },
   {
     slug: "vilka-kosttillskott-ska-jag-ta",
-    title: "Vilka kosttillskott ska jag ta? - En guide baserad på din profil",
+    title: "Vilka kosttillskott ska jag ta? En guide baserad på din profil",
     metaTitle: "Vilka kosttillskott ska jag ta? Guide för att hitta rätt",
     metaDescription:
       "Vilket kosttillskott du behöver beror på din kost, dina symtom och din livsstil. Den här guiden hjälper dig navigera marknaden och undvika onödiga köp.",
@@ -1491,7 +1491,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Kosttillskottmarknaden är enorm, förvirrande och fylld av produkter du inte behöver. Men rätt tillskott, i rätt dos, för rätt person - det kan göra verklig skillnad. Problemet är att de flesta tar fel saker baserat på reklam eller hörsägen snarare än baserat på sin faktiska profil.",
+        text: "Kosttillskottsmarknaden är enorm, förvirrande och fylld av produkter du inte behöver. Men rätt tillskott, i rätt dos, för rätt person kan göra verklig skillnad. Problemet är att de flesta tar fel saker baserat på reklam eller hörsägen snarare än sin faktiska profil.",
       },
       {
         type: "h2",
@@ -1512,10 +1512,10 @@ export const ARTICLES: Article[] = [
       {
         type: "ul",
         items: [
-          "[D-vitamin](/artikel/d-vitaminbrist) 25–50 µg per dag - nästan alla i Sverige behöver detta under vinterhalvåret. Välj D3 i olja.",
-          "[Magnesium](/artikel/magnesiumbrist) 300–400 mg glycinat eller citrat - relevant om du är stressad, tränar intensivt eller sover dåligt.",
-          "[B12](/artikel/b12-brist) - kritiskt om du är vegan eller vegetarian, viktigt för personer över 50.",
-          "[Omega-3](/artikel/omega-3-tillskott) 1–2 g EPA+DHA - om du sällan äter fet fisk.",
+          "[D-vitamin](/artikel/d-vitaminbrist) 25–50 µg per dag: nästan alla i Sverige behöver detta under vinterhalvåret. Välj D3 i olja.",
+          "[Magnesium](/artikel/magnesiumbrist) 300–400 mg glycinat eller citrat: relevant om du är stressad, tränar intensivt eller sover dåligt.",
+          "[B12](/artikel/b12-brist): kritiskt om du är vegan eller vegetarian, viktigt för personer över 50.",
+          "[Omega-3](/artikel/omega-3-tillskott) 1–2 g EPA+DHA: om du sällan äter fet fisk.",
         ],
       },
       {
@@ -1525,9 +1525,9 @@ export const ARTICLES: Article[] = [
       {
         type: "ul",
         items: [
-          "[Järn](/artikel/jarnbrist-symptom) - ta aldrig utan att testa ferritin. Järnöverskott är skadligt.",
-          "Zink i höga doser - kan störa kopparupptaget vid överdosering.",
-          "Folat i höga doser - kan maskera B12-brist.",
+          "[Järn](/artikel/jarnbrist-symptom): ta aldrig utan att testa ferritin. Järnöverskott är skadligt.",
+          "Zink i höga doser: kan störa kopparupptaget vid överdosering.",
+          "Folat i höga doser: kan maskera B12-brist.",
         ],
       },
       {
@@ -1536,7 +1536,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Biotin för håravfall - hjälper bara vid konstaterad biotinbrist, vilket är ovanligt. Collagen - absorberas som aminosyror, kroppen bestämmer själv vart de går. Antioxidantcocktails - mat är en bättre källa, höga doser av isolerade antioxidanter kan ge bakslag.",
+        text: "Biotin mot håravfall hjälper bara vid konstaterad biotinbrist, vilket är ovanligt. Kollagen absorberas som aminosyror och kroppen bestämmer själv vart de går. Antioxidantcocktails: mat är en bättre källa och höga doser av isolerade antioxidanter kan ge bakslag.",
       },
       {
         type: "h2",
