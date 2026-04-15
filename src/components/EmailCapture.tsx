@@ -13,16 +13,6 @@ type Props = {
   sessionId: string;
 };
 
-function getSessionId(): string {
-  const KEY = "peiling_session_id";
-  let id = sessionStorage.getItem(KEY);
-  if (!id) {
-    id = crypto.randomUUID();
-    sessionStorage.setItem(KEY, id);
-  }
-  return id;
-}
-
 export default function EmailCapture({ resultSummary, sessionId }: Props) {
   const [email, setEmail] = useState("");
   const [state, setState] = useState<"idle" | "loading" | "done" | "error">("idle");

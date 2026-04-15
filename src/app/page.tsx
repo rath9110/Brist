@@ -28,9 +28,9 @@ export default function Home() {
 
         {/* Subtext */}
         <p className="font-sans text-[16px] text-text-muted mb-8 leading-relaxed">
-          Svara på 9 frågor om din kost, dina symtom och din livsstil. Du får en
-          personlig bild av vilka näringsbristeer som är troliga för just dig —
-          och vad du kan göra åt dem.
+          Svara på ett par frågor om din kost, dina symtom och din livsstil. Du
+          får en personlig bild av vilka näringsbristar som är troliga för just
+          dig — och vad du kan göra åt dem.
         </p>
 
         {/* CTA */}
@@ -40,7 +40,7 @@ export default function Home() {
 
         {/* Footnote */}
         <p className="font-sans text-[13px] text-text-muted mb-10 text-center">
-          9 frågor · ca 2 minuter · inga personuppgifter sparas
+          Ca 2 minuter · inga personuppgifter sparas
         </p>
 
         {/* Sample result preview */}
