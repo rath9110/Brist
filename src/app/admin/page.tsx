@@ -1,4 +1,4 @@
-import { redirect } from "next/navigation";
+import { redirect, notFound } from "next/navigation";
 import {
   getFunnelCounts,
   getQuestionDropOff,
@@ -15,7 +15,7 @@ export default async function AdminPage({ searchParams }: Props) {
   const expected = process.env.ADMIN_SECRET;
 
   if (!expected || secret !== expected) {
-    redirect("/");
+    notFound();
   }
 
   const funnelRows = getFunnelCounts();

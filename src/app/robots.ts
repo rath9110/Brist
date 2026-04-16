@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: "*",
       allow: "/",
-      disallow: ["/results", "/api/"],
+      disallow: ["/results", "/api/", "/admin"],
     },
     sitemap: "https://peiling.se/sitemap.xml",
   };

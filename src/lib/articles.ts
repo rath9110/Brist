@@ -1658,6 +1658,356 @@ export const ARTICLES: Article[] = [
       },
     ],
   },
+  {
+    slug: "kalciumbrist",
+    title: "Kalciumbrist - symtom, källor och när tillskott faktiskt behövs",
+    metaTitle: "Kalciumbrist: Symtom, källor och tillskott",
+    metaDescription:
+      "Kalcium handlar om mer än benhälsa. Lär dig känna igen tecknen på kalciumbrist, vilka livsmedel som räcker och när tillskott faktiskt gör skillnad.",
+    publishedAt: "2026-04-16",
+    category: "nutrient",
+    relatedSlugs: [
+      "d-vitaminbrist",
+      "magnesiumbrist",
+      "vegansk-kost-tillskott",
+      "muskelkramper-magnesiumbrist",
+      "vilka-vitaminer-testa-blodprov",
+    ],
+    blocks: [
+      {
+        type: "p",
+        text: "Kalcium är det mineral som kroppen innehåller mest av - ungefär 99 procent sitter i skelett och tänder. Men det är den sista procenten som avgör hur du mår varje dag. Kalcium behövs för muskelkontraktion, nervsignalering, blodtrycksreglering och blodets koagulering. När intaget är för lågt tar kroppen från skelettet för att hålla blodvärdena stabila - vilket innebär att du kan ha kalciumbrist i åratal utan att veta det.",
+      },
+      {
+        type: "h2",
+        text: "Vem riskerar kalciumbrist?",
+      },
+      {
+        type: "p",
+        text: "Mejeriprodukter är den dominerande kalciumkällan i den svenska kosten, så de som äter lite eller inga mejeriprodukter löper störst risk. Det gäller [veganer](/artikel/vegansk-kost-tillskott), personer med laktosintolerans och de som av andra skäl undviker mjölk, yoghurt och ost utan att aktivt kompensera med andra källor.",
+      },
+      {
+        type: "p",
+        text: "Postmenopausala kvinnor är en annan högriskgrupp. Östrogenet skyddar benmassan, och när nivåerna sjunker ökar förlusten av kalcium från skelettet. Äldre över 65 absorberar dessutom mindre kalcium från tarmen och tillverkar mindre D-vitamin i huden, vilket förvärrar situationen.",
+      },
+      {
+        type: "h2",
+        text: "Symtom på kalciumbrist",
+      },
+      {
+        type: "ul",
+        items: [
+          "[Muskelkramper](/artikel/muskelkramper-magnesiumbrist) och ryckningar, särskilt i vader och händer",
+          "Stickningar och domningar i fingrar eller runt munnen",
+          "[Sköra naglar](/artikel/skora-naglar-haravfall-brist) och torrt hår",
+          "Tandproblem och karies hos barn",
+          "Benskörhet (osteopeni, osteoporos) vid långvarig brist",
+          "Hjärtklappningar och blodtrycksvariationer",
+        ],
+      },
+      {
+        type: "p",
+        text: "De tidiga symtomen är diffusa och lätt att avfärda. Det som gör kalciumbrist särskilt lurigt är att standard-blodprov (S-Kalcium) ofta visar normala värden även vid långvarig brist - kroppen offrar skelettet för att hålla blodet stabilt. En tätare märkt kontroll är ett DEXA-test av bentäthet, särskilt om du är över 50 och har riskfaktorer.",
+      },
+      {
+        type: "h2",
+        text: "Matkällor - utöver mejeriprodukter",
+      },
+      {
+        type: "p",
+        text: "Du behöver inte dricka mjölk för att få i dig kalcium. Sardiner och skarpsill (med ben) innehåller mycket kalcium per portion. Grönkål, broccoli, pak choi och andra mörkgröna bladgrönsaker är bra växtkällor med hyfsad biotillgänglighet. Sesamfrön, mandel och tahini bidrar också, och berikad havre- eller soyadryck matchar mjölkens kalciuminnehåll.",
+      },
+      {
+        type: "p",
+        text: "En viktig nyans: spenat och rabarber innehåller höga mängder oxalat som binder kalcium och minskar upptaget. De är fortfarande nyttiga livsmedel, men inte tillförlitliga kalciumkällor. Grönkål och broccoli är bättre alternativ bland gröna bladgrönsaker.",
+      },
+      {
+        type: "h2",
+        text: "Kalcium och D-vitamin - varför de hänger ihop",
+      },
+      {
+        type: "p",
+        text: "Kalcium absorberas inte utan D-vitamin. Det är D-vitamin som aktiverar det protein i tarmen som transporterar kalcium in i blodet. Det innebär att [D-vitaminbrist](/artikel/d-vitaminbrist), som är vanlig i Sverige under vinterhalvåret, effektivt ger dig kalciumbrist även om kostintaget är tillräckligt.",
+      },
+      {
+        type: "p",
+        text: "För att ett kalciumtillskott ska göra nytta behöver D-vitaminet vara på plats. I praktiken innebär det att de flesta som överväger kalciumtillskott också bör ta 25–50 µg D-vitamin dagligen - särskilt under oktober till mars.",
+      },
+      {
+        type: "h2",
+        text: "När är tillskott motiverat?",
+      },
+      {
+        type: "p",
+        text: "Kosten bör alltid vara förstahandsvalet. Rekommenderat dagligt intag är 800–1 000 mg för de flesta vuxna och 1 200 mg för postmenopausala kvinnor och personer över 70. Om kosten konsekvent ligger under behovet - och berikning av växtbaserade alternativ inte räcker till - är tillskott rimligt.",
+      },
+      {
+        type: "p",
+        text: "Kalciumcitrat är lättast att absorbera och kan tas med eller utan mat. Kalciumkarbonat är billigast men kräver magsyra för att absorberas, så det bör tas tillsammans med mat. Undvik doser över 500 mg åt gången - kroppen absorberar bara en begränsad mängd vid varje intag. Dela gärna upp i två doser över dagen.",
+      },
+      {
+        type: "callout",
+        text: "Om du överväger kalciumtillskott - kombinera alltid med D-vitamin. Utan D-vitamin absorberas kalciumet bara delvis, och effekten på benhälsan blir marginell.",
+      },
+    ],
+    faq: [
+      {
+        q: "Hur mycket kalcium behöver jag per dag?",
+        a: "Rekommenderat intag för vuxna är 800–1 000 mg per dag. Postmenopausala kvinnor och personer över 70 bör ligga på 1 200 mg för att motverka benförlust.",
+      },
+      {
+        q: "Kan jag få i mig tillräckligt med kalcium utan mjölk?",
+        a: "Ja. Sardiner med ben, grönkål, broccoli, sesamfrön, mandel och berikade växtdrycker bidrar alla. En medveten växtbaserad kost kan nå rekommenderat intag utan mejeriprodukter, men det kräver att man aktivt inkluderar dessa livsmedel.",
+      },
+      {
+        q: "Vilken form av kalciumtillskott är bäst?",
+        a: "Kalciumcitrat absorberas bäst och kan tas oavsett mat eller magsyra. Kalciumkarbonat är billigare men kräver mat och normal magsyra. Undvik doser över 500 mg åt gången och dela upp intaget över dagen.",
+      },
+      {
+        q: "Är det farligt att ta för mycket kalcium?",
+        a: "Ja, höga doser kalciumtillskott (över 1 500 mg per dag) har i vissa studier kopplats till ökad risk för hjärt-kärlsjukdom och njursten. Kosten är alltid en säkrare källa än tillskott i höga doser.",
+      },
+    ],
+  },
+  {
+    slug: "folatbrist",
+    title: "Folatbrist - vad det är, hur du märker det och vem behöver tillskott",
+    metaTitle: "Folatbrist: Symtom, källor och folsyra som tillskott",
+    metaDescription:
+      "Folat (B9) behövs för blodbildning, celldelning och nervsystemet. Lär dig skillnaden mellan folat och folsyra, vem som riskerar brist och vad som faktiskt hjälper.",
+    publishedAt: "2026-04-16",
+    category: "nutrient",
+    relatedSlugs: [
+      "b12-brist",
+      "jarnbrist-symptom",
+      "alltid-trott-vitaminbrist",
+      "vilka-vitaminer-testa-blodprov",
+      "vitaminbrist-tecken-test",
+    ],
+    blocks: [
+      {
+        type: "p",
+        text: "Folat är den biologiska formen av vitamin B9 - ett av de mest underskattade näringsämnena i svensk kost. Det behövs för celldelning, produktion av röda blodkroppar och för att bygga upp och reparera DNA. Vid graviditet är folat kritiskt för fostrets nervrörsutveckling, men bristen är relevant långt utanför graviditet: den påverkar energi, humör och kognitiv funktion hos alla.",
+      },
+      {
+        type: "h2",
+        text: "Folat vs folsyra - vad är skillnaden?",
+      },
+      {
+        type: "p",
+        text: "Folat är den naturliga formen som finns i mat. Folsyra är den syntetiska formen som tillsätts i tillskott och berikade livsmedel. Båda behöver omvandlas i kroppen till den aktiva formen 5-MTHF för att kunna användas. Problemet är att omkring 40 procent av befolkningen har en genetisk variant (MTHFR) som gör omvandlingen mindre effektiv - vilket innebär att folsyra i tillskott inte alltid blir bioaktivt.",
+      },
+      {
+        type: "p",
+        text: "Metyl-folat (även kallat 5-MTHF eller L-metyl-folat) är den aktiva formen och kringgår det här steget. För personer med MTHFR-variationer eller konstaterad folatbrist trots tillskott är metyl-folat ett bättre val än vanlig folsyra.",
+      },
+      {
+        type: "h2",
+        text: "Varför folat är så viktigt",
+      },
+      {
+        type: "p",
+        text: "Folat är avgörande för bildningen av röda blodkroppar. Vid brist uppstår megaloblastisk anemi - stora, omogna blodkroppar som inte transporterar syre effektivt. Det ger samma typ av trötthet som [järnbrist](/artikel/jarnbrist-symptom), men av en annan anledning.",
+      },
+      {
+        type: "p",
+        text: "Folat spelar också en central roll i metylering - en biokemisk process som styr allt från neurotransmittorbalansen till avgiftning. Det här är varför folatbrist ofta ger symtom som humörsvängningar, [hjärndimma](/artikel/hjarndimma-koncentrationssvaarigheter) och nedstämdhet utöver den rent hematologiska effekten.",
+      },
+      {
+        type: "h2",
+        text: "Vem riskerar folatbrist?",
+      },
+      {
+        type: "ul",
+        items: [
+          "Gravida och kvinnor som planerar graviditet - behovet ökar kraftigt",
+          "Personer med låg konsumtion av bladgrönsaker och baljväxter",
+          "De med hög alkoholkonsumtion - alkohol hämmar folatupptaget",
+          "Personer med celiaki, Crohns eller andra malabsorptionstillstånd",
+          "De som tar metotrexat, trimetoprim eller vissa antiepileptika",
+          "Äldre med nedsatt kostvariation",
+        ],
+      },
+      {
+        type: "h2",
+        text: "Symtom på folatbrist",
+      },
+      {
+        type: "p",
+        text: "Tidiga symtom är diffusa och liknar både [järnbrist](/artikel/jarnbrist-symptom) och [B12-brist](/artikel/b12-brist): trötthet, blek hud, andfåddhet vid ansträngning och nedsatt koncentration. Vid mer uttalad brist tillkommer svullen, öm tunga (glossit), munvinkelragader, håravfall och nedstämdhet.",
+      },
+      {
+        type: "p",
+        text: "En viktig nyans: folat och B12 är lätta att blanda ihop. Folattillskott kan normalisera blodbilden vid B12-brist samtidigt som nervskadorna från B12-bristen fortsätter oupptäckt. Om du misstänker brist bör du testa båda - aldrig bara folat - innan du börjar med tillskott.",
+      },
+      {
+        type: "h2",
+        text: "Matkällor",
+      },
+      {
+        type: "p",
+        text: "Namnet folat kommer från latinets folium (blad), och det är där det finns i störst koncentration. Grönkål, spenat, mangold, ruccola och andra mörkgröna bladgrönsaker är utmärkta källor. Baljväxter som linser, kikärter och svarta bönor ligger också högt. Avokado, sparris, broccoli och lever är andra rika källor.",
+      },
+      {
+        type: "p",
+        text: "Folat är värmekänsligt - upp till 50 procent kan förstöras vid långkokning. Ångning, kort tillagning eller rå konsumtion bevarar mer. Det här är en av anledningarna till att brist kan uppstå även med hyfsat kostintag om maten alltid är hårdkokt eller förberedd dagen innan.",
+      },
+      {
+        type: "h2",
+        text: "Dosering och tillskott",
+      },
+      {
+        type: "p",
+        text: "Rekommenderat dagligt intag är 400 µg för vuxna, 600 µg under graviditet. Alla kvinnor som planerar graviditet bör ta 400 µg folsyra (eller metyl-folat) dagligen från minst en månad före konception - det halverar risken för nervrörsdefekter hos fostret.",
+      },
+      {
+        type: "p",
+        text: "För andra är tillskott motiverat vid konstaterad brist, vid malabsorption eller när kosten är konsekvent fattig på bladgrönsaker. Höga doser (över 1 000 µg per dag) kan maskera [B12-brist](/artikel/b12-brist) - ta aldrig höga folattillskott utan att samtidigt testa B12.",
+      },
+      {
+        type: "callout",
+        text: "Folatbrist och B12-brist ger liknande blodbild men olika neurologiska konsekvenser. Testa alltid båda innan du börjar med tillskott i höga doser.",
+      },
+    ],
+    faq: [
+      {
+        q: "Vad är skillnaden mellan folat och folsyra?",
+        a: "Folat är den naturliga formen i mat. Folsyra är den syntetiska formen i tillskott och berikade livsmedel. Båda omvandlas till aktivt 5-MTHF, men personer med MTHFR-genvarianter kan ha svårt med omvandlingen och bör välja metyl-folat direkt.",
+      },
+      {
+        q: "Behöver jag folsyra om jag inte är gravid?",
+        a: "De flesta får i sig tillräckligt via kosten om de äter bladgrönsaker och baljväxter regelbundet. Tillskott är motiverat vid konstaterad brist, malabsorption eller hög alkoholkonsumtion. Kvinnor som planerar graviditet bör alltid ta tillskott.",
+      },
+      {
+        q: "Kan man få i sig för mycket folsyra?",
+        a: "Höga doser (över 1 000 µg per dag) kan maskera B12-brist genom att normalisera blodbilden samtidigt som nervskador fortsätter. Ta aldrig höga folattillskott utan att samtidigt kontrollera B12.",
+      },
+      {
+        q: "Hur vet jag om jag har folatbrist?",
+        a: "Ett blodprov på S-Folat är standardmåttet. Homocystein är ett kompletterande prov som stiger vid folatbrist. Symtomen (trötthet, blek hud, svullen tunga, nedstämdhet) är diffusa och överlappar med järn- och B12-brist.",
+      },
+    ],
+  },
+  {
+    slug: "selenbrist-sverige",
+    title: "Selenbrist i Sverige - varför nordisk jord ger lägre nivåer",
+    metaTitle: "Selenbrist i Sverige: Symtom, sköldkörteln och tillskott",
+    metaDescription:
+      "Nordisk jord är naturligt låg på selen, vilket gör brist vanligare i Sverige än på kontinenten. Lär dig om symtom, sambandet med sköldkörteln och vilket tillskott som fungerar.",
+    publishedAt: "2026-04-16",
+    category: "nutrient",
+    relatedSlugs: [
+      "zinkbrist",
+      "skora-naglar-haravfall-brist",
+      "alltid-trott-vitaminbrist",
+      "varfor-blir-jag-sjuk-sa-ofta",
+      "vilka-vitaminer-testa-blodprov",
+    ],
+    blocks: [
+      {
+        type: "p",
+        text: "Selen är ett spårämne som kroppen bara behöver i mycket små mängder - men när det saknas får det stora konsekvenser. Det är en nyckelkomponent i flera enzym som skyddar cellerna mot oxidativ stress, aktiverar sköldkörtelhormon och reglerar immunförsvaret. I Sverige är selenbrist vanligare än i många andra länder, av en anledning som få känner till: jorden.",
+      },
+      {
+        type: "h2",
+        text: "Varför är selenbrist vanligare i Sverige?",
+      },
+      {
+        type: "p",
+        text: "Mängden selen i maten beror nästan helt på hur mycket selen som finns i jorden där livsmedlen odlats. Nordisk jord - särskilt Sveriges - är naturligt låg på selen. Det beror på geologiska förhållanden och att den senaste inlandsisen lämnade efter sig sedimentfattig mark. I Finland började myndigheterna berika gödselmedel med selen på 1980-talet, vilket höjde befolkningens nivåer kraftigt. Sverige har inte infört samma berikning.",
+      },
+      {
+        type: "p",
+        text: "Resultatet är att spannmål, rotfrukter och vegetabilier odlade i Sverige innehåller betydligt mindre selen än motsvarande livsmedel från selenrika länder som USA eller Finland. Det här är en specifikt svensk utmaning som sällan syns i internationella näringsrekommendationer.",
+      },
+      {
+        type: "h2",
+        text: "Vad gör selen i kroppen?",
+      },
+      {
+        type: "p",
+        text: "Selen ingår i omkring 25 selenoproteiner med olika uppgifter. De viktigaste är glutationperoxidaserna, som skyddar cellerna mot fria radikaler, och dejodinaserna, som omvandlar sköldkörtelhormonet T4 till den aktiva formen T3. Selen stödjer också immunförsvaret, särskilt vid virusinfektioner, och spelar en roll för manlig fertilitet.",
+      },
+      {
+        type: "h2",
+        text: "Sambandet med sköldkörteln",
+      },
+      {
+        type: "p",
+        text: "Sköldkörteln innehåller mer selen per gram än något annat organ i kroppen. Det är inte en slump - sköldkörteln behöver selen både för att tillverka hormon och för att skydda sig själv mot den oxidativa stress som hormontillverkningen orsakar.",
+      },
+      {
+        type: "p",
+        text: "Vid selenbrist försämras omvandlingen av T4 till T3, vilket ger symtom på låg sköldkörtelfunktion även när standardproverna (TSH, T4) ser normala ut. Personer med autoimmun sköldkörtelsjukdom (Hashimoto) har i flera studier sett förbättring av antikroppsnivåerna och symtomen efter selentillskott på 200 µg per dag.",
+      },
+      {
+        type: "h2",
+        text: "Symtom på selenbrist",
+      },
+      {
+        type: "ul",
+        items: [
+          "Trötthet och låg energi, även vid normal sömn",
+          "Känslighet för kyla, långsam ämnesomsättning",
+          "[Håravfall och sköra naglar](/artikel/skora-naglar-haravfall-brist), särskilt vita fläckar på naglarna",
+          "Återkommande infektioner och [nedsatt immunförsvar](/artikel/varfor-blir-jag-sjuk-sa-ofta)",
+          "Hjärndimma och försämrat minne",
+          "Muskelsvaghet och ömhet",
+          "Nedsatt fertilitet hos män",
+        ],
+      },
+      {
+        type: "p",
+        text: "Symtomen är diffusa och överlappar med andra brister, särskilt [zinkbrist](/artikel/zinkbrist) och sköldkörtelproblem. Selen är sällan första misstanken hos svenska läkare, men i ljuset av de låga nivåerna i nordisk jord borde det vara det oftare.",
+      },
+      {
+        type: "h2",
+        text: "Matkällor",
+      },
+      {
+        type: "p",
+        text: "Paranötter är i särklass den rikaste naturliga källan - en enda paranöt kan innehålla 70–90 µg selen, vilket motsvarar eller överskrider dagsbehovet. Två paranötter om dagen är en enkel och effektiv strategi för många. Variationen är dock stor: nötter från selenfattiga områden i Brasilien kan innehålla betydligt mindre.",
+      },
+      {
+        type: "p",
+        text: "Andra bra källor är fisk (särskilt tonfisk och sardiner), skaldjur, ägg, kyckling och lever. Importerat vete från Nordamerika innehåller mer selen än svensk-odlat vete. För växtbaserat ätande är paranötter praktiskt taget oumbärliga som selenkälla.",
+      },
+      {
+        type: "h2",
+        text: "Dosering och form",
+      },
+      {
+        type: "p",
+        text: "Rekommenderat dagligt intag är 55–70 µg för vuxna. Som tillskott används oftast 100–200 µg per dag. Selenometionin är den mest biotillgängliga formen och föredras av de flesta. Natriumselenit är billigare men absorberas något sämre. Selenjäst är en annan välstuderad form som använts i flera kliniska studier.",
+      },
+      {
+        type: "p",
+        text: "Selen har ett smalare säkerhetsfönster än många andra näringsämnen. Doser över 400 µg per dag under längre perioder kan ge selentoxicitet med symtom som vitlöksdoft i andedräkten, håravfall, skörare naglar och magbesvär. Ta aldrig mer än 200 µg per dag utan medicinsk uppföljning.",
+      },
+      {
+        type: "callout",
+        text: "Två paranötter om dagen räcker för att täcka selenbehovet hos de flesta - men välj tillskott på 100–200 µg om du har sköldkörtelproblem eller återkommande infektioner.",
+      },
+    ],
+    faq: [
+      {
+        q: "Varför är selenbrist vanligare i Sverige än i andra länder?",
+        a: "Svensk jord innehåller naturligt lite selen, vilket gör att livsmedel odlade här har lägre halter än motsvarande livsmedel från selenrika länder. Till skillnad från Finland har Sverige inte berikat gödselmedel med selen.",
+      },
+      {
+        q: "Hur många paranötter ska jag äta per dag?",
+        a: "Två paranötter om dagen räcker för de flesta och täcker rekommenderat intag med god marginal. Undvik att äta mer än fem om dagen över längre perioder - selenhalten varierar mellan nötter och du kan snabbt hamna i överintag.",
+      },
+      {
+        q: "Kan selentillskott hjälpa vid Hashimoto?",
+        a: "Flera studier visar att 200 µg selen per dag kan sänka antikroppsnivåerna (anti-TPO) och förbättra symtomen vid autoimmun sköldkörtelsjukdom. Effekten är bäst dokumenterad vid Hashimoto, och tillskott bör alltid kombineras med reguljär uppföljning.",
+      },
+      {
+        q: "Kan man ta för mycket selen?",
+        a: "Ja, selen har ett smalt säkerhetsfönster. Doser över 400 µg per dag under längre perioder kan ge selentoxicitet med symtom som vitlöksdoft, håravfall och magbesvär. Håll dig under 200 µg per dag utan medicinsk uppföljning.",
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {

@@ -90,6 +90,18 @@ const QUIZ_CTA: Record<string, QuizCta> = {
     hook: "Är magnesiumbrist orsaken till dina sömnproblem?",
     body: "Quizzen väger ihop din kost, träning och symtom och räknar ut hur troligt det är att du har magnesiumbrist.",
   },
+  "kalciumbrist": {
+    hook: "Täcker din kost kalciumbehovet?",
+    body: "Om du äter få mejeriprodukter eller är postmenopausal kan behovet vara högre än du tror. Quizzen väger ihop din kost och riskfaktorer och visar vad som är relevant för dig.",
+  },
+  "folatbrist": {
+    hook: "Har du tillräckligt med folat i kosten?",
+    body: "Folatbrist syns sällan i standardprover men påverkar energi, humör och blodbildning. Quizzen tittar på din kost och dina symtom och pekar ut om folat är en prioritet.",
+  },
+  "selenbrist-sverige": {
+    hook: "Är selen en prioritet för dig?",
+    body: "Svensk jord är låg på selen och symtomen överlappar med sköldkörtelproblem. Quizzen väger ihop din kost, dina symtom och din profil och visar om selenbrist är trolig.",
+  },
 };
 
 const DEFAULT_CTA: QuizCta = {
