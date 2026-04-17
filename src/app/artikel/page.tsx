@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Artiklar om näringsbrist och tillskott | Peiling",
   description:
     "Läs om de vanligaste näringsbristerna, deras symtom och vad du kan göra - baserat på forskning och anpassat för svenska förhållanden.",
-  alternates: { canonical: "https://peiling.se/artikel" },
+  alternates: { canonical: "https://peiling.co/artikel" },
 };
 
 const CATEGORY_LABELS: Record<string, string> = {

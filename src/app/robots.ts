@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: ["/results", "/api/", "/admin"],
     },
-    sitemap: "https://peiling.se/sitemap.xml",
+    sitemap: "https://peiling.co/sitemap.xml",
   };
 }

@@ -37,7 +37,7 @@ function buildShareText(tier1: ScoredNutrient[], tier2: ScoredNutrient[]): strin
     for (const n of tier2) lines.push(`• ${NUTRIENT_NAMES_SV[n.key]} - ${n.confidence}`);
     lines.push("");
   }
-  lines.push("Testa dig själv på peiling.se/quiz");
+  lines.push("Testa dig själv på peiling.co/quiz");
   return lines.join("\n");
 }
 

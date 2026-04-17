@@ -5,7 +5,7 @@ import type { Metadata } from "next";
 import { getArticle, getAllSlugs, getRelatedArticles } from "@/lib/articles";
 import StickyQuizBar from "@/components/StickyQuizBar";
 
-const SITE_URL = "https://peiling.se";
+const SITE_URL = "https://peiling.co";
 
 type QuizCta = { hook: string; body: string };
 
