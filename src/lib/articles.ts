@@ -2008,6 +2008,144 @@ export const ARTICLES: Article[] = [
       },
     ],
   },
+  {
+    slug: "c-vitaminbrist",
+    title: "C-vitaminbrist - mer vanligt än du tror, även i Sverige",
+    metaTitle: "C-vitaminbrist: symtom, orsaker och rätt dosering",
+    metaDescription:
+      "C-vitaminbrist är vanligare än de flesta tror. Lär dig symtomen, vem som har störst risk, hur mycket du behöver och varför kostkällor inte alltid räcker.",
+    publishedAt: "2026-04-19",
+    category: "nutrient",
+    relatedSlugs: [
+      "vitaminbrist-tecken-test",
+      "varfor-blir-jag-sjuk-sa-ofta",
+      "jarnbrist-symptom",
+      "alltid-trott-vitaminbrist",
+    ],
+    blocks: [
+      {
+        type: "p",
+        text: "De flesta tror att C-vitaminbrist är ett historiskt problem – skörbjugg och sjömän. I verkligheten visar svensk och europeisk forskning att subklinisk brist, nivåer som är för låga för att ge skörbjugg men tillräckligt låga för att påverka immunförsvar, energi och läkning, är förvånansvärt vanligt. Studier uppskattar att 10–15 procent av vuxna i västländer har direkt bristfälliga nivåer, och ytterligare 20–30 procent har suboptimala nivåer.",
+      },
+      {
+        type: "h2",
+        text: "Varför brist uppstår trots tillgång till frukt",
+      },
+      {
+        type: "p",
+        text: "C-vitamin är vattenlösligt och lagras inte i kroppen. Det innebär att du behöver ett dagligt intag, inte ett genomsnitt per vecka. Du kan äta en stor sallad på måndag och ha bristfälliga nivåer på onsdag om resten av kosten saknar färska grönsaker och frukt. Dessutom förstörs C-vitamin av värme, luft och lagring. Kokta grönsaker kan förlora hälften av sitt C-vitamininnehåll, och frukt som legat länge i kylskåpet tappar gradvis sitt näringsvärde.",
+      },
+      {
+        type: "p",
+        text: "Rökning är den enskilt starkaste riskfaktorn. Rökare förbrukar C-vitamin snabbare och har i genomsnitt 25–40 procent lägre plasmanivåer än icke-rökare. Även passiv rökning sänker nivåerna. Men även icke-rökare är utsatta om kosten är ensidig, stressnivåerna höga eller om de tar vissa läkemedel som ökar C-vitaminbehovet.",
+      },
+      {
+        type: "h2",
+        text: "Symtom på C-vitaminbrist",
+      },
+      {
+        type: "ul",
+        items: [
+          "Trötthet och orkeslöshet som inte förklaras av sömn",
+          "Långsam sårläkning och blåmärken som uppstår lätt",
+          "Svullna, blödande tandkött",
+          "Torr och grov hud",
+          "Täta förkylningar och infektioner",
+          "Ledvärk och muskelsmärta",
+          "Nedstämdhet och irritabilitet",
+        ],
+      },
+      {
+        type: "p",
+        text: "Det förrädiska med subklinisk brist är att inget enstaka symtom pekar tydligt mot C-vitamin. Du känner dig bara allmänt nere, trött och infektionskänslig. Det är därför brist ofta missas eller förklaras med stress och dålig sömn.",
+      },
+      {
+        type: "h2",
+        text: "Vem har störst risk?",
+      },
+      {
+        type: "ul",
+        items: [
+          "Rökare och de som utsätts för passiv rökning",
+          "Äldre med ensidig kost eller nedsatt aptit",
+          "Personer med hög stressbelastning – kortisol ökar förbrukningen",
+          "De med mag-tarmsjukdomar som försämrar upptaget",
+          "Intensivtränande – hög oxidativ stress ökar behovet",
+          "Personer som äter lite frukt och grönsaker",
+        ],
+      },
+      {
+        type: "p",
+        text: "En viktig detalj: [järnbrist](/artikel/jarnbrist-symptom) och C-vitaminbrist förstärker varandra. C-vitamin ökar upptaget av icke-hemjärn (det järn du får från växter) med upp till fyra gånger. Har du låga C-vitaminnivåer kan det alltså bidra till att du utvecklar järnbrist, även om du äter järnrik mat. Om du misstänker järnbrist bör du samtidigt se över ditt C-vitaminintag.",
+      },
+      {
+        type: "h2",
+        text: "Hur mycket C-vitamin behöver du?",
+      },
+      {
+        type: "p",
+        text: "Nordiska näringsrekommendationer anger 75 mg per dag som tillräckligt för de flesta vuxna. Men det är en miniminivå för att förebygga brist, inte en optimal nivå. Forskning tyder på att 200–400 mg per dag ger maximal mättnad av vävnaderna och det bästa skyddet för immunförsvaret.",
+      },
+      {
+        type: "p",
+        text: "Rökare rekommenderas minst 35 mg extra per dag utöver basbehovet, men i praktiken behöver de flesta rökare 200 mg eller mer. Vid intensiv träning eller akut sjukdom kan behovet tillfälligt öka ytterligare.",
+      },
+      {
+        type: "p",
+        text: "En vanlig fråga är om megadoser på 1 000 mg eller mer ger extra nytta. Svaret är i de flesta fall nej. C-vitamin absorberas sämre vid höga doser – vid 1 000 mg tar kroppen upp under hälften. Överskottet utsöndras via urinen. Det finns inget stöd för att megadoser förebygger förkylningar bättre än en dosering på 200–400 mg.",
+      },
+      {
+        type: "h2",
+        text: "Kostkällor – vad räcker egentligen?",
+      },
+      {
+        type: "p",
+        text: "Paprika (röd och gul), svarta vinbär, broccoli, kiwi, citrusfrukter och jordgubbar tillhör de bästa källorna. En röd paprika innehåller omkring 150 mg C-vitamin, mer än dubbla dagsbehovet. Två kiwifrukter ger ungefär 130 mg. Men kosten fungerar bara om du äter dessa livsmedel rå eller skonsamt tillagade, varje dag.",
+      },
+      {
+        type: "p",
+        text: "Problemet i praktiken är konsistens. De flesta har enstaka dagar med bra intag och flera dagar med lågt intag. Eftersom kroppen inte kan lagra C-vitamin spelar genomsnittet per vecka mindre roll än det dagliga minimumet. Det är det här gapet som gör att tillskott kan vara meningsfullt även för personer som i teorin äter tillräckligt.",
+      },
+      {
+        type: "h2",
+        text: "Tillskott – form och dosering",
+      },
+      {
+        type: "p",
+        text: "Askorbinsyra är den vanligaste och mest studerade formen. Den är billig och effektiv. Den enda nackdelen är att höga doser kan ge magbesvär hos känsliga personer. I så fall kan buffrad C-vitamin (kalciumaskorbat eller natriumaskorbat) vara ett bättre alternativ.",
+      },
+      {
+        type: "p",
+        text: "Liposomalt C-vitamin marknadsförs med högre biotillgänglighet. Studier visar viss fördel vid höga doser, men vid doser under 500 mg är skillnaden liten jämfört med vanlig askorbinsyra. Det kostar däremot avsevärt mer.",
+      },
+      {
+        type: "p",
+        text: "Praktiskt tips: dela upp dosen. Två doser om 200 mg absorberas bättre än en dos om 400 mg. Ta tillskottet till en måltid för att minska magirritation och maximera upptaget.",
+      },
+      {
+        type: "callout",
+        text: "C-vitamin är inte bara ett immunvitamin. Det är en förutsättning för kollagenbildning, järnupptag och hjärnans signalsubstanser. Subklinisk brist är tyst men påverkar hur du mår varje dag.",
+      },
+    ],
+    faq: [
+      {
+        q: "Vilka är de vanligaste symtomen på C-vitaminbrist?",
+        a: "De vanligaste tecknen är oförklarlig trötthet, långsam sårläkning, blåmärken som uppstår lätt, svullna och blödande tandkött, torr hud och täta förkylningar. Vid subklinisk brist är symtomen vaga och lätta att bortförklara med stress eller dålig sömn.",
+      },
+      {
+        q: "Hur mycket C-vitamin ska jag ta per dag?",
+        a: "Nordiska rekommendationer anger 75 mg som minimum, men forskning tyder på att 200–400 mg per dag ger optimala nivåer. Rökare behöver minst 35 mg extra. Doser över 1 000 mg ger sällan ytterligare nytta eftersom kroppen absorberar en allt mindre andel vid höga doser.",
+      },
+      {
+        q: "Kan man få för mycket C-vitamin?",
+        a: "C-vitamin är vattenlösligt och överskottet utsöndras via urinen, vilket gör toxicitet ovanlig. Doser över 2 000 mg per dag kan dock ge magbesvär, diarré och i sällsynta fall njursten hos personer med anlag. De flesta mår bra på 200–500 mg per dag.",
+      },
+      {
+        q: "Hjälper C-vitamin mot förkylning?",
+        a: "Regelbundet intag av C-vitamin förebygger inte förkylning men kan förkorta förkylningsperioden med 8–14 procent hos vuxna. Effekten är tydligare hos personer med hård fysisk belastning. Megadoser vid symptomstart har däremot svagt vetenskapligt stöd.",
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {

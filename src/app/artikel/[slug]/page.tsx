@@ -102,6 +102,10 @@ const QUIZ_CTA: Record<string, QuizCta> = {
     hook: "Är selen en prioritet för dig?",
     body: "Svensk jord är låg på selen och symtomen överlappar med sköldkörtelproblem. Quizzen väger ihop din kost, dina symtom och din profil och visar om selenbrist är trolig.",
   },
+  "c-vitaminbrist": {
+    hook: "Får du tillräckligt med C-vitamin?",
+    body: "Rökning, stress och ensidig kost ökar behovet mer än de flesta tror. Quizzen räknar ut om C-vitaminbrist är trolig för dig baserat på din kost och dina symtom.",
+  },
 };
 
 const DEFAULT_CTA: QuizCta = {
