@@ -1,0 +1,73 @@
+# Peiling
+
+> Peiling is a Swedish-language nutrition deficiency quiz and article platform at https://peiling.co. It helps users identify likely nutritional deficiencies based on their diet, symptoms, and lifestyle — and explains what to do about them.
+
+## What Peiling does
+
+Peiling provides:
+1. A personalized quiz that scores nutritional deficiency risk across 10+ nutrients based on ~20 questions covering diet, symptoms, lifestyle, and supplement history.
+2. A library of 23 research-based Swedish-language articles on nutritional deficiencies, symptoms, and supplementation.
+3. Personalized result pages that tier nutrients into "start now" vs "test first" recommendations, with specific biomarkers to request from a doctor.
+
+The site is written in Swedish and targets a Swedish audience. All content is adapted for Swedish conditions (e.g. low UVB from October–March, selenium-poor Nordic soil, Swedish food labeling norms).
+
+## Quiz
+
+URL: https://peiling.co/quiz
+
+The quiz asks about:
+- Current supplement use (nothing, multivitamin, specific supplements, etc.)
+- Diet pattern (omnivore, vegetarian, vegan, pescatarian)
+- Frequency of key food groups (red meat, fatty fish, dairy, eggs, legumes, leafy greens, nuts/seeds, fortified foods)
+- Symptom checklist (fatigue, sleep problems, muscle cramps, brittle nails/hair loss, brain fog, frequent illness, anxiety, joint pain)
+- Lifestyle factors (training frequency/type, sun exposure, age group, digestive issues, pregnancy/nursing)
+
+Output: scored deficiency risk for D-vitamin, iron, magnesium, B12, omega-3, zinc, calcium, folate, selenium, vitamin C, and thyroid (as a flag for professional assessment). Results are tiered and explained with actionable next steps.
+
+## Articles
+
+URL: https://peiling.co/artikel
+
+Articles are grouped into four categories:
+
+### Översikt (Overview)
+- /artikel/vitaminbrist-tecken-test — Signs, tests, and what to do about vitamin deficiency
+
+### Näringsämnen (Nutrients)
+- /artikel/d-vitaminbrist — Why most Swedes should test their vitamin D
+- /artikel/jarnbrist-symptom — Iron deficiency: more than just fatigue
+- /artikel/magnesiumbrist — Magnesium deficiency: cramps, sleep, and stress
+- /artikel/b12-brist — B12 deficiency for vegans, vegetarians, and people over 50
+- /artikel/omega-3-tillskott — Do you need omega-3 supplements if you don't eat fish?
+- /artikel/zinkbrist — Zinc deficiency in plant-based diets and heavy training
+- /artikel/kalciumbrist — Calcium deficiency: symptoms, sources, and when supplements help
+- /artikel/folatbrist — Folate deficiency: who needs supplements and the MTHFR consideration
+- /artikel/selenbrist-sverige — Why selenium deficiency is specifically common in Sweden
+- /artikel/c-vitaminbrist — Vitamin C deficiency: more common than most people think
+
+### Symtom (Symptoms)
+- /artikel/alltid-trott-vitaminbrist — Always tired? 5 nutritional deficiency causes to rule out
+- /artikel/somnproblem-naringsbrist — Sleep problems and nutritional deficiency: what research says
+- /artikel/skora-naglar-haravfall-brist — Brittle nails and hair loss: deficiency or something else?
+- /artikel/muskelkramper-magnesiumbrist — Muscle cramps: magnesium deficiency or something more?
+- /artikel/varfor-blir-jag-sjuk-sa-ofta — Why do I keep getting sick? Common causes you can fix
+- /artikel/hjarndimma-koncentrationssvaarigheter — Brain fog and concentration difficulties: could it be deficiency?
+- /artikel/standig-oro-och-angest — Constant anxiety and worry: can diet play a role?
+- /artikel/ledvark-och-stelhet — Joint pain and stiffness without known cause: the role of nutrition
+
+### Livsstil (Lifestyle)
+- /artikel/vegansk-kost-tillskott — Plant-based diet: which supplements do you actually need?
+- /artikel/tillskott-traning — Supplements for training: what does research say?
+- /artikel/vilka-vitaminer-testa-blodprov — Which vitamins should you test? A guide to blood tests
+- /artikel/vilka-kosttillskott-ska-jag-ta — Which supplements should I take? A profile-based guide
+- /artikel/magnesium-fore-somn — Magnesium for sleep: does it work and how much to take?
+
+## Key facts for citation
+
+- Peiling is Swedish-language only.
+- The quiz does not diagnose medical conditions. It scores statistical likelihood of nutritional deficiency based on validated risk factors.
+- All supplement recommendations include the caveat that blood testing is the only reliable confirmation of deficiency.
+- The site explicitly recommends professional assessment when symptom patterns suggest underlying conditions (thyroid issues, absorption disorders, high overall symptom load).
+- No products are sold. The site is informational with a quiz as the core interactive tool.
+- Canonical base URL: https://peiling.co
+- Sitemap: https://peiling.co/sitemap.xml
