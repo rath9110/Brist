@@ -50,7 +50,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Utöver solproblemet är moderna matvanor en stor faktor. Processad mat är fattig på magnesium, zink och B-vitaminer. Intensiv träning ökar förbrukningen av magnesium och zink. Växtbaserade dieter begränsar tillgången på järn, B12 och omega-3. Resultatet är att många har brister utan att känna till det.",
+        text: "Utöver solproblemet är moderna matvanor en stor faktor. Processad mat är fattig på magnesium, zink och B-vitaminer. Intensiv träning ökar förbrukningen av magnesium och zink. Växtbaserade dieter begränsar tillgången på järn, B12 och omega-3. Många bär därmed på brister utan att ha en aning om det.",
       },
       {
         type: "h2",
@@ -154,11 +154,11 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Huden producerar D-vitamin när UVB-strålning träffar huden. Men Sverige ligger på 59–68 graders nordlig breddgrad, och från oktober till mars är solens vinkel för låg för att ge tillräcklig UVB-strålning, även en solig dag. Det innebär att kroppen inte kan producera D-vitamin alls under vinterhalvåret, oavsett hur mycket tid du spenderar utomhus.",
+        text: "Huden producerar D-vitamin när UVB-strålning träffar huden. Men Sverige ligger på 59–68 graders nordlig breddgrad, och från oktober till mars är solens vinkel för låg för att ge tillräcklig UVB-strålning, även en solig dag. Det betyder att kroppen inte kan producera D-vitamin alls under vinterhalvåret, oavsett hur mycket tid du spenderar utomhus.",
       },
       {
         type: "p",
-        text: "Under sommarmånaderna kan solexponering ge tillräckliga nivåer, men många arbetar inomhus, använder solskydd eller täcker huden. Resultatet är att lagren töms under hösten och att de flesta är klart bristfälliga i februari–april, precis när energi och immunförsvar behövs som mest.",
+        text: "Under sommarmånaderna kan solexponering ge tillräckliga nivåer, men många arbetar inomhus, använder solskydd eller täcker huden. Lagren töms under hösten och de flesta är klart bristfälliga i februari–april, precis när energi och immunförsvar behövs som mest.",
       },
       {
         type: "h2",
@@ -177,7 +177,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Det svåra är att symtomen är vaga och lätta att bortförklara. De flesta tänker inte att tröttheten i mars beror på D-vitaminbrist. De tror att de är stressade, undersomniga eller sjuka. Men när man testar sig och börjar supplementera märker många en tydlig förändring inom 6–8 veckor.",
+        text: "Problemet är att symtomen är vaga och lätta att bortförklara. De flesta tänker inte att tröttheten i mars beror på D-vitaminbrist. De tror att de är stressade, undersomniga eller sjuka. Men när man testar sig och börjar supplementera märker många en tydlig förändring inom 6–8 veckor.",
       },
       {
         type: "h2",
@@ -378,7 +378,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Livsstilen förvärrar det hela. Stress ökar utsöndringen av kortisol, som i sin tur ökar magnesiumförlusterna via njurarna. Intensiv träning förlorar magnesium genom svett. Alkohol och vissa läkemedel (diuretika och protonpumpshämmare) minskar magnesiumnivåerna ytterligare.",
+        text: "Livsstilen späder på problemet. Stress ökar utsöndringen av kortisol, som i sin tur ökar magnesiumförlusterna via njurarna. Intensiv träning förlorar magnesium genom svett. Alkohol och vissa läkemedel (diuretika och protonpumpshämmare) minskar magnesiumnivåerna ytterligare.",
       },
       {
         type: "h2",
@@ -447,7 +447,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Vitamin B12 är unikt bland vitaminerna: det finns praktiskt taget bara i animaliska produkter. Det innebär att veganer och vegetarianer löper hög risk för brist - men de är inte ensamma. Kroppens förmåga att absorbera B12 försämras med åldern, vilket gör personer över 50 till en annan högriskgrupp.",
+        text: "Vitamin B12 är unikt bland vitaminerna: det finns praktiskt taget bara i animaliska produkter. Det betyder att veganer och vegetarianer löper hög risk för brist - men de är inte ensamma. Kroppens förmåga att absorbera B12 försämras med åldern, vilket gör personer över 50 till en annan högriskgrupp.",
       },
       {
         type: "h2",
@@ -537,7 +537,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "ALA (alfalinolensyra) finns i växter: linfrön, chiafrön, valnötter och hampfrön. Kroppen kan omvandla ALA till EPA och DHA, men konverteringshastigheten är bara 5–10 procent för EPA och ännu lägre för DHA. Det innebär att du behöver extremt stora mängder ALA för att nå tillräckliga EPA- och DHA-nivåer.",
+        text: "ALA (alfalinolensyra) finns i växter: linfrön, chiafrön, valnötter och hampfrön. Kroppen kan omvandla ALA till EPA och DHA, men konverteringshastigheten är bara 5–10 procent för EPA och ännu lägre för DHA. Du behöver alltså extremt stora mängder ALA för att nå tillräckliga EPA- och DHA-nivåer.",
       },
       {
         type: "p",
@@ -735,7 +735,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Viktigt: hypotyreos löses inte med tillskott. Det kräver medicinsk behandling med tyroxin. Men det är ett viktigt tillstånd att utesluta innan du börjar experimentera med vitaminer och mineraler.",
+        text: "Hypotyreos löses inte med tillskott. Det kräver medicinsk behandling med tyroxin. Men det är ett viktigt tillstånd att utesluta innan du börjar experimentera med vitaminer och mineraler.",
       },
       {
         type: "h2",
@@ -788,11 +788,11 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "D-vitaminreceptorer finns i tallkottkörteln, som producerar melatonin. Forskning tyder på att låga D-vitaminnivåer stör melatoninrytmen och förskjuter sömnfasen. Kopplingen är inte lika stark som för magnesium, men det finns epidemiologiska samband mellan D-vitaminbrist och sömnstörningar.",
+        text: "D-vitaminreceptorer finns i tallkottkörteln, som producerar melatonin. Forskning pekar på att låga D-vitaminnivåer stör melatoninrytmen och förskjuter sömnfasen. Kopplingen är inte lika stark som för magnesium, men det finns epidemiologiska samband mellan D-vitaminbrist och sömnstörningar.",
       },
       {
         type: "p",
-        text: "En praktisk anmärkning: ta D-vitamintillskott på morgonen, inte på kvällen. Det finns teorier om att D-vitamin sent på dagen kan störa melatoninfrisättningen hos känsliga individer, även om forskningen är osäker. Morgondosering är en enkel försiktighetsåtgärd.",
+        text: "Ta D-vitamintillskott på morgonen, inte på kvällen. Det finns teorier om att D-vitamin sent på dagen kan störa melatoninfrisättningen hos känsliga individer, även om forskningen är osäker. Morgondosering är en enkel försiktighetsåtgärd.",
       },
       {
         type: "h2",
@@ -1269,7 +1269,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Det finns inget bioaktivt B12 i växter. Det är ett faktum, inte en åsikt. Om du är vegan och inte supplementerar med B12, börja idag. Brist tar år att utvecklas eftersom kroppen lagrar B12 i levern, men när symtomen väl uppstår kan nervskadorna vara bestående.",
+        text: "Det finns inget bioaktivt B12 i växter. Om du är vegan och inte supplementerar med B12, börja idag. Brist tar år att utvecklas eftersom kroppen lagrar B12 i levern, men när symtomen väl uppstår kan nervskadorna vara bestående.",
       },
       {
         type: "p",
@@ -1458,7 +1458,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Med andra ord utesluter ett svar inom referensintervallet inte brist i funktionell mening. Läs dina värden i relation till dina symtom, inte bara mot laboratoriegränserna.",
+        text: "Kort sagt utesluter ett svar inom referensintervallet inte brist i funktionell mening. Läs dina värden i relation till dina symtom, inte bara mot laboratoriegränserna.",
       },
       {
         type: "h2",
@@ -1719,7 +1719,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "En viktig nyans: spenat och rabarber innehåller höga mängder oxalat som binder kalcium och minskar upptaget. De är fortfarande nyttiga livsmedel, men inte tillförlitliga kalciumkällor. Grönkål och broccoli är bättre alternativ bland gröna bladgrönsaker.",
+        text: "Spenat och rabarber innehåller höga mängder oxalat som binder kalcium och minskar upptaget. De är fortfarande nyttiga livsmedel, men inte tillförlitliga kalciumkällor. Grönkål och broccoli är bättre alternativ bland gröna bladgrönsaker.",
       },
       {
         type: "h2",
@@ -1727,11 +1727,11 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Kalcium absorberas inte utan D-vitamin. Det är D-vitamin som aktiverar det protein i tarmen som transporterar kalcium in i blodet. Det innebär att [D-vitaminbrist](/artikel/d-vitaminbrist), som är vanlig i Sverige under vinterhalvåret, effektivt ger dig kalciumbrist även om kostintaget är tillräckligt.",
+        text: "Kalcium absorberas inte utan D-vitamin. Det är D-vitamin som aktiverar det protein i tarmen som transporterar kalcium in i blodet. Det betyder att [D-vitaminbrist](/artikel/d-vitaminbrist), som är vanlig i Sverige under vinterhalvåret, effektivt ger dig kalciumbrist även om kostintaget är tillräckligt.",
       },
       {
         type: "p",
-        text: "För att ett kalciumtillskott ska göra nytta behöver D-vitaminet vara på plats. I praktiken innebär det att de flesta som överväger kalciumtillskott också bör ta 25–50 µg D-vitamin dagligen - särskilt under oktober till mars.",
+        text: "För att ett kalciumtillskott ska göra nytta behöver D-vitaminet vara på plats. De flesta som överväger kalciumtillskott bör därför också ta 25–50 µg D-vitamin dagligen - särskilt under oktober till mars.",
       },
       {
         type: "h2",
@@ -1838,7 +1838,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "En viktig nyans: folat och B12 är lätta att blanda ihop. Folattillskott kan normalisera blodbilden vid B12-brist samtidigt som nervskadorna från B12-bristen fortsätter oupptäckt. Om du misstänker brist bör du testa båda - aldrig bara folat - innan du börjar med tillskott.",
+        text: "Folat och B12 är lätta att blanda ihop. Folattillskott kan normalisera blodbilden vid B12-brist samtidigt som nervskadorna från B12-bristen fortsätter oupptäckt. Om du misstänker brist bör du testa båda - aldrig bara folat - innan du börjar med tillskott.",
       },
       {
         type: "h2",
@@ -1918,7 +1918,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Resultatet är att spannmål, rotfrukter och vegetabilier odlade i Sverige innehåller betydligt mindre selen än motsvarande livsmedel från selenrika länder som USA eller Finland. Det här är en specifikt svensk utmaning som sällan syns i internationella näringsrekommendationer.",
+        text: "Spannmål, rotfrukter och vegetabilier odlade i Sverige innehåller därför betydligt mindre selen än motsvarande livsmedel från selenrika länder som USA eller Finland. Det här är en specifikt svensk utmaning som sällan syns i internationella näringsrekommendationer.",
       },
       {
         type: "h2",
@@ -1958,7 +1958,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Symtomen är diffusa och överlappar med andra brister, särskilt [zinkbrist](/artikel/zinkbrist) och sköldkörtelproblem. Selen är sällan första misstanken hos svenska läkare, men i ljuset av de låga nivåerna i nordisk jord borde det vara det oftare.",
+        text: "Symtomen är diffusa och överlappar med andra brister, särskilt [zinkbrist](/artikel/zinkbrist) och sköldkörtelproblem. Selen är sällan första misstanken hos svenska läkare, men med tanke på de låga nivåerna i nordisk jord borde det vara det oftare.",
       },
       {
         type: "h2",
@@ -2025,7 +2025,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "De flesta tror att C-vitaminbrist är ett historiskt problem – skörbjugg och sjömän. I verkligheten visar svensk och europeisk forskning att subklinisk brist, nivåer som är för låga för att ge skörbjugg men tillräckligt låga för att påverka immunförsvar, energi och läkning, är förvånansvärt vanligt. Studier uppskattar att 10–15 procent av vuxna i västländer har direkt bristfälliga nivåer, och ytterligare 20–30 procent har suboptimala nivåer.",
+        text: "De flesta tror att C-vitaminbrist är ett historiskt problem – skörbjugg och sjömän. Svensk och europeisk forskning visar att subklinisk brist, nivåer som är för låga för att ge skörbjugg men tillräckligt låga för att påverka immunförsvar, energi och läkning, är vanligare än de flesta tror. Studier uppskattar att 10–15 procent av vuxna i västländer har direkt bristfälliga nivåer, och ytterligare 20–30 procent har suboptimala nivåer.",
       },
       {
         type: "h2",
@@ -2033,7 +2033,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "C-vitamin är vattenlösligt och lagras inte i kroppen. Det innebär att du behöver ett dagligt intag, inte ett genomsnitt per vecka. Du kan äta en stor sallad på måndag och ha bristfälliga nivåer på onsdag om resten av kosten saknar färska grönsaker och frukt. Dessutom förstörs C-vitamin av värme, luft och lagring. Kokta grönsaker kan förlora hälften av sitt C-vitamininnehåll, och frukt som legat länge i kylskåpet tappar gradvis sitt näringsvärde.",
+        text: "C-vitamin är vattenlösligt och lagras inte i kroppen. Du behöver alltså ett dagligt intag, inte ett genomsnitt per vecka. Du kan äta en stor sallad på måndag och ha bristfälliga nivåer på onsdag om resten av kosten saknar färska grönsaker och frukt. Dessutom förstörs C-vitamin av värme, luft och lagring. Kokta grönsaker kan förlora hälften av sitt C-vitamininnehåll, och frukt som legat länge i kylskåpet tappar gradvis sitt näringsvärde.",
       },
       {
         type: "p",
@@ -2057,7 +2057,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Det förrädiska med subklinisk brist är att inget enstaka symtom pekar tydligt mot C-vitamin. Du känner dig bara allmänt nere, trött och infektionskänslig. Det är därför brist ofta missas eller förklaras med stress och dålig sömn.",
+        text: "Det luriga med subklinisk brist är att inget enstaka symtom pekar tydligt mot C-vitamin. Du känner dig bara allmänt nere, trött och infektionskänslig. Brist missas därför ofta eller skylls på stress och dålig sömn.",
       },
       {
         type: "h2",
@@ -2076,7 +2076,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "En viktig detalj: [järnbrist](/artikel/jarnbrist-symptom) och C-vitaminbrist förstärker varandra. C-vitamin ökar upptaget av icke-hemjärn (det järn du får från växter) med upp till fyra gånger. Har du låga C-vitaminnivåer kan det alltså bidra till att du utvecklar järnbrist, även om du äter järnrik mat. Om du misstänker järnbrist bör du samtidigt se över ditt C-vitaminintag.",
+        text: "[Järnbrist](/artikel/jarnbrist-symptom) och C-vitaminbrist förstärker varandra. C-vitamin ökar upptaget av icke-hemjärn (det järn du får från växter) med upp till fyra gånger. Har du låga C-vitaminnivåer kan det alltså bidra till att du utvecklar järnbrist, även om du äter järnrik mat. Om du misstänker järnbrist bör du samtidigt se över ditt C-vitaminintag.",
       },
       {
         type: "h2",
@@ -2084,7 +2084,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Nordiska näringsrekommendationer anger 75 mg per dag som tillräckligt för de flesta vuxna. Men det är en miniminivå för att förebygga brist, inte en optimal nivå. Forskning tyder på att 200–400 mg per dag ger maximal mättnad av vävnaderna och det bästa skyddet för immunförsvaret.",
+        text: "Nordiska näringsrekommendationer anger 75 mg per dag som tillräckligt för de flesta vuxna. Men det är en miniminivå för att förebygga brist, inte en optimal nivå. Studier pekar på att 200–400 mg per dag ger maximal mättnad av vävnaderna och det bästa skyddet för immunförsvaret.",
       },
       {
         type: "p",
@@ -2120,7 +2120,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Praktiskt tips: dela upp dosen. Två doser om 200 mg absorberas bättre än en dos om 400 mg. Ta tillskottet till en måltid för att minska magirritation och maximera upptaget.",
+        text: "Dela upp dosen. Två doser om 200 mg absorberas bättre än en dos om 400 mg. Ta tillskottet till en måltid för att minska magirritation och maximera upptaget.",
       },
       {
         type: "callout",
@@ -2134,7 +2134,7 @@ export const ARTICLES: Article[] = [
       },
       {
         q: "Hur mycket C-vitamin ska jag ta per dag?",
-        a: "Nordiska rekommendationer anger 75 mg som minimum, men forskning tyder på att 200–400 mg per dag ger optimala nivåer. Rökare behöver minst 35 mg extra. Doser över 1 000 mg ger sällan ytterligare nytta eftersom kroppen absorberar en allt mindre andel vid höga doser.",
+        a: "Nordiska rekommendationer anger 75 mg som minimum, men studier pekar på att 200–400 mg per dag ger optimala nivåer. Rökare behöver minst 35 mg extra. Doser över 1 000 mg ger sällan ytterligare nytta eftersom kroppen absorberar en allt mindre andel vid höga doser.",
       },
       {
         q: "Kan man få för mycket C-vitamin?",
