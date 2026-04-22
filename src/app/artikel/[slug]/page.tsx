@@ -172,18 +172,50 @@ export default function ArticlePage({ params }: { params: { slug: string } }) {
 
   const articleUrl = `${SITE_URL}/artikel/${article.slug}`;
 
+  const CATEGORY_NAMES: Record<string, string> = {
+    pillar: "Näringsbrist",
+    nutrient: "Näringsämnen",
+    symptom: "Symtom",
+    lifestyle: "Livsstil",
+  };
+
+  const wordCount = article.blocks.reduce((acc, block) => {
+    if (block.type === "p" || block.type === "callout") {
+      return acc + block.text.split(/\s+/).length;
+    }
+    if (block.type === "ul") {
+      return acc + block.items.join(" ").split(/\s+/).length;
+    }
+    return acc;
+  }, 0);
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": ["Article", "MedicalWebPage"],
+    "@type": "Article",
     headline: article.title,
     description: article.metaDescription,
     datePublished: article.publishedAt,
+    dateModified: article.publishedAt,
     inLanguage: "sv-SE",
-    author: { "@type": "Organization", name: "Peiling", url: SITE_URL },
-    publisher: { "@type": "Organization", name: "Peiling", url: SITE_URL },
     url: articleUrl,
-    about: { "@type": "MedicalCause" },
-    audience: { "@type": "Patient" },
+    mainEntityOfPage: { "@type": "WebPage", "@id": articleUrl },
+    author: {
+      "@type": "Organization",
+      name: "Peiling",
+      url: SITE_URL,
+    },
+    publisher: {
+      "@type": "Organization",
+      name: "Peiling",
+      url: SITE_URL,
+      logo: {
+        "@type": "ImageObject",
+        url: `${SITE_URL}/icon.png`,
+      },
+    },
+    articleSection: CATEGORY_NAMES[article.category] ?? "Hälsa",
+    wordCount,
+    isPartOf: { "@type": "WebSite", name: "Peiling", url: SITE_URL },
   };
 
   const breadcrumbLd = {
