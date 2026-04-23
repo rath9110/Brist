@@ -38,7 +38,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "De flesta vet att vitaminer är viktiga. Färre vet om de faktiskt får i sig tillräckligt. Vitaminbrist är vanligare än du tror, och symtomen är luddiga: trötthet, sämre sömn, håravfall, täta förkylningar. Inget dramatiskt — men det påverkar hur du mår varje dag.",
+        text: "De flesta vet att vitaminer är viktiga. Färre vet om de faktiskt får i sig tillräckligt. Vitaminbrist är vanligare än du tror, och symtomen är luddiga: trötthet, sämre sömn, håravfall, täta förkylningar. Inget dramatiskt - men det påverkar hur du mår varje dag.",
       },
       {
         type: "h2",
@@ -105,7 +105,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "callout",
-        text: "Osäker på var du ska börja? Gör quizzen — svara på några frågor om din kost, dina symtom och din livsstil så ser du vilka brister som är troligast för dig.",
+        text: "Osäker på var du ska börja? Gör quizzen - svara på några frågor om din kost, dina symtom och din livsstil så ser du vilka brister som är troligast för dig.",
       },
     ],
     faq: [
@@ -115,7 +115,7 @@ export const ARTICLES: Article[] = [
       },
       {
         q: "Hur vet jag om jag har vitaminbrist?",
-        a: "Vanliga tecken är kronisk trötthet, håravfall, sköra naglar, kramper, sömnproblem och täta infektioner. Symtomen varierar beroende på vilken brist du har. Säkraste sättet att veta är ett blodprov — be om ferritin, 25-OH-D3, B12 och TSH.",
+        a: "Vanliga tecken är kronisk trötthet, håravfall, sköra naglar, kramper, sömnproblem och täta infektioner. Symtomen varierar beroende på vilken brist du har. Säkraste sättet att veta är ett blodprov - be om ferritin, 25-OH-D3, B12 och TSH.",
       },
       {
         q: "Kan jag ta vitamintillskott utan att testa mig?",
@@ -219,7 +219,7 @@ export const ARTICLES: Article[] = [
     faq: [
       {
         q: "Vilka är symtomen på D-vitaminbrist?",
-        a: "Kronisk trötthet, nedstämdhet och vinterdepression (SAD), muskelsvaghet, täta förkylningar och ledvärk. Symtomen är diffusa och liknar allmän utmattning — det är därför brist missas så ofta.",
+        a: "Kronisk trötthet, nedstämdhet och vinterdepression (SAD), muskelsvaghet, täta förkylningar och ledvärk. Symtomen är diffusa och liknar allmän utmattning - det är därför brist missas så ofta.",
       },
       {
         q: "Hur mycket D-vitamin behöver man per dag?",
@@ -252,7 +252,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Järnbrist drabbar runt 2 miljarder människor världen över — den vanligaste näringsbristsjukdomen som finns. I Sverige är det vanligast bland kvinnor med mens, löpare och de som äter lite kött. De flesta som har det vet inte om det.",
+        text: "Järnbrist drabbar runt 2 miljarder människor världen över - den vanligaste näringsbristsjukdomen som finns. I Sverige är det vanligast bland kvinnor med mens, löpare och de som äter lite kött. De flesta som har det vet inte om det.",
       },
       {
         type: "h2",
@@ -281,7 +281,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Järnbrist och järnbristanemi är inte samma sak. Anemi innebär att hemoglobinet är lågt — det är vad de flesta blodprover mäter. Men järnlagren (ferritin) börjar sina månader innan hemoglobinet sjunker. Du kan ha ett normalt hemoglobin och ändå ha järnbrist.",
+        text: "Järnbrist och järnbristanemi är inte samma sak. Anemi innebär att hemoglobinet är lågt - det är vad de flesta blodprover mäter. Men järnlagren (ferritin) börjar sina månader innan hemoglobinet sjunker. Du kan ha ett normalt hemoglobin och ändå ha järnbrist.",
       },
       {
         type: "p",
@@ -337,7 +337,7 @@ export const ARTICLES: Article[] = [
       },
       {
         q: "Vad är ferritin och varför är det viktigt?",
-        a: "Ferritin mäter kroppens järnlager och är känsligare än hemoglobin. Normalt hemoglobin utesluter inte järnbrist — ferritin kan vara lågt ändå. Be specifikt om ferritin, inte bara blodstatus.",
+        a: "Ferritin mäter kroppens järnlager och är känsligare än hemoglobin. Normalt hemoglobin utesluter inte järnbrist - ferritin kan vara lågt ändå. Be specifikt om ferritin, inte bara blodstatus.",
       },
       {
         q: "Kan man ta järntillskott utan recept?",
@@ -366,7 +366,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Magnesium är inblandat i över 300 processer i kroppen — energiproduktion, proteinsyntes, blodsocker, hjärtrytm. Trots det är magnesiumbrist en av de vanligaste bristerna i västvärlden, och den diagnostiseras sällan.",
+        text: "Magnesium är inblandat i över 300 processer i kroppen - energiproduktion, proteinsyntes, blodsocker, hjärtrytm. Trots det är magnesiumbrist en av de vanligaste bristerna i västvärlden, och den diagnostiseras sällan.",
       },
       {
         type: "h2",
@@ -398,7 +398,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Läkare kopplar sällan dessa symtom till magnesiumbrist, delvis för att standardblodprov mäter magnesium i serum — men 99 procent av kroppens magnesium finns i cellerna, inte i blodet. Serumvärdet kan se normalt ut trots att du har brist.",
+        text: "Läkare kopplar sällan dessa symtom till magnesiumbrist, delvis för att standardblodprov mäter magnesium i serum - men 99 procent av kroppens magnesium finns i cellerna, inte i blodet. Serumvärdet kan se normalt ut trots att du har brist.",
       },
       {
         type: "h2",
@@ -447,7 +447,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "B12 finns bara i animaliska produkter. Är du vegan eller vegetarian löper du hög risk för brist. Men det gäller inte bara dig — kroppens förmåga att ta upp B12 försämras med åldern, så även personer över 50 är utsatta.",
+        text: "B12 finns bara i animaliska produkter. Är du vegan eller vegetarian löper du hög risk för brist. Men det gäller inte bara dig - kroppens förmåga att ta upp B12 försämras med åldern, så även personer över 50 är utsatta.",
       },
       {
         type: "h2",
@@ -529,7 +529,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Omega-3 är en familj av fettsyror, inte en enda substans. Skillnaden mellan dem är avgörande — lin- och chiafrön ger inte alls samma skydd som fet fisk.",
+        text: "Omega-3 är en familj av fettsyror, inte en enda substans. Skillnaden mellan dem är avgörande - lin- och chiafrön ger inte alls samma skydd som fet fisk.",
       },
       {
         type: "h2",
@@ -576,7 +576,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Algolja är det bästa veganska alternativet — alger är det fisken själv äter. Du får DHA och EPA direkt, utan fisk och utan miljögifter. Kostar mer, men kvaliteten är utmärkt.",
+        text: "Algolja är det bästa veganska alternativet - alger är det fisken själv äter. Du får DHA och EPA direkt, utan fisk och utan miljögifter. Kostar mer, men kvaliteten är utmärkt.",
       },
       {
         type: "callout",
@@ -601,7 +601,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Zink är inblandat i hundratals processer i kroppen men det pratas sällan om. Brist är vanlig och konsekvenserna märks — på immunförsvaret, sårläkning och reproduktiv hälsa.",
+        text: "Zink är inblandat i hundratals processer i kroppen men det pratas sällan om. Brist är vanlig och konsekvenserna märks - på immunförsvaret, sårläkning och reproduktiv hälsa.",
       },
       {
         type: "h2",
@@ -628,7 +628,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Blötläggning, grodning och fermentering av spannmål och baljväxter minskar fytatinnehållet och förbättrar zinktillgängligheten avsevärt. Gamla tekniker som återfår relevans. Men det räcker sällan — de flesta på växtbaserad kost behöver antingen vara mycket noggranna med sina zinkrika livsmedel eller ta tillskott.",
+        text: "Blötläggning, grodning och fermentering av spannmål och baljväxter minskar fytatinnehållet och förbättrar zinktillgängligheten avsevärt. Gamla tekniker som återfår relevans. Men det räcker sällan - de flesta på växtbaserad kost behöver antingen vara mycket noggranna med sina zinkrika livsmedel eller ta tillskott.",
       },
       {
         type: "h2",
@@ -768,7 +768,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Stress, skärmtid, oregelbundna sovtider, koffein — de vanliga misstänkta vid sömnproblem. Men näringsstatus förbises ofta. Magnesium, D-vitamin, B12 och järn påverkar alla sömnen.",
+        text: "Stress, skärmtid, oregelbundna sovtider, koffein - de vanliga misstänkta vid sömnproblem. Men näringsstatus förbises ofta. Magnesium, D-vitamin, B12 och järn påverkar alla sömnen.",
       },
       {
         type: "h2",
@@ -841,7 +841,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Håravfall och sköra naglar kan ha en rad orsaker. Näringsbrist är en av de mer åtgärdbara — men det gäller att hitta rätt brist. Fel tillskott ger ingenting.",
+        text: "Håravfall och sköra naglar kan ha en rad orsaker. Näringsbrist är en av de mer åtgärdbara - men det gäller att hitta rätt brist. Fel tillskott ger ingenting.",
       },
       {
         type: "h2",
@@ -919,7 +919,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Muskelkramper kan vara allt från milt irriterande till plågsamt. Nattliga vadkramper som väcker dig ur sömnen är ett klassiskt problem. För de flesta finns en enkel biokemisk förklaring — och ofta en lika enkel lösning.",
+        text: "Muskelkramper kan vara allt från milt irriterande till plågsamt. Nattliga vadkramper som väcker dig ur sömnen är ett klassiskt problem. För de flesta finns en enkel biokemisk förklaring - och ofta en lika enkel lösning.",
       },
       {
         type: "h2",
@@ -985,7 +985,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "2–3 förkylningar per år är normalt. Blir du sjuk oftare, eller tar infektionerna längre tid att läka, finns det ofta en orsak. Immunförsvaret behöver specifika näringsämnen för att fungera — och brist på dessa är vanligare än du tror.",
+        text: "2–3 förkylningar per år är normalt. Blir du sjuk oftare, eller tar infektionerna längre tid att läka, finns det ofta en orsak. Immunförsvaret behöver specifika näringsämnen för att fungera - och brist på dessa är vanligare än du tror.",
       },
       {
         type: "h2",
@@ -993,7 +993,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "D-vitamin är inte bara ett benvitamin. Det reglerar aktiveringen av T-celler och makrofager — immunförsvarets frontlinje. D-vitaminbrist hänger ihop med fler luftvägsinfektioner, och tillskott minskar risken, särskilt om du har låga nivåer från start.",
+        text: "D-vitamin är inte bara ett benvitamin. Det reglerar aktiveringen av T-celler och makrofager - immunförsvarets frontlinje. D-vitaminbrist hänger ihop med fler luftvägsinfektioner, och tillskott minskar risken, särskilt om du har låga nivåer från start.",
       },
       {
         type: "p",
@@ -1056,7 +1056,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Att inte kunna tänka klart. Ord som försvinner. Fokus som skiftar utan att du vill det. Det kallas ibland hjärndimma — ingen diagnos, men ett mönster. Orsakerna är många. Näringsbrist är en av de mer åtgärdbara.",
+        text: "Att inte kunna tänka klart. Ord som försvinner. Fokus som skiftar utan att du vill det. Det kallas ibland hjärndimma - ingen diagnos, men ett mönster. Orsakerna är många. Näringsbrist är en av de mer åtgärdbara.",
       },
       {
         type: "h2",
@@ -1122,7 +1122,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Oro, stresskänslighet, känslan av att alltid vara på helspänn. Orsakerna kan vara många — livsomständigheter, sömnbrist, hormoner. Men en faktor som sällan diskuteras är hur näringen påverkar nervsystemet. Magnesiumbrist sticker ut där.",
+        text: "Oro, stresskänslighet, känslan av att alltid vara på helspänn. Orsakerna kan vara många - livsomständigheter, sömnbrist, hormoner. Men en faktor som sällan diskuteras är hur näringen påverkar nervsystemet. Magnesiumbrist sticker ut där.",
       },
       {
         type: "h2",
@@ -1134,7 +1134,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Magnesiumtillskott minskar ångest och oro hos personer med låga nivåer. Sambandet är starkast vid tydlig brist, men effekter ses brett. Magnesium utarmas av stress — vilket skapar en ond cirkel: stress tömmer lagren, lågt magnesium ökar stressen.",
+        text: "Magnesiumtillskott minskar ångest och oro hos personer med låga nivåer. Sambandet är starkast vid tydlig brist, men effekter ses brett. Magnesium utarmas av stress - vilket skapar en ond cirkel: stress tömmer lagren, lågt magnesium ökar stressen.",
       },
       {
         type: "h2",
@@ -1192,7 +1192,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Ledvärk och morgonstelhet utan känd diagnos är vanligare än du tror, särskilt på vintern. Inflammation i lederna kan ha många orsaker — men näring påverkar den inflammatoriska balansen direkt, och det går att åtgärda.",
+        text: "Ledvärk och morgonstelhet utan känd diagnos är vanligare än du tror, särskilt på vintern. Inflammation i lederna kan ha många orsaker - men näring påverkar den inflammatoriska balansen direkt, och det går att åtgärda.",
       },
       {
         type: "h2",
@@ -1289,7 +1289,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Linfrön och chiafrön innehåller ALA, men omvandlingen till EPA och DHA är ineffektiv (5–10%). Algolja ger DHA och EPA direkt — samma källa som fisken själv äter. 250–500 mg DHA+EPA från algolja per dag är en bra underhållsdos.",
+        text: "Linfrön och chiafrön innehåller ALA, men omvandlingen till EPA och DHA är ineffektiv (5–10%). Algolja ger DHA och EPA direkt - samma källa som fisken själv äter. 250–500 mg DHA+EPA från algolja per dag är en bra underhållsdos.",
       },
       {
         type: "h2",
@@ -1339,7 +1339,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Träningsindustrin säljer kosttillskott för miljarder varje år — en stor del är pengar i sjön. Men bakom hypen finns ett korn av sanning: intensiv träning ökar förbrukningen av specifika näringsämnen, och brist bromsar både återhämtning och prestation.",
+        text: "Träningsindustrin säljer kosttillskott för miljarder varje år - en stor del är pengar i sjön. Men bakom hypen finns ett korn av sanning: intensiv träning ökar förbrukningen av specifika näringsämnen, och brist bromsar både återhämtning och prestation.",
       },
       {
         type: "h2",
@@ -1454,7 +1454,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Referensintervall i labsvar är satta för att hitta sjukdom — inte för att säkerställa att du mår bra. D-vitamin: referensen sätts ofta vid 50 nmol/L men optimalt anses vara 75–150 nmol/L. Ferritin: undre gränsen är ofta 12–15 µg/L men symtom uppstår vanligen under 30–50 µg/L. B12: referens 148 pmol/L men symtom är vanliga under 300 pmol/L.",
+        text: "Referensintervall i labsvar är satta för att hitta sjukdom - inte för att säkerställa att du mår bra. D-vitamin: referensen sätts ofta vid 50 nmol/L men optimalt anses vara 75–150 nmol/L. Ferritin: undre gränsen är ofta 12–15 µg/L men symtom uppstår vanligen under 30–50 µg/L. B12: referens 148 pmol/L men symtom är vanliga under 300 pmol/L.",
       },
       {
         type: "p",
@@ -1466,7 +1466,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Har du hittat en brist — ta tillskott i rätt dos under 3 månader och testa om. Kontrollera att värdet faktiskt stigit till en nivå där du förväntar dig att må bra. Anpassa dosen vid behov. Upprepa ett gång om året, eller halvårsvis om du tränar intensivt.",
+        text: "Har du hittat en brist - ta tillskott i rätt dos under 3 månader och testa om. Kontrollera att värdet faktiskt stigit till en nivå där du förväntar dig att må bra. Anpassa dosen vid behov. Upprepa ett gång om året, eller halvårsvis om du tränar intensivt.",
       },
       {
         type: "callout",
@@ -1491,7 +1491,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Kosttillskottsmarknaden är enorm, förvirrande och fylld av saker du inte behöver. Men rätt tillskott, i rätt dos, för rätt person gör skillnad. Problemet är att de flesta tar fel saker baserat på reklam eller hörsägen — inte sin faktiska profil.",
+        text: "Kosttillskottsmarknaden är enorm, förvirrande och fylld av saker du inte behöver. Men rätt tillskott, i rätt dos, för rätt person gör skillnad. Problemet är att de flesta tar fel saker baserat på reklam eller hörsägen - inte sin faktiska profil.",
       },
       {
         type: "h2",
@@ -1499,7 +1499,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Tillskott för att täcka en brist och tillskott för att 'optimera' är två helt olika saker. Brist ger ett tydligt svar — du saknar X, du tar X, du mår bättre. Optimering är luddigt, och bevisen för de flesta 'prestationshöjande' tillskott är svaga.",
+        text: "Tillskott för att täcka en brist och tillskott för att 'optimera' är två helt olika saker. Brist ger ett tydligt svar - du saknar X, du tar X, du mår bättre. Optimering är luddigt, och bevisen för de flesta 'prestationshöjande' tillskott är svaga.",
       },
       {
         type: "p",
@@ -1583,7 +1583,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Sömnproblem är ett av de vanligaste hälsoklagomålen. Många prövar melatonin, antihistaminer eller sömnmedel. Men en av de mest studerade och säkraste insatserna för sömn är magnesium — inte ett sömnmedel, utan ett svar på en brist som kan hålla dig vaken.",
+        text: "Sömnproblem är ett av de vanligaste hälsoklagomålen. Många prövar melatonin, antihistaminer eller sömnmedel. Men en av de mest studerade och säkraste insatserna för sömn är magnesium - inte ett sömnmedel, utan ett svar på en brist som kan hålla dig vaken.",
       },
       {
         type: "h2",
@@ -1676,7 +1676,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "99 procent av kroppens kalcium sitter i skelett och tänder. Men det är den sista procenten som avgör hur du mår — muskelkontraktion, nervsignalering, blodtryck, blodets koagulering. När intaget är för lågt tar kroppen från skelettet för att hålla blodvärdena stabila. Du kan ha kalciumbrist i åratal utan att märka det.",
+        text: "99 procent av kroppens kalcium sitter i skelett och tänder. Men det är den sista procenten som avgör hur du mår - muskelkontraktion, nervsignalering, blodtryck, blodets koagulering. När intaget är för lågt tar kroppen från skelettet för att hålla blodvärdena stabila. Du kan ha kalciumbrist i åratal utan att märka det.",
       },
       {
         type: "h2",
@@ -1787,7 +1787,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Folat (vitamin B9) är ett av de mest underskattade näringsämnena i svensk kost. Det behövs för celldelning, röda blodkroppar och DNA-reparation. Folat är kritiskt vid graviditet, men bristen är relevant för alla — den påverkar energi, humör och kognition.",
+        text: "Folat (vitamin B9) är ett av de mest underskattade näringsämnena i svensk kost. Det behövs för celldelning, röda blodkroppar och DNA-reparation. Folat är kritiskt vid graviditet, men bristen är relevant för alla - den påverkar energi, humör och kognition.",
       },
       {
         type: "h2",
@@ -1906,7 +1906,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "Selen behöver kroppen bara i små mängder — men när det saknas märks det. Det skyddar cellerna, aktiverar sköldkörtelhormon och driver immunförsvaret. I Sverige är selenbrist vanligare än i de flesta andra länder, av en anledning som få känner till: jorden.",
+        text: "Selen behöver kroppen bara i små mängder - men när det saknas märks det. Det skyddar cellerna, aktiverar sköldkörtelhormon och driver immunförsvaret. I Sverige är selenbrist vanligare än i de flesta andra länder, av en anledning som få känner till: jorden.",
       },
       {
         type: "h2",
@@ -2025,7 +2025,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "De flesta tror att C-vitaminbrist är historia — skörbjugg och sjömän. Men subklinisk brist, nivåer som inte ger skörbjugg men som sänker immunförsvar, energi och läkning, är vanligare än du tror. 10–15 procent av vuxna i västländer har bristfälliga nivåer, och 20–30 procent till ligger för lågt.",
+        text: "De flesta tror att C-vitaminbrist är historia - skörbjugg och sjömän. Men subklinisk brist, nivåer som inte ger skörbjugg men som sänker immunförsvar, energi och läkning, är vanligare än du tror. 10–15 procent av vuxna i västländer har bristfälliga nivåer, och 20–30 procent till ligger för lågt.",
       },
       {
         type: "h2",
@@ -2092,7 +2092,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Megadoser på 1 000 mg eller mer ger sällan extra nytta. C-vitamin absorberas sämre vid höga doser — vid 1 000 mg tar kroppen upp under hälften. Resten kissas ut. Ingenting tyder på att megadoser förebygger förkylningar bättre än 200–400 mg.",
+        text: "Megadoser på 1 000 mg eller mer ger sällan extra nytta. C-vitamin absorberas sämre vid höga doser - vid 1 000 mg tar kroppen upp under hälften. Resten kissas ut. Ingenting tyder på att megadoser förebygger förkylningar bättre än 200–400 mg.",
       },
       {
         type: "h2",
