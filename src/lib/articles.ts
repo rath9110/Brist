@@ -105,7 +105,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "callout",
-        text: "Vet inte var du ska börja? Gör Peiling-quizzen. Svara på några frågor om dina mål, din kost och dina symtom och få en personlig bild av vilka brister som är mest troliga för dig.",
+        text: "Osäker på var du ska börja? Gör quizzen — svara på några frågor om din kost, dina symtom och din livsstil så ser du vilka brister som är troligast för dig.",
       },
     ],
     faq: [
@@ -146,7 +146,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "50–80 procent av Sveriges befolkning har för låga D-vitaminnivåer under vinterhalvåret. Inte för att vi äter dåligt — utan för att vi bor på fel breddgrad.",
+        text: "50–80 procent av Sveriges befolkning har för låga D-vitaminnivåer under vinterhalvåret. Anledningen är enkel: solen står för lågt för att huden ska kunna bilda D-vitamin mellan oktober och mars.",
       },
       {
         type: "h2",
@@ -572,11 +572,11 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Fiskolja är det vanligaste alternativet. Kontrollera alltid mängden EPA+DHA per kapsel, inte totalt fiskoljinnehåll. En kapsel kan innehålla 1 000 mg fiskolja men bara 300 mg EPA+DHA - det är den relevanta siffran. Sikta på minst 500 mg EPA+DHA per dag som underhållsdos, 1–3 g per dag om du tränar intensivt eller har inflammatoriska problem.",
+        text: "Fiskolja är det vanligaste alternativet. Kontrollera alltid mängden EPA+DHA per kapsel, inte totalt fiskoljinnehåll. En kapsel kan innehålla 1 000 mg fiskolja men bara 300 mg EPA+DHA - det är den siffran som spelar roll. Sikta på minst 500 mg EPA+DHA per dag som underhållsdos, 1–3 g per dag om du tränar intensivt eller har inflammatoriska problem.",
       },
       {
         type: "p",
-        text: "Algolja är det bästa veganska alternativet - alger är ursprungskällan som fisken äter, så du hoppar över ett led i kedjan. Algolja ger direkt DHA och EPA utan fisken och utan risk för miljögifter. Priset är högre men kvaliteten är utmärkt.",
+        text: "Algolja är det bästa veganska alternativet — alger är det fisken själv äter. Du får DHA och EPA direkt, utan fisk och utan miljögifter. Kostar mer, men kvaliteten är utmärkt.",
       },
       {
         type: "callout",
@@ -1261,7 +1261,7 @@ export const ARTICLES: Article[] = [
     blocks: [
       {
         type: "p",
-        text: "En vegansk kost kan täcka de flesta näringsbehov, men den har förutsägbara luckor. Att känna till dem och täcka dem aktivt är skillnaden mellan att må bra och att långsamt tömma sina lager.",
+        text: "En vegansk kost kan täcka de flesta näringsbehov, men den har förutsägbara luckor. Känner du till dem och täcker dem aktivt mår du bra. Gör du det inte tömmer du långsamt dina lager.",
       },
       {
         type: "h2",
@@ -1269,7 +1269,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Det finns inget bioaktivt B12 i växter. Om du är vegan och inte supplementerar med B12, börja idag. Brist tar år att utvecklas eftersom kroppen lagrar B12 i levern, men när symtomen väl uppstår kan nervskadorna vara bestående.",
+        text: "Det finns inget bioaktivt B12 i växter. Är du vegan och inte tar B12-tillskott, börja idag. Brist tar år att utvecklas eftersom kroppen lagrar B12 i levern, men när symtomen väl uppstår kan nervskadorna vara bestående.",
       },
       {
         type: "p",
@@ -1289,7 +1289,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Linfrön och chiafrön innehåller ALA, men omvandlingen till de viktiga EPA och DHA är ineffektiv (5–10%). Algolja ger DHA och EPA direkt - det är källan fisken äter, så du hoppar ett led i kedjan. 250–500 mg DHA+EPA från algolja per dag är en bra underhållsdos.",
+        text: "Linfrön och chiafrön innehåller ALA, men omvandlingen till EPA och DHA är ineffektiv (5–10%). Algolja ger DHA och EPA direkt — samma källa som fisken själv äter. 250–500 mg DHA+EPA från algolja per dag är en bra underhållsdos.",
       },
       {
         type: "h2",
@@ -1458,7 +1458,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Kort sagt utesluter ett svar inom referensintervallet inte brist i funktionell mening. Läs dina värden i relation till dina symtom, inte bara mot laboratoriegränserna.",
+        text: "Att ligga inom referensintervallet betyder inte att du mår optimalt. Läs dina värden mot dina symtom, inte bara mot labgränserna.",
       },
       {
         type: "h2",
@@ -2092,7 +2092,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "En vanlig fråga är om megadoser på 1 000 mg eller mer ger extra nytta. Svaret är i de flesta fall nej. C-vitamin absorberas sämre vid höga doser – vid 1 000 mg tar kroppen upp under hälften. Överskottet utsöndras via urinen. Det finns inget stöd för att megadoser förebygger förkylningar bättre än en dosering på 200–400 mg.",
+        text: "Megadoser på 1 000 mg eller mer ger sällan extra nytta. C-vitamin absorberas sämre vid höga doser — vid 1 000 mg tar kroppen upp under hälften. Resten kissas ut. Ingenting tyder på att megadoser förebygger förkylningar bättre än 200–400 mg.",
       },
       {
         type: "h2",
@@ -2104,7 +2104,7 @@ export const ARTICLES: Article[] = [
       },
       {
         type: "p",
-        text: "Problemet i praktiken är konsistens. De flesta har enstaka dagar med bra intag och flera dagar med lågt intag. Eftersom kroppen inte kan lagra C-vitamin spelar genomsnittet per vecka mindre roll än det dagliga minimumet. Det är det här gapet som gör att tillskott kan vara meningsfullt även för personer som i teorin äter tillräckligt.",
+        text: "Problemet är konsistens. De flesta har enstaka bra dagar och flera dagar med lågt intag. Kroppen kan inte lagra C-vitamin, så det dagliga minimumet spelar större roll än veckosnittet. Därför kan tillskott vara meningsfullt även om du i teorin äter tillräckligt.",
       },
       {
         type: "h2",
